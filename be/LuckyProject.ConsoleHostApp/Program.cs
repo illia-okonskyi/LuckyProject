@@ -1,12 +1,15 @@
-﻿using System;
+﻿using Microsoft.Extensions.Hosting;
+using System.Threading.Tasks;
 
 namespace LuckyProject.ConsoleHostApp
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static async Task Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            using var entryPoint = new EntryPoint(args);
+            await entryPoint.ConfigureAsync();
+            await entryPoint.Host.RunAsync();
         }
     }
 }
