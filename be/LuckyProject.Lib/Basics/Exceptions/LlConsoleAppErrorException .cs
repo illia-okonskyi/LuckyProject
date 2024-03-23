@@ -1,12 +1,12 @@
 ﻿using System;
 
-namespace LuckyProject.CertManager.Exceptions
+namespace LuckyProject.Lib.Basics.Exceptions
 {
-    public class LlCertManagerAppErrorException : Exception
+    public class LlConsoleAppErrorException : Exception
     {
         public int ExitCode { get; }
 
-        public LlCertManagerAppErrorException(int exitCode, string message = null)
+        public LlConsoleAppErrorException(int exitCode, string message = null)
             : base(BuildMessage(exitCode, message))
         {
             ExitCode = exitCode;

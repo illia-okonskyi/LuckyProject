@@ -1,7 +1,6 @@
-﻿using LuckyProject.CertManager.Models;
-using LuckyProject.CertManager.Services;
-using LuckyProject.Lib.Hosting.EntryPoint;
-using Microsoft.Extensions.Configuration;
+﻿using LuckyProject.Lib.Hosting.EntryPoint;
+using LuckyProject.SecretManager.Models;
+using LuckyProject.SecretManager.Services;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
@@ -9,7 +8,7 @@ using NLog.Extensions.Logging;
 using System;
 using System.Threading.Tasks;
 
-namespace LuckyProject.CertManager
+namespace LuckyProject.SecretManager
 {
     public class EntryPoint : LlAbstractGenericHostEntryPoint, IEntryPoint
     {
@@ -21,7 +20,6 @@ namespace LuckyProject.CertManager
         #region Public interface
         public override Task ConfigureAsync()
         {
-            ConfigureConfiguration();
             ConfigureLogging();
             ConfigureServices();
             ConfigureHostedService();
@@ -44,11 +42,6 @@ namespace LuckyProject.CertManager
         #endregion
 
         #region Internals
-        private void ConfigureConfiguration()
-        {
-            HostBuilder.Configuration.AddJsonFile("appsecrets.json");
-        }
-
         private void ConfigureLogging()
         {
             // NOTE: Create NLog configuration
@@ -82,13 +75,11 @@ namespace LuckyProject.CertManager
         {
             HostBuilder.Services.Configure<AppConfig>(
                 HostBuilder.Configuration.GetSection("Application"));
-            HostBuilder.Services.Configure<AppSecretsConfig>(
-                HostBuilder.Configuration.GetSection("Secrets"));
         }
 
         private void ConfigureHostedService()
         {
-            HostBuilder.Services.AddHostedService<LlCertManagerService>();
+            HostBuilder.Services.AddHostedService<LlSecretManagerService>();
         }
         #endregion
     }

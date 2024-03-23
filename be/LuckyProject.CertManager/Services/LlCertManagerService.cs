@@ -1,8 +1,8 @@
 ﻿using Azure.Identity;
 using Azure.Security.KeyVault.Certificates;
 using Azure.Security.KeyVault.Secrets;
-using LuckyProject.CertManager.Exceptions;
 using LuckyProject.CertManager.Models;
+using LuckyProject.Lib.Basics.Exceptions;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
@@ -44,7 +44,7 @@ namespace LuckyProject.CertManager.Services
             {
                 await ExecuteAsync(cancellationToken);
             }
-            catch (LlCertManagerAppErrorException appErrorEx)
+            catch (LlConsoleAppErrorException appErrorEx)
             {
                 exitCode = appErrorEx.ExitCode;
                 logger.LogError(appErrorEx, null);
@@ -53,7 +53,6 @@ namespace LuckyProject.CertManager.Services
             {
                 logger.LogError(ex, "Unexpected error");
                 exitCode = -1;
-                Console.ReadLine();
             }
             finally
             {
@@ -88,7 +87,7 @@ namespace LuckyProject.CertManager.Services
                 return;
             }
 
-            throw new LlCertManagerAppErrorException(1, "Unexpected command");
+            throw new LlConsoleAppErrorException(1, "Unexpected command");
         }
 
         private void WriteHelp()

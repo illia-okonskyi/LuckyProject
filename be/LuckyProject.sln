@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LuckyProject.ConsoleHostApp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LuckyProject.AuthServer", "LuckyProject.AuthServer\LuckyProject.AuthServer.csproj", "{31A5B43B-C4A7-4406-8DF7-AC474CBFB3E4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LuckyProject.CertManager", "LuckyProject.CertManager\LuckyProject.CertManager.csproj", "{ED482737-8D7C-4717-9E2D-897481C2FBE7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LuckyProject.CertManager", "LuckyProject.CertManager\LuckyProject.CertManager.csproj", "{ED482737-8D7C-4717-9E2D-897481C2FBE7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LuckyProject.SecretManager", "LuckyProject.SecretManager\LuckyProject.SecretManager.csproj", "{258119F2-4658-4CC4-A0D8-990E9E29C9F6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{ED482737-8D7C-4717-9E2D-897481C2FBE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ED482737-8D7C-4717-9E2D-897481C2FBE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ED482737-8D7C-4717-9E2D-897481C2FBE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{258119F2-4658-4CC4-A0D8-990E9E29C9F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{258119F2-4658-4CC4-A0D8-990E9E29C9F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{258119F2-4658-4CC4-A0D8-990E9E29C9F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{258119F2-4658-4CC4-A0D8-990E9E29C9F6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
