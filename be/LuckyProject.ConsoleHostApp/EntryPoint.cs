@@ -1,6 +1,7 @@
 ﻿using LuckyProject.ConsoleHostApp.Services.Dummy;
 using LuckyProject.ConsoleHostApp.Services.Hosted;
 using LuckyProject.Lib.Hosting.EntryPoint;
+using LuckyProject.Lib.Basics.Extensions;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
@@ -10,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace LuckyProject.ConsoleHostApp
 {
-    public class EntryPoint : LlAbstractGenericHostEntryPoint, IEntryPoint
+    public class EntryPoint : AbstractGenericHostEntryPoint, IEntryPoint
     {
         #region ctor
         public EntryPoint(string[] args) : base(args)
@@ -48,18 +49,20 @@ namespace LuckyProject.ConsoleHostApp
             // NOTE: Create NLog configuration
             var config = new NLog.Config.LoggingConfiguration();
 
+            var logLayoutFormat = "${level:format=TriLetter:uppercase=true}|${longdate}|" +
+                "${logger}|${scopenested:separator=>}${newline}    ${scopeindent}${message} " +
+                "${exception:format=tostring}";
+
             var fileTarget = new NLog.Targets.FileTarget("file")
             {
                 FileName = "logfile.log",
-                Layout = new NLog.Layouts.SimpleLayout(
-                    "${longdate}|${level:format=TriLetter:uppercase=true}|${logger}|${message} ${exception:format=tostring}")
+                Layout = new NLog.Layouts.SimpleLayout(logLayoutFormat)
             };
             config.AddRule(NLog.LogLevel.Info, NLog.LogLevel.Fatal, fileTarget);
 
             var consoleTarget = new NLog.Targets.ColoredConsoleTarget("console")
             {
-                Layout = new NLog.Layouts.SimpleLayout(
-                    "${level:format=TriLetter:uppercase=true}|${longdate}|${logger}${newline}    ${message} ${exception:format=tostring}")
+                Layout = new NLog.Layouts.SimpleLayout(logLayoutFormat)
             };
             config.AddRule(NLog.LogLevel.Info, NLog.LogLevel.Fatal, consoleTarget);
             
@@ -74,12 +77,13 @@ namespace LuckyProject.ConsoleHostApp
 
         private void ConfigureServices()
         {
+            HostBuilder.Services.AddLpBasicServices();
             HostBuilder.Services.AddTransient<IHelloWorldService, HelloWorldService>();
         }
 
         private void ConfigureHostedService()
         {
-            HostBuilder.Services.AddHostedService<LlHostedService>();
+            HostBuilder.Services.AddHostedService<LpHostedService>();
         }
         #endregion
     }

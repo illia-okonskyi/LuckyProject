@@ -15,7 +15,7 @@ using System.Threading.Tasks;
 
 namespace LuckyProject.CertManager.Services
 {
-    internal class LlCertManagerService : IHostedService
+    internal class LpCertManagerService : IHostedService
     {
         private const string DevCaCertName = "DevCA";
         private const string DevCaCertOutName = "DevCA.crt";
@@ -27,10 +27,10 @@ namespace LuckyProject.CertManager.Services
         private readonly AppSecretsConfig appSecrets;
         private readonly ILogger logger;
 
-        public LlCertManagerService(
+        public LpCertManagerService(
             IOptions<AppConfig> appConfig,
             IOptions<AppSecretsConfig> appSecrets,
-            ILogger<LlCertManagerService> logger)
+            ILogger<LpCertManagerService> logger)
         {
             this.appConfig = appConfig.Value;
             this.appSecrets = appSecrets.Value;
@@ -44,7 +44,7 @@ namespace LuckyProject.CertManager.Services
             {
                 await ExecuteAsync(cancellationToken);
             }
-            catch (LlConsoleAppErrorException appErrorEx)
+            catch (LpConsoleAppErrorException appErrorEx)
             {
                 exitCode = appErrorEx.ExitCode;
                 logger.LogError(appErrorEx, null);
@@ -87,7 +87,7 @@ namespace LuckyProject.CertManager.Services
                 return;
             }
 
-            throw new LlConsoleAppErrorException(1, "Unexpected command");
+            throw new LpConsoleAppErrorException(1, "Unexpected command");
         }
 
         private void WriteHelp()

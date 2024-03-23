@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 
 namespace LuckyProject.SecretManager
 {
-    public interface IEntryPoint : ILlGenericHostEntryPoint
+    public interface IEntryPoint : IGenericHostEntryPoint
     {
         Task RunAsync();
     }

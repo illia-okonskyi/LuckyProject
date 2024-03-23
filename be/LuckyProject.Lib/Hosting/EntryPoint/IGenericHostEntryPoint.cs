@@ -1,12 +1,12 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using Microsoft.Extensions.Hosting;
 using System;
 using System.Threading.Tasks;
 
 namespace LuckyProject.Lib.Hosting.EntryPoint
 {
-    public interface ILlWebHostEntryPoint : IAsyncDisposable
+    public interface IGenericHostEntryPoint : IDisposable
     {
-        WebApplication App { get; }
+        IHost Host { get; }
         Task ConfigureAsync();
     }
 }

@@ -1,12 +1,10 @@
-﻿using System;
-
-namespace LuckyProject.Lib.Basics.Exceptions
+﻿namespace LuckyProject.Lib.Basics.Exceptions
 {
-    public class LlConsoleAppErrorException : Exception
+    public class LpConsoleAppErrorException : LpException
     {
         public int ExitCode { get; }
 
-        public LlConsoleAppErrorException(int exitCode, string message = null)
+        public LpConsoleAppErrorException(int exitCode, string message = null)
             : base(BuildMessage(exitCode, message))
         {
             ExitCode = exitCode;

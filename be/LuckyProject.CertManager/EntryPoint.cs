@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace LuckyProject.CertManager
 {
-    public class EntryPoint : LlAbstractGenericHostEntryPoint, IEntryPoint
+    public class EntryPoint : AbstractGenericHostEntryPoint, IEntryPoint
     {
         #region ctor
         public EntryPoint(string[] args) : base(args)
@@ -88,7 +88,7 @@ namespace LuckyProject.CertManager
 
         private void ConfigureHostedService()
         {
-            HostBuilder.Services.AddHostedService<LlCertManagerService>();
+            HostBuilder.Services.AddHostedService<LpCertManagerService>();
         }
         #endregion
     }

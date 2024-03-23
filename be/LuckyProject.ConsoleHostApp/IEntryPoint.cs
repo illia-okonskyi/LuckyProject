@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 
 namespace LuckyProject.ConsoleHostApp
 {
-    public interface IEntryPoint : ILlGenericHostEntryPoint
+    public interface IEntryPoint : IGenericHostEntryPoint
     {
         Task RunAsync();
     }

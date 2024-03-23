@@ -15,7 +15,7 @@ using System.Text;
 
 namespace LuckyProject.SecretManager.Services
 {
-    internal class LlSecretManagerService : IHostedService
+    internal class LpSecretManagerService : IHostedService
     {
         private class SecretInfo
         {
@@ -32,9 +32,9 @@ namespace LuckyProject.SecretManager.Services
 
         private readonly List<SecretInfo> secrets;
 
-        public LlSecretManagerService(
+        public LpSecretManagerService(
             IOptions<AppConfig> appConfig,
-            ILogger<LlSecretManagerService> logger)
+            ILogger<LpSecretManagerService> logger)
         {
             this.appConfig = appConfig.Value;
             this.logger = logger;
@@ -55,7 +55,7 @@ namespace LuckyProject.SecretManager.Services
             {
                 await ExecuteAsync(cancellationToken);
             }
-            catch (LlConsoleAppErrorException appErrorEx)
+            catch (LpConsoleAppErrorException appErrorEx)
             {
                 exitCode = appErrorEx.ExitCode;
                 logger.LogError(appErrorEx, null);
@@ -92,7 +92,7 @@ namespace LuckyProject.SecretManager.Services
                 return;
             }
 
-            throw new LlConsoleAppErrorException(1, "Unexpected command");
+            throw new LpConsoleAppErrorException(1, "Unexpected command");
         }
 
         private void WriteHelp()

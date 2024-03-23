@@ -7,7 +7,7 @@ namespace LuckyProject.Lib.Hosting.EntryPoint
     /// For documentation reference see the
     /// https://learn.microsoft.com/en-us/dotnet/core/extensions/generic-host
     /// </summary>
-    public abstract class LlAbstractGenericHostEntryPoint : ILlGenericHostEntryPoint
+    public abstract class AbstractGenericHostEntryPoint : IGenericHostEntryPoint
     {
         #region Public interface
         public IHost Host { get; protected set; }
@@ -18,7 +18,7 @@ namespace LuckyProject.Lib.Hosting.EntryPoint
         #endregion
 
         #region ctor & Dispose
-        protected LlAbstractGenericHostEntryPoint(string[] args)
+        protected AbstractGenericHostEntryPoint(string[] args)
         {
             HostBuilder = Microsoft.Extensions.Hosting.Host.CreateApplicationBuilder(args);
         }

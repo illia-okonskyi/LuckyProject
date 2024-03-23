@@ -4,7 +4,7 @@ using System.Security.Cryptography.X509Certificates;
 
 namespace LuckyProject.AuthServer
 {
-    public class EntryPoint : LlAbstractWebHostEntryPoint, IEntryPoint
+    public class EntryPoint : AbstractWebHostEntryPoint, IEntryPoint
     {
         #region ctor
         public EntryPoint(string[] args) : base(args)

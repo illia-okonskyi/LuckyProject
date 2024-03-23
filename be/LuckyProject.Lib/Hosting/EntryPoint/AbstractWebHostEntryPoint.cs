@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 
 namespace LuckyProject.Lib.Hosting.EntryPoint
 {
-    public abstract class LlAbstractWebHostEntryPoint : ILlWebHostEntryPoint
+    public abstract class AbstractWebHostEntryPoint : IWebHostEntryPoint
     {
         #region Public interface
         public WebApplication App { get; private set; }
@@ -14,7 +14,7 @@ namespace LuckyProject.Lib.Hosting.EntryPoint
         #endregion
 
         #region ctor & Dispose
-        protected LlAbstractWebHostEntryPoint(string[] args)
+        protected AbstractWebHostEntryPoint(string[] args)
         {
             AppBuilder = WebApplication.CreateBuilder(args);
         }

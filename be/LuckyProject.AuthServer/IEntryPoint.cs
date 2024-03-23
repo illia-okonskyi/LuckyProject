@@ -2,7 +2,7 @@
 
 namespace LuckyProject.AuthServer
 {
-    public interface IEntryPoint : ILlWebHostEntryPoint
+    public interface IEntryPoint : IWebHostEntryPoint
     {
         Task RunAsync();
     }
