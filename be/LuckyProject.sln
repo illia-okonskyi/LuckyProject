@@ -5,11 +5,15 @@ VisualStudioVersion = 17.9.34622.214
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LuckyProject.Lib", "LuckyProject.Lib\LuckyProject.Lib.csproj", "{95CA5F89-7282-45FA-81E3-7BD4D6206F80}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LuckyProject.Lib.Test", "LuckyProject.Lib.Test\LuckyProject.Lib.Test.csproj", "{49704F9E-6F9F-4B45-B583-B79CB6E0CF8E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LuckyProject.Lib.Test", "LuckyProject.Lib.Test\LuckyProject.Lib.Test.csproj", "{49704F9E-6F9F-4B45-B583-B79CB6E0CF8E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LuckyProject.ConsoleSimpleApp", "LuckyProject.ConsoleSimpleApp\LuckyProject.ConsoleSimpleApp.csproj", "{9A969584-7A66-4EA1-AA63-38A65D279579}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LuckyProject.ConsoleSimpleApp", "LuckyProject.ConsoleSimpleApp\LuckyProject.ConsoleSimpleApp.csproj", "{9A969584-7A66-4EA1-AA63-38A65D279579}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LuckyProject.ConsoleHostApp", "LuckyProject.ConsoleHostApp\LuckyProject.ConsoleHostApp.csproj", "{4D3D6868-9A9F-4136-821D-D36C3CBEF710}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LuckyProject.ConsoleHostApp", "LuckyProject.ConsoleHostApp\LuckyProject.ConsoleHostApp.csproj", "{4D3D6868-9A9F-4136-821D-D36C3CBEF710}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LuckyProject.AuthServer", "LuckyProject.AuthServer\LuckyProject.AuthServer.csproj", "{31A5B43B-C4A7-4406-8DF7-AC474CBFB3E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LuckyProject.CertManager", "LuckyProject.CertManager\LuckyProject.CertManager.csproj", "{ED482737-8D7C-4717-9E2D-897481C2FBE7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +37,14 @@ Global
 		{4D3D6868-9A9F-4136-821D-D36C3CBEF710}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4D3D6868-9A9F-4136-821D-D36C3CBEF710}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4D3D6868-9A9F-4136-821D-D36C3CBEF710}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31A5B43B-C4A7-4406-8DF7-AC474CBFB3E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31A5B43B-C4A7-4406-8DF7-AC474CBFB3E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31A5B43B-C4A7-4406-8DF7-AC474CBFB3E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31A5B43B-C4A7-4406-8DF7-AC474CBFB3E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED482737-8D7C-4717-9E2D-897481C2FBE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED482737-8D7C-4717-9E2D-897481C2FBE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED482737-8D7C-4717-9E2D-897481C2FBE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED482737-8D7C-4717-9E2D-897481C2FBE7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
