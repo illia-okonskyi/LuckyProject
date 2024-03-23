@@ -10,11 +10,11 @@ namespace LuckyProject.Lib.Hosting.EntryPoint
     public abstract class LlAbstractGenericHostEntryPoint : ILlGenericHostEntryPoint
     {
         #region Public interface
-        public IHost Host { get; private set; }
+        public IHost Host { get; protected set; }
         #endregion
 
         #region Configuration builder forwarding
-        protected HostApplicationBuilder HostBuilder { get; private set; }
+        protected HostApplicationBuilder HostBuilder { get; set; }
         #endregion
 
         #region ctor & Dispose
@@ -33,25 +33,12 @@ namespace LuckyProject.Lib.Hosting.EntryPoint
         }
         #endregion
 
-        #region ConfigureAsync
-        public async Task ConfigureAsync()
+        public abstract Task ConfigureAsync();
+
+        protected void BuildHost()
         {
-            await ConfigureInitAsync();
-            await ConfigureConfigurationAsync();
-            await ConfigureLoggingAsync();
-            await ConfigureServicesAsync();
-            await ConfigureHostedServicesAsync();
-            await ConfigureFinishAsync();
             Host = HostBuilder.Build();
             HostBuilder = null;
         }
-
-        protected virtual Task ConfigureInitAsync() { return Task.CompletedTask; }
-        protected virtual Task ConfigureConfigurationAsync() { return Task.CompletedTask; }
-        protected virtual Task ConfigureLoggingAsync() { return Task.CompletedTask; }
-        protected virtual Task ConfigureServicesAsync() { return Task.CompletedTask; }
-        protected virtual Task ConfigureHostedServicesAsync() { return Task.CompletedTask; }
-        protected virtual Task ConfigureFinishAsync() { return Task.CompletedTask; }
-        #endregion
     }
 }

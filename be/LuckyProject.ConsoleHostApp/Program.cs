@@ -1,5 +1,4 @@
-﻿using Microsoft.Extensions.Hosting;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 
 namespace LuckyProject.ConsoleHostApp
 {
@@ -9,7 +8,7 @@ namespace LuckyProject.ConsoleHostApp
         {
             using var entryPoint = new EntryPoint(args);
             await entryPoint.ConfigureAsync();
-            await entryPoint.Host.RunAsync();
+            await entryPoint.RunAsync();
         }
     }
 }

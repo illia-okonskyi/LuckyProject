@@ -1,62 +1,39 @@
-﻿using Microsoft.AspNetCore;
-using Microsoft.AspNetCore.Hosting;
+﻿using Microsoft.AspNetCore.Builder;
 using System.Threading.Tasks;
 
 namespace LuckyProject.Lib.Hosting.EntryPoint
 {
-    /// <summary>
-    /// For documentation reference see the
-    /// https://learn.microsoft.com/en-us/aspnet/core/fundamentals/host/web-host?view=aspnetcore-8.0
-    /// </summary>
     public abstract class LlAbstractWebHostEntryPoint : ILlWebHostEntryPoint
     {
         #region Public interface
-        public IWebHost Host { get; private set; }
+        public WebApplication App { get; private set; }
         #endregion
 
         #region Configuration builder forwarding
-        protected IWebHostBuilder HostBuilder { get; private set; }
+        protected WebApplicationBuilder AppBuilder { get; set; }
         #endregion
 
         #region ctor & Dispose
         protected LlAbstractWebHostEntryPoint(string[] args)
         {
-            HostBuilder = WebHost.CreateDefaultBuilder(args);
+            AppBuilder = WebApplication.CreateBuilder(args);
         }
 
-        public void Dispose()
+        public async ValueTask DisposeAsync()
         {
-            if (Host != null)
+            if (App != null)
             {
-                Host.Dispose();
-                Host = null;
+                await App.DisposeAsync();
+                App = null;
             }
         }
         #endregion
+        public abstract Task ConfigureAsync();
 
-        #region ConfigureAsync
-        public async Task ConfigureAsync()
+        protected void BuildApp()
         {
-            await ConfigureInitAsync();
-            await ConfigureConfigurationAsync();
-            await ConfigureLoggingAsync();
-            await ConfigureServicesAsync();
-            await ConfigureWebServerAsync();
-            await ConfigureHostedServicesAsync();
-            Host = HostBuilder.Build();
-            HostBuilder = null;
-            await ConfigureHostAppAsync();
-            await ConfigureFinishAsync();
+            App = AppBuilder.Build();
+            AppBuilder = null;
         }
-
-        protected virtual Task ConfigureInitAsync() { return Task.CompletedTask; }
-        protected virtual Task ConfigureConfigurationAsync() { return Task.CompletedTask; }
-        protected virtual Task ConfigureLoggingAsync() { return Task.CompletedTask; }
-        protected virtual Task ConfigureServicesAsync() { return Task.CompletedTask; }
-        protected virtual Task ConfigureWebServerAsync() { return Task.CompletedTask; }
-        protected virtual Task ConfigureHostedServicesAsync() { return Task.CompletedTask; }
-        protected virtual Task ConfigureHostAppAsync() { return Task.CompletedTask; }
-        protected virtual Task ConfigureFinishAsync() { return Task.CompletedTask; }
-        #endregion
     }
 }
