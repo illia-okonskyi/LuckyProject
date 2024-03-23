@@ -2,6 +2,6 @@
 {
     public class AppSecretsConfig
     {
-        public string KeyVault { get; set; }
+        public string AppSecret { get; set; }
     }
 }

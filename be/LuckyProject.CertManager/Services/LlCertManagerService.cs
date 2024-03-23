@@ -156,7 +156,7 @@ namespace LuckyProject.CertManager.Services
             return new ClientSecretCredential(
                 appConfig.KeyVault.TenantId,
                 appConfig.KeyVault.ClientId,
-                appSecrets.KeyVault);
+                appSecrets.AppSecret);
         }
 
         private void EnsureOutDir()
