@@ -15,7 +15,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LuckyProject.AuthServer", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LuckyProject.CertManager", "LuckyProject.CertManager\LuckyProject.CertManager.csproj", "{ED482737-8D7C-4717-9E2D-897481C2FBE7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LuckyProject.SecretManager", "LuckyProject.SecretManager\LuckyProject.SecretManager.csproj", "{258119F2-4658-4CC4-A0D8-990E9E29C9F6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LuckyProject.SecretManager", "LuckyProject.SecretManager\LuckyProject.SecretManager.csproj", "{258119F2-4658-4CC4-A0D8-990E9E29C9F6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

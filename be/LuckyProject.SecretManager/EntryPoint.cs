@@ -1,5 +1,6 @@
-﻿using LuckyProject.Lib.Hosting.EntryPoint;
-using LuckyProject.SecretManager.Models;
+﻿using LuckyProject.Lib.Azure.Extensions;
+using LuckyProject.Lib.Basics.Extensions;
+using LuckyProject.Lib.Hosting.EntryPoint;
 using LuckyProject.SecretManager.Services;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -47,21 +48,23 @@ namespace LuckyProject.SecretManager
             // NOTE: Create NLog configuration
             var config = new NLog.Config.LoggingConfiguration();
 
+            var logLayoutFormat = "${level:format=TriLetter:uppercase=true}|${longdate}|" +
+                "${logger}|${scopenested:separator=>}${newline}    ${scopeindent}${message} " +
+                "${exception:format=tostring}";
+
             var fileTarget = new NLog.Targets.FileTarget("file")
             {
                 FileName = "logfile.log",
-                Layout = new NLog.Layouts.SimpleLayout(
-                    "${longdate}|${level:format=TriLetter:uppercase=true}|${logger}|${message} ${exception:format=tostring}")
+                Layout = new NLog.Layouts.SimpleLayout(logLayoutFormat)
             };
             config.AddRule(NLog.LogLevel.Info, NLog.LogLevel.Fatal, fileTarget);
 
             var consoleTarget = new NLog.Targets.ColoredConsoleTarget("console")
             {
-                Layout = new NLog.Layouts.SimpleLayout(
-                    "${level:format=TriLetter:uppercase=true}|${longdate}|${logger}${newline}    ${message} ${exception:format=tostring}")
+                Layout = new NLog.Layouts.SimpleLayout(logLayoutFormat)
             };
             config.AddRule(NLog.LogLevel.Info, NLog.LogLevel.Fatal, consoleTarget);
-            
+
             // NOTE: Apply NLog configuration
             NLog.LogManager.Configuration = config;
 
@@ -73,8 +76,14 @@ namespace LuckyProject.SecretManager
 
         private void ConfigureServices()
         {
-            HostBuilder.Services.Configure<AppConfig>(
-                HostBuilder.Configuration.GetSection("Application"));
+            var services = HostBuilder.Services;
+            var configuration = HostBuilder.Configuration;
+
+            services.AddLpBasicServices();
+            services.AddLpAppVersionService(configuration.GetSection("Application:Version"));
+            services.AddLpAzureServices();
+            services.Configure<LpSecretManagerServiceOptions>(
+                configuration.GetSection("Application:Service"));
         }
 
         private void ConfigureHostedService()

@@ -376,7 +376,7 @@ namespace LuckyProject.Lib.Basics.Services
         string PathJoin(string path1, string path2);
         string PathJoin(string path1, string path2, string path3);
         string PathJoin(string path1, string path2, string path3, string path4);
-        string PathJoin(params string?[] paths);
+        string PathJoin(params string[] paths);
 
         bool PathTryJoin(
             ReadOnlySpan<char> path1,

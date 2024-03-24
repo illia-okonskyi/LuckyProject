@@ -1,17 +1,14 @@
-﻿using Azure.Identity;
-using Azure.Security.KeyVault.Secrets;
-using LuckyProject.SecretManager.Models;
-using LuckyProject.Lib.Basics.Exceptions;
+﻿using LuckyProject.Lib.Basics.Exceptions;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
-using System;
-using System.IO;
-using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Collections.Generic;
 using System.Text;
+using LuckyProject.Lib.Basics.Services;
+using LuckyProject.Lib.Azure.Services;
+using LuckyProject.Lib.ConsoleTool.Helpers;
 
 namespace LuckyProject.SecretManager.Services
 {
@@ -27,17 +24,36 @@ namespace LuckyProject.SecretManager.Services
         private const string OutDir = "out";
         private const string OutFileName = "secrets.txt";
 
-        private readonly AppConfig appConfig;
+        private readonly LpSecretManagerServiceOptions options;
+        private readonly IAppVersionService appVersionService;
+        private readonly IEnvironmentService environmentService;
+        private readonly IConsoleService consoleService;
+        private readonly IAzureIdentityService azureIdentityService;
+        private readonly IAzureKeyVaultService azureKeyVaultService;
+        private readonly IFsService fsService;
         private readonly ILogger logger;
 
         private readonly List<SecretInfo> secrets;
 
         public LpSecretManagerService(
-            IOptions<AppConfig> appConfig,
+            IOptions<LpSecretManagerServiceOptions> options,
+            IAppVersionService appVersionService,
+            IEnvironmentService environmentService,
+            IConsoleService consoleService,
+            IAzureIdentityService azureIdentityService,
+            IAzureKeyVaultService azureKeyVaultService,
+            IFsService fsService,
             ILogger<LpSecretManagerService> logger)
         {
-            this.appConfig = appConfig.Value;
+            this.options = options.Value;
+            this.appVersionService = appVersionService;
+            this.environmentService = environmentService;
+            this.consoleService = consoleService;
+            this.azureIdentityService = azureIdentityService;
+            this.azureKeyVaultService = azureKeyVaultService;
+            this.fsService = fsService;
             this.logger = logger;
+
             secrets = new()
             {
                 new()
@@ -50,25 +66,11 @@ namespace LuckyProject.SecretManager.Services
 
         public async Task StartAsync(CancellationToken cancellationToken)
         {
-            var exitCode = 0;
-            try
-            {
-                await ExecuteAsync(cancellationToken);
-            }
-            catch (LpConsoleAppErrorException appErrorEx)
-            {
-                exitCode = appErrorEx.ExitCode;
-                logger.LogError(appErrorEx, null);
-            }
-            catch (Exception ex)
-            {
-                logger.LogError(ex, "Unexpected error");
-                exitCode = -1;
-            }
-            finally
-            {
-                Environment.Exit(exitCode);
-            }
+            await HostedServiceHelper.ExecuteAsync(
+                ExecuteAsync,
+                environmentService,
+                logger,
+                cancellationToken);
         }
 
         public Task StopAsync(CancellationToken cancellationToken)
@@ -78,8 +80,9 @@ namespace LuckyProject.SecretManager.Services
 
         private async Task ExecuteAsync(CancellationToken cancellationToken)
         {
-            var args = Environment.GetCommandLineArgs();
-            if (args.Length < 2 || args.Contains("-h") || args.Contains("--help"))
+            await appVersionService.InitAsync();
+            var args = environmentService.GetCommandLineArgs();
+            if (CommandLineArgsHelper.IsHelpRequested(args))
             {
                 WriteHelp();
                 return;
@@ -97,69 +100,46 @@ namespace LuckyProject.SecretManager.Services
 
         private void WriteHelp()
         {
-            Console.WriteLine("LuckyProject.SecretManager version 0.0.1");
-            Console.WriteLine();
-            Console.WriteLine("Usage:");
-            Console.WriteLine("1) Display help message:");
-            Console.WriteLine("   <APP>");
-            Console.WriteLine("   <APP> -h");
-            Console.WriteLine("   <APP> --help");
-            Console.WriteLine("2) Obtain Secrets:");
-            Console.WriteLine("   <APP> get-secrets");
+            consoleService.WriteLine(
+                $"LuckyProject.SecretManager version {appVersionService.AppVersion}");
+            consoleService.WriteLine();
+            consoleService.WriteLine("Usage:");
+            consoleService.WriteLine("1) Display help message:");
+            consoleService.WriteLine("   <APP>");
+            consoleService.WriteLine("   <APP> -h");
+            consoleService.WriteLine("   <APP> --help");
+            consoleService.WriteLine("2) Obtain Secrets:");
+            consoleService.WriteLine("   <APP> get-secrets");
         }
 
         private async Task GetSecretsAsync(CancellationToken cancellationToken)
         {
-            Console.Write("Enter Master Password:");
-            var masterPassword = Console.ReadLine();
+            consoleService.Write("Enter Master Password:");
+            var masterPassword = consoleService.ReadLine();
+
             logger.LogInformation($"Retrieving Secrets...");
-            var vaultUrl = GetVaultUrl();
-            var clientCredential = GetClientCredential(masterPassword);
-            var client = new SecretClient(vaultUrl, clientCredential);
+            var credential = azureIdentityService.CreateClientCredential(
+                options.TenantId,
+                options.ClientId,
+                masterPassword);
+            var client = azureKeyVaultService.CreateSecretClient(options.KeyVaultName, credential);
             foreach (var secret in secrets)
             {
-                await GetSecretAsync(client, secret, cancellationToken);
+                logger.LogInformation($"Retrieving Secret: {secret.DisplayName}...");
+                secret.Value = await azureKeyVaultService.GetSecretAsync(
+                    client,
+                    secret.Name,
+                    cancellationToken);
+                logger.LogInformation($"OK");
             }
-            EnsureOutDir();
-            var outFilePath = Path.Combine(OutDir, OutFileName);
-            await File.WriteAllTextAsync(outFilePath, BuildOutFileContents(), cancellationToken);
+
+            fsService.DirectoryEnsureCreated(OutDir);
+            var outFilePath = fsService.PathCombine(OutDir, OutFileName);
+            await fsService.FileWriteAllTextAsync(
+                outFilePath,
+                BuildOutFileContents(),
+                cancellationToken);
             logger.LogInformation($"Secrets written to: {outFilePath}");
-        }
-
-        private Uri GetVaultUrl()
-        {
-            return new Uri($"https://{appConfig.KeyVault.Name}.vault.azure.net");
-        }
-
-        private ClientSecretCredential GetClientCredential(string masterPassword)
-        {
-            return new ClientSecretCredential(
-                appConfig.KeyVault.TenantId,
-                appConfig.KeyVault.ClientId,
-                masterPassword);
-        }
-
-        private void EnsureOutDir()
-        {
-            if (Directory.Exists(OutDir))
-            {
-                return;
-            }
-
-            Directory.CreateDirectory(OutDir);
-        }
-
-        private async Task GetSecretAsync(
-            SecretClient client,
-            SecretInfo secret,
-            CancellationToken cancellationToken)
-        {
-            logger.LogInformation($"Retrieving Secret: {secret.DisplayName}...");
-            var response = await client.GetSecretAsync(
-                secret.Name,
-                cancellationToken: cancellationToken);
-            secret.Value = response.Value.Value;
-            logger.LogInformation($"OK");
         }
 
         private string BuildOutFileContents()

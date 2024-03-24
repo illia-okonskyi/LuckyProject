@@ -602,7 +602,7 @@ namespace LuckyProject.Lib.Basics.Services
             Path.Join(path1, path2, path3);
         public string PathJoin(string path1, string path2, string path3, string path4) =>
             Path.Join(path1, path2, path3, path4);
-        public string PathJoin(params string?[] paths) =>
+        public string PathJoin(params string[] paths) =>
             Path.Join(paths);
 
         public bool PathTryJoin(

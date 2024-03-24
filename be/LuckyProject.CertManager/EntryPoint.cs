@@ -1,5 +1,6 @@
-﻿using LuckyProject.CertManager.Models;
-using LuckyProject.CertManager.Services;
+﻿using LuckyProject.CertManager.Services;
+using LuckyProject.Lib.Azure.Extensions;
+using LuckyProject.Lib.Basics.Extensions;
 using LuckyProject.Lib.Hosting.EntryPoint;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -46,7 +47,7 @@ namespace LuckyProject.CertManager
         #region Internals
         private void ConfigureConfiguration()
         {
-            HostBuilder.Configuration.AddJsonFile("appsecrets.json");
+            HostBuilder.Configuration.AddJsonFile("appsecret.json");
         }
 
         private void ConfigureLogging()
@@ -54,21 +55,23 @@ namespace LuckyProject.CertManager
             // NOTE: Create NLog configuration
             var config = new NLog.Config.LoggingConfiguration();
 
+            var logLayoutFormat = "${level:format=TriLetter:uppercase=true}|${longdate}|" +
+                "${logger}|${scopenested:separator=>}${newline}    ${scopeindent}${message} " +
+                "${exception:format=tostring}";
+
             var fileTarget = new NLog.Targets.FileTarget("file")
             {
                 FileName = "logfile.log",
-                Layout = new NLog.Layouts.SimpleLayout(
-                    "${longdate}|${level:format=TriLetter:uppercase=true}|${logger}|${message} ${exception:format=tostring}")
+                Layout = new NLog.Layouts.SimpleLayout(logLayoutFormat)
             };
             config.AddRule(NLog.LogLevel.Info, NLog.LogLevel.Fatal, fileTarget);
 
             var consoleTarget = new NLog.Targets.ColoredConsoleTarget("console")
             {
-                Layout = new NLog.Layouts.SimpleLayout(
-                    "${level:format=TriLetter:uppercase=true}|${longdate}|${logger}${newline}    ${message} ${exception:format=tostring}")
+                Layout = new NLog.Layouts.SimpleLayout(logLayoutFormat)
             };
             config.AddRule(NLog.LogLevel.Info, NLog.LogLevel.Fatal, consoleTarget);
-            
+
             // NOTE: Apply NLog configuration
             NLog.LogManager.Configuration = config;
 
@@ -80,10 +83,16 @@ namespace LuckyProject.CertManager
 
         private void ConfigureServices()
         {
-            HostBuilder.Services.Configure<AppConfig>(
-                HostBuilder.Configuration.GetSection("Application"));
-            HostBuilder.Services.Configure<AppSecretsConfig>(
-                HostBuilder.Configuration.GetSection("Secrets"));
+            var services = HostBuilder.Services;
+            var configuration = HostBuilder.Configuration;
+
+            services.AddLpBasicServices();
+            services.AddLpAppVersionService(configuration.GetSection("Application:Version"));
+            services.AddLpAzureServices();
+            services.AddLpAzureAppRegistrationService(
+                configuration.GetSection("Application:AzureAppRegistration"));
+            services.Configure<LpCertManagerServiceOptions>(
+                configuration.GetSection("Application:Service"));
         }
 
         private void ConfigureHostedService()

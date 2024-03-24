@@ -1,7 +1,6 @@
 ﻿using LuckyProject.ConsoleHostApp.Services.Dummy;
 using LuckyProject.ConsoleHostApp.Services.Hosted;
 using LuckyProject.Lib.Hosting.EntryPoint;
-using LuckyProject.Lib.Basics.Extensions;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
@@ -65,7 +64,7 @@ namespace LuckyProject.ConsoleHostApp
                 Layout = new NLog.Layouts.SimpleLayout(logLayoutFormat)
             };
             config.AddRule(NLog.LogLevel.Info, NLog.LogLevel.Fatal, consoleTarget);
-            
+
             // NOTE: Apply NLog configuration
             NLog.LogManager.Configuration = config;
 
@@ -77,7 +76,6 @@ namespace LuckyProject.ConsoleHostApp
 
         private void ConfigureServices()
         {
-            HostBuilder.Services.AddLpBasicServices();
             HostBuilder.Services.AddTransient<IHelloWorldService, HelloWorldService>();
         }
 

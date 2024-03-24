@@ -1,21 +1,22 @@
 ﻿using LuckyProject.Lib.Basics.Extensions;
 using LuckyProject.Lib.Basics.Models;
+using LuckyProject.Lib.Basics.Services;
 using Newtonsoft.Json;
 using System;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace LuckyProject.ConsoleSimpleApp
 {
     internal class Program
     {
-        static void Main(string[] args)
+        //Key: q3T7pSro5hEO2n6BSK1oA65ovCcjD+ccHxDydMdaRmc=
+        //IV: /KSdTz5iVhmP/480ki5a4w==
+
+
+        static async Task Main(string[] args)
         {
-            var s = "1\r\n2\n\n4.txt\n444";
-            var l = s.SplitByLines();
-            var pl = l.ToPaginatedList(2, 2);
-            var s2 = JsonConvert.SerializeObject(pl, Formatting.Indented);
-            var pl2 = JsonConvert.DeserializeObject<PaginatedList<string>>(s2);
-            Console.WriteLine(s.ToSurrounded(CommonStringSurround.SingleQuotes));
-            Console.ReadKey();
+            Console.ReadLine();
         }
     }
 }

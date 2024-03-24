@@ -1,14 +1,10 @@
-﻿using Azure.Identity;
-using Azure.Security.KeyVault.Certificates;
-using Azure.Security.KeyVault.Secrets;
-using LuckyProject.CertManager.Models;
+﻿using LuckyProject.Lib.Azure.Services;
 using LuckyProject.Lib.Basics.Exceptions;
+using LuckyProject.Lib.Basics.Services;
+using LuckyProject.Lib.ConsoleTool.Helpers;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
-using System;
-using System.IO;
-using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using System.Threading;
 using System.Threading.Tasks;
@@ -23,41 +19,43 @@ namespace LuckyProject.CertManager.Services
         private const string DevCertOutName = "cert-dev.pfx";
         private const string OutDir = "out";
 
-        private readonly AppConfig appConfig;
-        private readonly AppSecretsConfig appSecrets;
+        private readonly LpCertManagerServiceOptions options;
+        private readonly IAppVersionService appVersionService;
+        private readonly IEnvironmentService environmentService;
+        private readonly IConsoleService consoleService;
+        private readonly IAzureAppRegistrationService azureAppRegistrationService;
+        private readonly IAzureKeyVaultService azureKeyVaultService;
+        private readonly IFsService fsService;
         private readonly ILogger logger;
 
         public LpCertManagerService(
-            IOptions<AppConfig> appConfig,
-            IOptions<AppSecretsConfig> appSecrets,
+            IOptions<LpCertManagerServiceOptions> options,
+            IAppVersionService appVersionService,
+            IEnvironmentService environmentService,
+            IConsoleService consoleService,
+            IAzureAppRegistrationService azureAppRegistrationService,
+            IAzureKeyVaultService azureKeyVaultService,
+            IFsService fsService,
             ILogger<LpCertManagerService> logger)
         {
-            this.appConfig = appConfig.Value;
-            this.appSecrets = appSecrets.Value;
+            this.options = options.Value;
+            this.appVersionService = appVersionService;
+            this.environmentService = environmentService;
+            this.consoleService = consoleService;
+            this.azureAppRegistrationService = azureAppRegistrationService;
+            this.azureKeyVaultService = azureKeyVaultService;
+            this.fsService = fsService;
             this.logger = logger;
         }
 
         public async Task StartAsync(CancellationToken cancellationToken)
         {
-            var exitCode = 0;
-            try
-            {
-                await ExecuteAsync(cancellationToken);
-            }
-            catch (LpConsoleAppErrorException appErrorEx)
-            {
-                exitCode = appErrorEx.ExitCode;
-                logger.LogError(appErrorEx, null);
-            }
-            catch (Exception ex)
-            {
-                logger.LogError(ex, "Unexpected error");
-                exitCode = -1;
-            }
-            finally
-            {
-                Environment.Exit(exitCode);
-            }
+            await HostedServiceHelper.ExecuteAsync(
+                ExecuteAsync,
+                environmentService,
+                logger,
+                cancellationToken,
+                ec => consoleService.ReadKey());
         }
 
         public Task StopAsync(CancellationToken cancellationToken)
@@ -67,8 +65,9 @@ namespace LuckyProject.CertManager.Services
 
         private async Task ExecuteAsync(CancellationToken cancellationToken)
         {
-            var args = Environment.GetCommandLineArgs();
-            if (args.Length < 2 || args.Contains("-h") || args.Contains("--help"))
+            await appVersionService.InitAsync();
+            var args = environmentService.GetCommandLineArgs();
+            if (CommandLineArgsHelper.IsHelpRequested(args))
             {
                 WriteHelp();
                 return;
@@ -92,81 +91,64 @@ namespace LuckyProject.CertManager.Services
 
         private void WriteHelp()
         {
-            Console.WriteLine("LuckyProject.CertManager version 0.0.1");
-            Console.WriteLine();
-            Console.WriteLine("Usage:");
-            Console.WriteLine("1) Display help message:");
-            Console.WriteLine("   <APP>");
-            Console.WriteLine("   <APP> -h");
-            Console.WriteLine("   <APP> --help");
-            Console.WriteLine("2) Obtain Developer CA certificate:");
-            Console.WriteLine("   <APP> get-dev-ca-cert");
-            Console.WriteLine("3) Obtain Developer certificate:");
-            Console.WriteLine("   <APP> get-dev-cert");
+            consoleService.WriteLine(
+                $"LuckyProject.CertManager version {appVersionService.AppVersion}");
+            consoleService.WriteLine();
+            consoleService.WriteLine("Usage:");
+            consoleService.WriteLine("1) Display help message:");
+            consoleService.WriteLine("   <APP>");
+            consoleService.WriteLine("   <APP> -h");
+            consoleService.WriteLine("   <APP> --help");
+            consoleService.WriteLine("2) Obtain Developer CA certificate:");
+            consoleService.WriteLine("   <APP> get-dev-ca-cert");
+            consoleService.WriteLine("3) Obtain Developer certificate:");
+            consoleService.WriteLine("   <APP> get-dev-cert");
         }
 
         private async Task GetDevCaCertAsync(CancellationToken cancellationToken)
         {
             logger.LogInformation($"Retrieving Developer CA Certificate...");
-            var client = new CertificateClient(GetVaultUrl(), GetClientCredential());
-            var response = await client.GetCertificateAsync(DevCaCertName, cancellationToken);
-            logger.LogInformation($"Thumbprint: {response.Value.Properties.X509ThumbprintString}");
-            using var cert = new X509Certificate2(
-                response.Value.Cer,
-                string.Empty,
-                X509KeyStorageFlags.Exportable);
-            var pem = cert.ExportCertificatePem();
-            EnsureOutDir();
-            var certOutPath = Path.Combine(OutDir, DevCaCertOutName);
-            await File.WriteAllTextAsync(certOutPath, pem, cancellationToken);
-            logger.LogInformation($"Developer CA Certificate written to: {certOutPath}");
+            var certClient = azureKeyVaultService.CreateCertificateClient(
+                options.KeyVaultName,
+                azureAppRegistrationService.Credential);
+            using var cert = await azureKeyVaultService.GetCertificateAsync(
+                certClient,
+                DevCaCertName,
+                cancellationToken);
+            logger.LogInformation("Thumbprint: {Thumbprint}", cert.Thumbprint);
+
+            fsService.DirectoryEnsureCreated(OutDir);
+            var certOutPath = fsService.PathCombine(OutDir, DevCaCertOutName);
+            await fsService.FileWriteAllTextAsync(
+                certOutPath,
+                cert.ExportCertificatePem(),
+                cancellationToken);
+            logger.LogInformation("Developer CA Certificate written to: {certOutPath}", certOutPath);
         }
 
         private async Task GetDevCertAsync(CancellationToken cancellationToken)
         {
             logger.LogInformation($"Retrieving Developer Certificate...");
-            var vaultUrl = GetVaultUrl();
-            var clientCredential = GetClientCredential();
-            var cerClient = new CertificateClient(vaultUrl, clientCredential);
-            var certResponse = await cerClient.GetCertificateAsync(DevCertName, cancellationToken);
-            logger.LogInformation($"Thumbprint: {certResponse.Value.Properties.X509ThumbprintString}"); logger.LogInformation($"Retrieving Developer Certificate Secret...");
-            var secretName = certResponse.Value.SecretId.Segments[2].TrimEnd('/');
-            var secretClient = new SecretClient(vaultUrl, clientCredential);
-            var secretResponse = await secretClient.GetSecretAsync(
-                secretName,
-                cancellationToken: cancellationToken);
-            using var cert = new X509Certificate2(
-                Convert.FromBase64String(secretResponse.Value.Value),
-                string.Empty,
-                X509KeyStorageFlags.Exportable);
-            var certBytes = cert.Export(X509ContentType.Pkcs12);
-            EnsureOutDir();
-            var certOutPath = Path.Combine(OutDir, DevCertOutName);
-            await File.WriteAllBytesAsync(certOutPath, certBytes, cancellationToken);
-            logger.LogInformation($"Developer Certificate written to: {certOutPath}");
-        }
+            var certClient = azureKeyVaultService.CreateCertificateClient(
+                options.KeyVaultName,
+                azureAppRegistrationService.Credential);
+            var secretClient = azureKeyVaultService.CreateSecretClient(
+                options.KeyVaultName,
+                azureAppRegistrationService.Credential);
+            using var cert = await azureKeyVaultService.GetCertificateWithPrivateKeyAsync(
+                certClient,
+                secretClient,
+                DevCertName,
+                cancellationToken);
+            logger.LogInformation("Thumbprint: {Thumbprint}", cert.Thumbprint);
 
-        private Uri GetVaultUrl()
-        {
-            return new Uri($"https://{appConfig.KeyVault.Name}.vault.azure.net");
-        }
-
-        private ClientSecretCredential GetClientCredential()
-        {
-            return new ClientSecretCredential(
-                appConfig.KeyVault.TenantId,
-                appConfig.KeyVault.ClientId,
-                appSecrets.AppSecret);
-        }
-
-        private void EnsureOutDir()
-        {
-            if (Directory.Exists(OutDir))
-            {
-                return;
-            }
-
-            Directory.CreateDirectory(OutDir);
+            fsService.DirectoryEnsureCreated(OutDir);
+            var certOutPath = fsService.PathCombine(OutDir, DevCertOutName);
+            await fsService.FileWriteAllBytesAsync(
+                certOutPath,
+                cert.Export(X509ContentType.Pkcs12),
+                cancellationToken);
+            logger.LogInformation("Developer Certificate written to: {certOutPath}", certOutPath);
         }
     }
 }
