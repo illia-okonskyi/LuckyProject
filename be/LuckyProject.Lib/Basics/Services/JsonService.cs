@@ -8,10 +8,7 @@ namespace LuckyProject.Lib.Basics.Services
         public Func<JsonSerializerSettings> DefaultSettings
         {
             get => JsonConvert.DefaultSettings;
-            set
-            {
-                JsonConvert.DefaultSettings = value;
-            }
+            set => JsonConvert.DefaultSettings = value;
         }
 
         #region Serialize
