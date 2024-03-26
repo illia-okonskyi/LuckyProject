@@ -11,9 +11,9 @@ namespace LuckyProject.ConsoleHostApp.Services.Dummy
             this.logger = logger;
         }
 
-        public void SayHello()
+        public void SayHello(string from)
         {
-            logger.LogWarning("Hello, World!");
+            logger.LogWarning($"Hello from {from}");
         }
     }
 }

@@ -1,19 +1,24 @@
-﻿using LuckyProject.Lib.Basics.Exceptions;
+﻿using LuckyProject.Lib.Basics.Constants;
+using LuckyProject.Lib.Basics.Exceptions;
+using LuckyProject.Lib.Basics.Services;
+using LuckyProject.Lib.Azure.Services;
+using LuckyProject.Lib.ConsoleTool.Helpers;
+using LuckyProject.Lib.Hosting.HostedServices;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using Microsoft.Extensions.DependencyInjection;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Collections.Generic;
 using System.Text;
-using LuckyProject.Lib.Basics.Services;
-using LuckyProject.Lib.Azure.Services;
-using LuckyProject.Lib.ConsoleTool.Helpers;
+using Azure.Identity;
 
 namespace LuckyProject.SecretManager.Services
 {
-    internal class LpSecretManagerService : IHostedService
+    internal class LpSecretManagerService : AbstractLpSingleRunLpHostedService
     {
+        #region Definitions & constants
         private class SecretInfo
         {
             public string Name { get; init; }
@@ -23,36 +28,46 @@ namespace LuckyProject.SecretManager.Services
 
         private const string OutDir = "out";
         private const string OutFileName = "secrets.txt";
+        #endregion
 
+        #region Services
         private readonly LpSecretManagerServiceOptions options;
+        private readonly ILogger logger;
+
         private readonly IAppVersionService appVersionService;
-        private readonly IEnvironmentService environmentService;
         private readonly IConsoleService consoleService;
         private readonly IAzureIdentityService azureIdentityService;
         private readonly IAzureKeyVaultService azureKeyVaultService;
         private readonly IFsService fsService;
-        private readonly ILogger logger;
+        #endregion
 
+        #region Data
         private readonly List<SecretInfo> secrets;
+        #endregion
 
+        #region ctor
         public LpSecretManagerService(
             IOptions<LpSecretManagerServiceOptions> options,
-            IAppVersionService appVersionService,
+            IServiceScopeService serviceScopeService,
+            IHostApplicationLifetime appLifetime,
             IEnvironmentService environmentService,
-            IConsoleService consoleService,
-            IAzureIdentityService azureIdentityService,
-            IAzureKeyVaultService azureKeyVaultService,
-            IFsService fsService,
+            ILpTimerFactory timerFactory,
             ILogger<LpSecretManagerService> logger)
+            : base(
+                  serviceScopeService,
+                  appLifetime,
+                  environmentService,
+                  timerFactory,
+                  logger,
+                  TimeoutDeafults.Short)
         {
             this.options = options.Value;
-            this.appVersionService = appVersionService;
-            this.environmentService = environmentService;
-            this.consoleService = consoleService;
-            this.azureIdentityService = azureIdentityService;
-            this.azureKeyVaultService = azureKeyVaultService;
-            this.fsService = fsService;
             this.logger = logger;
+            appVersionService = ServiceProvider.GetRequiredService<IAppVersionService>();
+            consoleService = ServiceProvider.GetRequiredService<IConsoleService>();
+            azureIdentityService = ServiceProvider.GetRequiredService<IAzureIdentityService>();
+            azureKeyVaultService = ServiceProvider.GetRequiredService<IAzureKeyVaultService>();
+            fsService = ServiceProvider.GetRequiredService<IFsService>();
 
             secrets = new()
             {
@@ -63,25 +78,14 @@ namespace LuckyProject.SecretManager.Services
                 }
             };
         }
+        #endregion
 
-        public async Task StartAsync(CancellationToken cancellationToken)
-        {
-            await HostedServiceHelper.ExecuteAsync(
-                ExecuteAsync,
-                environmentService,
-                logger,
-                cancellationToken);
-        }
-
-        public Task StopAsync(CancellationToken cancellationToken)
-        {
-            return Task.CompletedTask;
-        }
-
-        private async Task ExecuteAsync(CancellationToken cancellationToken)
+        #region Execute
+        protected override async Task ExecuteSingleRunServiceAsync(
+            CancellationToken cancellationToken)
         {
             await appVersionService.InitAsync();
-            var args = environmentService.GetCommandLineArgs();
+            var args = EnvironmentService.GetCommandLineArgs();
             if (CommandLineArgsHelper.IsHelpRequested(args))
             {
                 WriteHelp();
@@ -95,9 +99,11 @@ namespace LuckyProject.SecretManager.Services
                 return;
             }
 
-            throw new LpConsoleAppErrorException(1, "Unexpected command");
+            throw new LpExitCodeException(ExitCodes.ArgumentError, "Unexpected command");
         }
+        #endregion
 
+        #region Internals
         private void WriteHelp()
         {
             consoleService.WriteLine(
@@ -117,7 +123,7 @@ namespace LuckyProject.SecretManager.Services
             consoleService.Write("Enter Master Password:");
             var masterPassword = consoleService.ReadLine();
 
-            logger.LogInformation($"Retrieving Secrets...");
+            logger.LogInformation("Retrieving Secrets...");
             var credential = azureIdentityService.CreateClientCredential(
                 options.TenantId,
                 options.ClientId,
@@ -125,12 +131,20 @@ namespace LuckyProject.SecretManager.Services
             var client = azureKeyVaultService.CreateSecretClient(options.KeyVaultName, credential);
             foreach (var secret in secrets)
             {
-                logger.LogInformation($"Retrieving Secret: {secret.DisplayName}...");
-                secret.Value = await azureKeyVaultService.GetSecretAsync(
-                    client,
-                    secret.Name,
-                    cancellationToken);
-                logger.LogInformation($"OK");
+                using var logScope = logger.BeginScope("Get Secret {Name}", secret.Name);
+                try
+                {
+                    secret.Value = await azureKeyVaultService.GetSecretAsync(
+                        client,
+                        secret.Name,
+                        cancellationToken);
+                    logger.LogInformation($"OK");
+                }
+                catch (AuthenticationFailedException)
+                {
+                    logger.LogError("Wrong master password");
+                    throw new LpExitCodeException(ExitCodes.AuthFailed, "Wrong master password");
+                }
             }
 
             fsService.DirectoryEnsureCreated(OutDir);
@@ -147,7 +161,7 @@ namespace LuckyProject.SecretManager.Services
             var sb = new StringBuilder("LuckyProject Secrets:");
             sb.AppendLine();
             sb.AppendLine();
-            foreach(var secret in secrets)
+            foreach (var secret in secrets)
             {
                 sb.Append("- ");
                 sb.Append(secret.DisplayName);
@@ -157,5 +171,6 @@ namespace LuckyProject.SecretManager.Services
             sb.AppendLine();
             return sb.ToString();
         }
+        #endregion
     }
 }

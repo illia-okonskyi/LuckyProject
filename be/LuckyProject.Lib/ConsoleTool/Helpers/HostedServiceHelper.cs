@@ -21,7 +21,7 @@ namespace LuckyProject.Lib.ConsoleTool.Helpers
             {
                 await func(cancellationToken);
             }
-            catch (LpConsoleAppErrorException appErrorEx)
+            catch (LpExitCodeException appErrorEx)
             {
                 exitCode = appErrorEx.ExitCode;
                 logger.LogError(appErrorEx, null);

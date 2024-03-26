@@ -9,9 +9,12 @@ namespace LuckyProject.Lib.Basics.Services
 {
     public interface IStringService
     {
-        #region Extensions
+        #region Newlines
         string NormalizeNewlines(string s);
         List<string> SplitByLines(string s);
+        #endregion
+
+        #region Surround
         string Surround(string s, string begin, string end);
         string Surround(string s, string wrap);
         string Surround(string s, CommonStringSurround surround);

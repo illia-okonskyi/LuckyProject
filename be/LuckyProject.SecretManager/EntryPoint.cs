@@ -5,6 +5,7 @@ using LuckyProject.SecretManager.Services;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using NLog.Config;
 using NLog.Extensions.Logging;
 using System;
 using System.Threading.Tasks;
@@ -51,18 +52,27 @@ namespace LuckyProject.SecretManager
             var logLayoutFormat = "${level:format=TriLetter:uppercase=true}|${longdate}|" +
                 "${logger}|${scopenested:separator=>}${newline}    ${scopeindent}${message} " +
                 "${exception:format=tostring}";
+            var msSpamLogger = "Microsoft.Hosting.*";
 
             var fileTarget = new NLog.Targets.FileTarget("file")
             {
                 FileName = "logfile.log",
                 Layout = new NLog.Layouts.SimpleLayout(logLayoutFormat)
             };
+            config.AddRule(new LoggingRule(msSpamLogger, NLog.LogLevel.Off, fileTarget)
+            {
+                FinalMinLevel = NLog.LogLevel.Off
+            });
             config.AddRule(NLog.LogLevel.Info, NLog.LogLevel.Fatal, fileTarget);
 
             var consoleTarget = new NLog.Targets.ColoredConsoleTarget("console")
             {
                 Layout = new NLog.Layouts.SimpleLayout(logLayoutFormat)
             };
+            config.AddRule(new LoggingRule(msSpamLogger, NLog.LogLevel.Off, consoleTarget)
+            {
+                FinalMinLevel = NLog.LogLevel.Off
+            });
             config.AddRule(NLog.LogLevel.Info, NLog.LogLevel.Fatal, consoleTarget);
 
             // NOTE: Apply NLog configuration

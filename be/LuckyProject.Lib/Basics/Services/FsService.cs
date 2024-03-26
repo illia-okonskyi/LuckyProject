@@ -13,6 +13,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using LuckyProject.Lib.Basics.Extensions;
+using System.Text.RegularExpressions;
 
 namespace LuckyProject.Lib.Basics.Services
 {
@@ -632,9 +633,10 @@ namespace LuckyProject.Lib.Basics.Services
             Path.EndsInDirectorySeparator(path);
 
         #region Custom helpers
+        private static readonly Regex SlashesRegex = new(@"\\|/");
         public string PathNormilizeDirectorySeparators(string path)
         {
-            return path.ToNormalizedPath();
+            return SlashesRegex.Replace(path, $"{DirectorySeparatorChar}");
         }
 
         public string PathPrefixFileName(string path, string prefix, string separator = "-")

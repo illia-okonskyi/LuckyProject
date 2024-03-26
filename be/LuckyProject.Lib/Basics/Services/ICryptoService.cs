@@ -19,6 +19,10 @@ namespace LuckyProject.Lib.Basics.Services
         Aes CreateAes(AesProperties props = null);
         #endregion
 
+        #region GenerateAesProperties
+        AesProperties GenereteAesProperties();
+        #endregion
+
         #region AesEncode
         byte[] AesEncode(Aes aes, byte[] data, AesProperties props = null);
         void AesEncode(Aes aes, Stream inStream, Stream outStream, AesProperties props = null);

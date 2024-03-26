@@ -1,21 +1,64 @@
-﻿using LuckyProject.Lib.Basics.Extensions;
-using LuckyProject.Lib.Basics.Models;
+﻿using LuckyProject.Lib.Basics.Models;
 using System;
 using System.Buffers;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 
 namespace LuckyProject.Lib.Basics.Services
 {
     public class StringService : IStringService
     {
-        #region Extensions
-        public string NormalizeNewlines(string s) => s.ToNormalizedNewlines();
-        public List<string> SplitByLines(string s) => s.SplitByLines();
-        public string Surround(string s, string begin, string end) => s.ToSurrounded(begin, end);
-        public string Surround(string s, string wrap) => s.ToSurrounded(wrap);
-        public string Surround(string s, CommonStringSurround surround) => s.ToSurrounded(surround);
+        #region Internals
+        private readonly IEnvironmentService environmentService;
+        #endregion
+
+        #region ctor
+        public StringService(IEnvironmentService environmentService)
+        {
+            this.environmentService = environmentService;
+        }
+        #endregion
+
+        #region Newlines
+        private static readonly Regex NewlineRegex = new(@"\r?\n");
+        public string NormalizeNewlines(string s) =>
+            NewlineRegex.Replace(s, environmentService.NewLine);
+        public List<string> SplitByLines(string s) => NewlineRegex.Split(s).ToList();
+        #endregion
+
+        #region Surround
+        public string Surround(string s, string begin, string end)
+        {
+            var sb = new StringBuilder(begin);
+            sb.Append(s);
+            sb.Append(end);
+            return sb.ToString();
+        }
+
+        public string Surround(string s, string wrap)
+        {
+            return Surround(s, wrap, wrap);
+        }
+
+        public string Surround(string s, CommonStringSurround surround)
+        {
+            (var begin, var end) = surround switch
+            {
+                CommonStringSurround.Quotes => ("\"", "\""),
+                CommonStringSurround.SingleQuotes => ("'", "'"),
+                CommonStringSurround.BackQuotes => ("`", "`"),
+                CommonStringSurround.Brackets => ("(", ")"),
+                CommonStringSurround.Braces => ("{", "}"),
+                CommonStringSurround.SquareBrackets => ("[", "]"),
+                CommonStringSurround.TriangleBrackets => ("<", ">"),
+                _ => throw new ArgumentException($"Unexpeceted {nameof(CommonStringSurround)}")
+            };
+
+            return Surround(s, begin, end);
+        }
         #endregion
 
         #region Encoding

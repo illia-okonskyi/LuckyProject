@@ -17,6 +17,11 @@ namespace LuckyProject.Lib.Basics.Extensions
             services.AddSingleton<IJsonService, JsonService>();
             services.AddSingleton<ICryptoService, CryptoService>();
             services.AddSingleton<IVersionService, VersionService>();
+            services.AddSingleton<IThreadSyncService, ThreadSyncService>();
+            services.AddSingleton<ILpTimerFactory, LpTimerFactory>();
+            services.AddSingleton<ILpWorkerFactory, LpWorkerFactory>();
+            services.AddSingleton<ILpWorkerService, LpWorkerService>();
+            services.AddSingleton<IServiceScopeService, ServiceScopeService>();
             return services;
         }
 

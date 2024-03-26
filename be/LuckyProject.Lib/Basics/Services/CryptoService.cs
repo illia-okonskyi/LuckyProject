@@ -29,6 +29,22 @@ namespace LuckyProject.Lib.Basics.Services
         }
         #endregion
 
+        #region GenerateAesProperties
+        public ICryptoService.AesProperties GenereteAesProperties()
+        {
+            using var aes = CreateAes();
+            aes.GenerateKey();
+            aes.GenerateIV();
+
+            return new ICryptoService.AesProperties
+            {
+                Base64Key = stringService.ToBase64String(aes.Key),
+                Base64Iv = stringService.ToBase64String(aes.IV)
+            };
+        }
+        #endregion
+
+
         #region AesEncode
         public byte[] AesEncode(Aes aes, byte[] data, ICryptoService.AesProperties props = null) =>
             AesEncodeDecode(aes, data, true, props);

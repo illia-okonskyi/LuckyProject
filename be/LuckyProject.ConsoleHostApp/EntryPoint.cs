@@ -1,9 +1,11 @@
 ﻿using LuckyProject.ConsoleHostApp.Services.Dummy;
 using LuckyProject.ConsoleHostApp.Services.Hosted;
+using LuckyProject.Lib.Basics.Extensions;
 using LuckyProject.Lib.Hosting.EntryPoint;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using NLog.Config;
 using NLog.Extensions.Logging;
 using System;
 using System.Threading.Tasks;
@@ -51,19 +53,28 @@ namespace LuckyProject.ConsoleHostApp
             var logLayoutFormat = "${level:format=TriLetter:uppercase=true}|${longdate}|" +
                 "${logger}|${scopenested:separator=>}${newline}    ${scopeindent}${message} " +
                 "${exception:format=tostring}";
+            var msSpamLogger = "Microsoft.Hosting.*";
 
             var fileTarget = new NLog.Targets.FileTarget("file")
             {
                 FileName = "logfile.log",
                 Layout = new NLog.Layouts.SimpleLayout(logLayoutFormat)
             };
-            config.AddRule(NLog.LogLevel.Info, NLog.LogLevel.Fatal, fileTarget);
+            config.AddRule(new LoggingRule(msSpamLogger, NLog.LogLevel.Off, fileTarget)
+            {
+                FinalMinLevel = NLog.LogLevel.Off
+            });
+            config.AddRule(NLog.LogLevel.Debug, NLog.LogLevel.Fatal, fileTarget);
 
             var consoleTarget = new NLog.Targets.ColoredConsoleTarget("console")
             {
                 Layout = new NLog.Layouts.SimpleLayout(logLayoutFormat)
             };
-            config.AddRule(NLog.LogLevel.Info, NLog.LogLevel.Fatal, consoleTarget);
+            config.AddRule(new LoggingRule(msSpamLogger, NLog.LogLevel.Off, consoleTarget)
+            {
+                FinalMinLevel = NLog.LogLevel.Off
+            });
+            config.AddRule(NLog.LogLevel.Debug, NLog.LogLevel.Fatal, consoleTarget);
 
             // NOTE: Apply NLog configuration
             NLog.LogManager.Configuration = config;
@@ -76,12 +87,15 @@ namespace LuckyProject.ConsoleHostApp
 
         private void ConfigureServices()
         {
-            HostBuilder.Services.AddTransient<IHelloWorldService, HelloWorldService>();
+            HostBuilder.Services.AddLpBasicServices();
+            HostBuilder.Services.AddScoped<IHelloWorldService, HelloWorldService>();
         }
 
         private void ConfigureHostedService()
         {
-            HostBuilder.Services.AddHostedService<LpHostedService>();
+            HostBuilder.Services.AddHostedService<LpSingleRunPrimaryHostedService>();
+            HostBuilder.Services.AddHostedService<LpPeriodicBackgroundHostedService>();
+
         }
         #endregion
     }

@@ -2,6 +2,6 @@
 {
     public interface IHelloWorldService
     {
-        void SayHello();
+        void SayHello(string from);
     }
 }

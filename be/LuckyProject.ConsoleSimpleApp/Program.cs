@@ -16,6 +16,8 @@ namespace LuckyProject.ConsoleSimpleApp
 
         static async Task Main(string[] args)
         {
+
+            var ts = TimeSpan.FromDays(365000);
             Console.ReadLine();
         }
     }
