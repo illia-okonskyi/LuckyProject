@@ -1,0 +1,124 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>$(NoWarn);1591</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="config\cert.pfx" />
+    <None Remove="i18n\lp-api-admin-panel-fe-ui_en-US.lpi18n" />
+    <None Remove="i18n\lp-api-admin-panel-fe-ui_ru-UA.lpi18n" />
+    <None Remove="i18n\lp-authserver-be_en-US.lpi18n" />
+    <None Remove="i18n\lp-authserver-be_ru-UA.lpi18n" />
+    <None Remove="i18n\lp-authserver-fe-errors_en-US.lpi18n" />
+    <None Remove="i18n\lp-authserver-fe-errors_ru-UA.lpi18n" />
+    <None Remove="i18n\lp-authserver-fe-ui_en-US.lpi18n" />
+    <None Remove="i18n\lp-authserver-fe-ui_ru-UA.lpi18n" />
+    <None Remove="i18n\lp-ui-shell_en-US.lpi18n" />
+    <None Remove="i18n\lp-ui-shell_ru-UA.lpi18n" />
+    <None Remove="i18n\lp-validation_en-US.lpi18n" />
+    <None Remove="i18n\lp-validation_ru-UA.lpi18n" />
+    <None Remove="version.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="config\cert.pfx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="config\version.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="i18n\lp-api-admin-panel-fe-ui_en-US.lpi18n">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="i18n\lp-api-admin-panel-fe-ui_ru-UA.lpi18n">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="i18n\lp-authserver-be_ru-UA.lpi18n">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="i18n\lp-authserver-fe-errors_en-US.lpi18n">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="i18n\lp-authserver-fe-errors_ru-UA.lpi18n">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="i18n\lp-authserver-fe-ui_en-US.lpi18n">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="i18n\lp-authserver-be_en-US.lpi18n">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="i18n\lp-authserver-fe-ui_ru-UA.lpi18n">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="i18n\lp-ui-shell_en-US.lpi18n">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="i18n\lp-ui-shell_ru-UA.lpi18n">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="i18n\lp-validation_en-US.lpi18n">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="i18n\lp-validation_ru-UA.lpi18n">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.10" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="8.0.10" />
+    <PackageReference Include="Microsoft.AspNetCore.SignalR.Protocols.NewtonsoftJson" Version="8.0.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.10">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="8.0.10" />
+    <PackageReference Include="OpenIddict.AspNetCore" Version="5.8.0" />
+    <PackageReference Include="OpenIddict.EntityFrameworkCore" Version="5.8.0" />
+    <PackageReference Include="OpenIddict.Quartz" Version="5.8.0" />
+    <PackageReference Include="Quartz.Extensions.Hosting" Version="3.13.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LuckyProject.Lib\LuckyProject.Lib.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="db\" />
+    <Folder Include="FrontEnd\" />
+    <Folder Include="Views\Home\" />
+  </ItemGroup>
+
+  <Target Name="BuildFrontEnd" BeforeTargets="BeforeBuild">
+    <Exec Command="npm cache clean --force" WorkingDirectory="FrontEnd\LpAuthServerFe" />
+    <Exec Command="npm install" WorkingDirectory="FrontEnd\LpAuthServerFe" />
+    <Exec Command="npm run build" WorkingDirectory="FrontEnd\LpAuthServerFe" />
+  </Target>
+
+  <Target Name="CopyBuildFrontEndDistFiles" AfterTargets="BuildFrontEnd">
+    <ItemGroup>
+      <FrontEndDistFiles Include="FrontEnd\LpAuthServerFe\dist\**\*.*" />
+    </ItemGroup>
+
+    <Copy SourceFiles="@(FrontEndDistFiles)" DestinationFolder="$(ProjectDir)wwwroot\%(RecursiveDir)" SkipUnchangedFiles="true" />
+  </Target>
+
+  <Target Name="CreateFrontEndIndexView" AfterTargets="CopyBuildFrontEndDistFiles">
+    <ItemGroup>
+      <IndexFile Include="$(ProjectDir)wwwroot\index.html" />
+    </ItemGroup>
+
+    <MakeDir Directories="$(ProjectDir)Views\Home" />
+    <Copy SourceFiles="@(IndexFile)" DestinationFiles="@(IndexFile-&gt;Replace('index.html','Index.cshtml'))" SkipUnchangedFiles="true" />
+    <Move SourceFiles="$(ProjectDir)wwwroot\Index.cshtml" DestinationFolder="$(ProjectDir)Views\Home" OverwriteReadOnlyFiles="true" />
+    <Delete Files="@(IndexFile)" />
+  </Target>
+
+</Project>

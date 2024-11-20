@@ -1,0 +1,2 @@
+Remove: oidc.user:{authority}:{client_id}
+Example: oidc.user:https://localhost:5000:web-lp-default

@@ -1,0 +1,348 @@
+{
+  "Document": {
+    "Items": [
+      {
+        "Value": "Помощь",
+        "Type": "String",
+        "Key": "nav.help"
+      },
+      {
+        "Value": "Про Проект",
+        "Type": "String",
+        "Key": "nav.about"
+      },
+      {
+        "Value": "Вход",
+        "Type": "String",
+        "Key": "nav.signIn"
+      },
+      {
+        "Value": "Профиль",
+        "Type": "String",
+        "Key": "nav.profile"
+      },
+      {
+        "Value": "Выход",
+        "Type": "String",
+        "Key": "nav.logout"
+      },
+      {
+        "Value": "Нет Элементов",
+        "Type": "String",
+        "Key": "components.lpDataList.noItems"
+      },
+      {
+        "Value": "Домашняя",
+        "Type": "String",
+        "Key": "nav.home"
+      },
+      {
+        "Value": "APIs",
+        "Type": "String",
+        "Key": "nav.apis"
+      },
+      {
+        "Value": "Админ Панель",
+        "Type": "String",
+        "Key": "nav.adminPanel"
+      },
+      {
+        "Value": "Про Lucky Project",
+        "Type": "String",
+        "Key": "about.header"
+      },
+      {
+        "Value": "Про Проект",
+        "Type": "String",
+        "Key": "about.crumb"
+      },
+      {
+        "Value": "Это Lucky Project",
+        "Type": "String",
+        "Key": "about.text"
+      },
+      {
+        "Value": "Ошибка Авторизации",
+        "Type": "String",
+        "Key": "auth.error.header"
+      },
+      {
+        "Value": "Ошибка Авторизации",
+        "Type": "String",
+        "Key": "auth.error.crumb"
+      },
+      {
+        "Value": "Завершение Авторизации...",
+        "Type": "String",
+        "Key": "auth.signIn.header"
+      },
+      {
+        "Value": "Помощь",
+        "Type": "String",
+        "Key": "help.header"
+      },
+      {
+        "Value": "Помощь",
+        "Type": "String",
+        "Key": "help.crumb"
+      },
+      {
+        "Value": "Эта страница поможет вам в вашем опыте использования Lucky Project",
+        "Type": "String",
+        "Key": "help.text"
+      },
+      {
+        "Value": "Очистить Хранилище",
+        "Type": "String",
+        "Key": "help.clearStorage"
+      },
+      {
+        "Value": "Не Найдено",
+        "Type": "String",
+        "Key": "notFound.header"
+      },
+      {
+        "Value": "Не Найдено",
+        "Type": "String",
+        "Key": "notFound.crumb"
+      },
+      {
+        "Value": "Страница Не Найдена",
+        "Type": "String",
+        "Key": "notFound.text"
+      },
+      {
+        "Value": "Профиль",
+        "Type": "String",
+        "Key": "profile.header"
+      },
+      {
+        "Value": "Профиль",
+        "Type": "String",
+        "Key": "profile.crumb"
+      },
+      {
+        "Value": "Имя Пользователя",
+        "Type": "String",
+        "Key": "profile.form.userName"
+      },
+      {
+        "Value": "Email",
+        "Type": "String",
+        "Key": "profile.form.email"
+      },
+      {
+        "Value": "Номер Телефона",
+        "Type": "String",
+        "Key": "profile.form.phoneNumber"
+      },
+      {
+        "Value": "Полное Имя",
+        "Type": "String",
+        "Key": "profile.form.fullName"
+      },
+      {
+        "Value": "Имя Пользователя в Telegram",
+        "Type": "String",
+        "Key": "profile.form.tgUserName"
+      },
+      {
+        "Value": "Предпочитаемая Локаль",
+        "Type": "String",
+        "Key": "profile.form.preferredLocale"
+      },
+      {
+        "Value": "Обновить Профиль",
+        "Type": "String",
+        "Key": "profile.form.updateProfile"
+      },
+      {
+        "Value": "Старый Пароль",
+        "Type": "String",
+        "Key": "profile.form.oldPassword"
+      },
+      {
+        "Value": "Новый Пароль",
+        "Type": "String",
+        "Key": "profile.form.newPassword"
+      },
+      {
+        "Value": "Повторите Новый Пароль",
+        "Type": "String",
+        "Key": "profile.form.newPasswordRepeat"
+      },
+      {
+        "Value": "Правила для Пароля:",
+        "Type": "String",
+        "Key": "profile.form.passwordRules.title"
+      },
+      {
+        "Value": "- Должен содержать как минимум 1 строчную букву",
+        "Type": "String",
+        "Key": "profile.form.form.passwordRules.1"
+      },
+      {
+        "Value": "- Должен содержать как минимум 1 цифру",
+        "Type": "String",
+        "Key": "profile.form.form.passwordRules.2"
+      },
+      {
+        "Value": "- Должен содержать как минимум 1 специальный символ",
+        "Type": "String",
+        "Key": "profile.form.form.passwordRules.3"
+      },
+      {
+        "Value": "- Должен быть не короче 8 символов",
+        "Type": "String",
+        "Key": "profile.form.form.passwordRules.4"
+      },
+      {
+        "Value": "Обновить Пароль",
+        "Type": "String",
+        "Key": "profile.form.updatePassword"
+      },
+      {
+        "Value": "Не удалось загрузить Профиль Пользователя",
+        "Type": "String",
+        "Key": "profile.get.error"
+      },
+      {
+        "Value": "Не удалось получить список Локалей",
+        "Type": "String",
+        "Key": "profile.getLocales.error"
+      },
+      {
+        "Value": "Профиль Обновлен",
+        "Type": "String",
+        "Key": "profile.update.success"
+      },
+      {
+        "Value": "Не удалось Обновить Профиль Пользователя",
+        "Type": "String",
+        "Key": "profile.update.error"
+      },
+      {
+        "Value": "Пароль Обновлен",
+        "Type": "String",
+        "Key": "profile.updatePassword.success"
+      },
+      {
+        "Value": "Не Удалось Обновить Пароль",
+        "Type": "String",
+        "Key": "profile.updatePassword.error"
+      },
+      {
+        "Value": "Управление APIs",
+        "Type": "String",
+        "Key": "apis.header"
+      },
+      {
+        "Value": "Управление APIs",
+        "Type": "String",
+        "Key": "apis.crumb"
+      },
+      {
+        "Value": "Инсталляция API",
+        "Type": "String",
+        "Key": "apis.install.title"
+      },
+      {
+        "Value": "Callback URL",
+        "Type": "String",
+        "Key": "apis.install.callbackUrl"
+      },
+      {
+        "Value": "Инсталлировать",
+        "Type": "String",
+        "Key": "apis.install"
+      },
+      {
+        "Value": "Деинсталлировать",
+        "Type": "String",
+        "Key": "apis.uninstall"
+      },
+      {
+        "Value": "Lucky Project APIs",
+        "Type": "String",
+        "Key": "apis.lpApis"
+      },
+      {
+        "Value": "Имя",
+        "Type": "String",
+        "Key": "apis.name"
+      },
+      {
+        "Value": "Описание",
+        "Type": "String",
+        "Key": "apis.description"
+      },
+      {
+        "Value": "Все Инсталлированные APIs",
+        "Type": "String",
+        "Key": "apis.allApis"
+      },
+      {
+        "Value": "Не удалось загрузить APIs",
+        "Type": "String",
+        "Key": "apis.get.error"
+      },
+      {
+        "Value": "API Инсталлировано",
+        "Type": "String",
+        "Key": "apis.install.success"
+      },
+      {
+        "Value": "Не удалось Инсталлировать API",
+        "Type": "String",
+        "Key": "apis.install.error"
+      },
+      {
+        "Value": "API Деинстилировано",
+        "Type": "String",
+        "Key": "apis.uninstall.success"
+      },
+      {
+        "Value": "Не удалось Деинсталлировать API",
+        "Type": "String",
+        "Key": "apis.uninstall.error"
+      },
+      {
+        "Value": "Домашняя",
+        "Type": "String",
+        "Key": "home.crumb"
+      },
+      {
+        "Value": "Домашняя",
+        "Type": "String",
+        "Key": "home.header"
+      },
+      {
+        "Value": "Показаны Элементы {{firstPageItem}} - {{lastPageItem}} из {{totalItemsCount}}",
+        "Type": "String",
+        "Key": "components.lpFopDataList.pagination"
+      },
+      {
+        "Value": "Разрешения",
+        "Type": "String",
+        "Key": "nav.adminPanel.permissions"
+      },
+      {
+        "Value": "Роли",
+        "Type": "String",
+        "Key": "nav.adminPanel.roles"
+      },
+      {
+        "Value": "Пользователи",
+        "Type": "String",
+        "Key": "nav.adminPanel.users"
+      },
+      {
+        "Value": "Клиенты",
+        "Type": "String",
+        "Key": "nav.adminPanel.clients"
+      }
+    ]
+  },
+  "DocType": "lp.doc.i18n",
+  "DocVersion": 1
+}

@@ -1,0 +1,198 @@
+{
+  "Document": {
+    "Items": [
+      {
+        "Value": "Cancelled",
+        "Type": "String",
+        "Key": "cancelled"
+      },
+      {
+        "Value": "Must be not null",
+        "Type": "String",
+        "Key": "errors.not-null"
+      },
+      {
+        "Value": "Must be null",
+        "Type": "String",
+        "Key": "errors.null"
+      },
+      {
+        "Value": "Must be not empty",
+        "Type": "String",
+        "Key": "errors.not-empty"
+      },
+      {
+        "Value": "Must be empty",
+        "Type": "String",
+        "Key": "errors.empty"
+      },
+      {
+        "Value": "Must be not equal to {{target}}",
+        "Type": "String",
+        "Key": "errors.not-equal"
+      },
+      {
+        "Value": "Must be equal to {{target}}",
+        "Type": "String",
+        "Key": "errors.equal"
+      },
+      {
+        "Value": "Length must be from {{min}} to {{max}}",
+        "Type": "String",
+        "Key": "errors.length"
+      },
+      {
+        "Value": "Length must be at least {{target}}",
+        "Type": "String",
+        "Key": "errors.min-length"
+      },
+      {
+        "Value": "Length must be at most {{target}}",
+        "Type": "String",
+        "Key": "errors.max-length"
+      },
+      {
+        "Value": "Must be less than {{target}}",
+        "Type": "String",
+        "Key": "errors.less-than"
+      },
+      {
+        "Value": "Must be less than or equal to {{target}}",
+        "Type": "String",
+        "Key": "errors.less-than-or-equal"
+      },
+      {
+        "Value": "Must be greater than {{target}}",
+        "Type": "String",
+        "Key": "errors.greater-than"
+      },
+      {
+        "Value": "Must be greater than or equal to {{target}}",
+        "Type": "String",
+        "Key": "errors.greater-than-or-equal"
+      },
+      {
+        "Value": "Must math regular expression: {{target}}",
+        "Type": "String",
+        "Key": "errors.regex"
+      },
+      {
+        "Value": "Must be valid email address",
+        "Type": "String",
+        "Key": "errors.email"
+      },
+      {
+        "Value": "Must be valid user name",
+        "Type": "String",
+        "Key": "errors.login"
+      },
+      {
+        "Value": "Must be valid password",
+        "Type": "String",
+        "Key": "errors.pwd"
+      },
+      {
+        "Value": "Invalid credentials",
+        "Type": "String",
+        "Key": "errors.creds"
+      },
+      {
+        "Value": "Must be valid {{target}} URL",
+        "Type": "String",
+        "Key": "errors.url"
+      },
+      {
+        "Value": "Must be valid user Full Name",
+        "Type": "String",
+        "Key": "errors.full-name"
+      },
+      {
+        "Value": "Must be valid permission",
+        "Type": "String",
+        "Key": "errors.permission"
+      },
+      {
+        "Value": "Must be valid Phone Number in International Format",
+        "Type": "String",
+        "Key": "errors.phone"
+      },
+      {
+        "Value": "Must be valid Credit Card Number",
+        "Type": "String",
+        "Key": "errors.credit-card"
+      },
+      {
+        "Value": "Must be on of enumeration options",
+        "Type": "String",
+        "Key": "errors.enum"
+      },
+      {
+        "Value": "Must be exclusive between {{min}} and {{max}}",
+        "Type": "String",
+        "Key": "errors.exclusive-between"
+      },
+      {
+        "Value": "Must be inclusive between {{min}} and {{max}}",
+        "Type": "String",
+        "Key": "errors.inclusive-between"
+      },
+      {
+        "Value": "Must not be more than {{precision}} digits in total, with allowance for {{scale}} decimals",
+        "Type": "String",
+        "Key": "errors.precision-scale"
+      },
+      {
+        "Value": "Must be unique (none of existing)",
+        "Type": "String",
+        "Key": "errors.unique"
+      },
+      {
+        "Value": "Must be not unique (one of existing)",
+        "Type": "String",
+        "Key": "errors.not-unique"
+      },
+      {
+        "Value": "Not Found",
+        "Type": "String",
+        "Key": "errors.not-found"
+      },
+      {
+        "Value": "Access Denied",
+        "Type": "String",
+        "Key": "errors.access-denied"
+      },
+      {
+        "Value": "Must start with \"{{target}}\"",
+        "Type": "String",
+        "Key": "errors.prefixed"
+      },
+      {
+        "Value": "Must not start with \"{{target}}\"",
+        "Type": "String",
+        "Key": "errors.not-prefixed"
+      },
+      {
+        "Value": "Must end with \"{{target}}\"",
+        "Type": "String",
+        "Key": "errors.suffixed"
+      },
+      {
+        "Value": "Must not end with \"{{target}}\"",
+        "Type": "String",
+        "Key": "errors.not-suffixed"
+      },
+      {
+        "Value": "Unknown error",
+        "Type": "String",
+        "Key": "errors.unknown"
+      },
+      {
+        "Value": "Invalid",
+        "Type": "String",
+        "Key": "errors.invalid"
+      }
+    ]
+  },
+  "DocType": "lp.doc.i18n",
+  "DocVersion": 1
+}

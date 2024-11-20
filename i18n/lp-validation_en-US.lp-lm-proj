@@ -1,0 +1,278 @@
+{
+  "Document": {
+    "Name": "LP Validation en-US",
+    "Description": "Lucky Project Validatin en-US Localization",
+    "Source": "lp-validation",
+    "Locale": "en-US",
+    "Items": [
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "cancelled",
+        "Basis": null,
+        "Transaltion": "Cancelled"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "errors.not-null",
+        "Basis": null,
+        "Transaltion": "Must be not null"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "errors.null",
+        "Basis": null,
+        "Transaltion": "Must be null"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "errors.not-empty",
+        "Basis": null,
+        "Transaltion": "Must be not empty"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "errors.empty",
+        "Basis": null,
+        "Transaltion": "Must be empty"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "errors.not-equal",
+        "Basis": null,
+        "Transaltion": "Must be not equal to {{target}}"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "errors.equal",
+        "Basis": null,
+        "Transaltion": "Must be equal to {{target}}"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "errors.length",
+        "Basis": null,
+        "Transaltion": "Length must be from {{min}} to {{max}}"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "errors.min-length",
+        "Basis": null,
+        "Transaltion": "Length must be at least {{target}}"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "errors.max-length",
+        "Basis": null,
+        "Transaltion": "Length must be at most {{target}}"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "errors.less-than",
+        "Basis": null,
+        "Transaltion": "Must be less than {{target}}"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "errors.less-than-or-equal",
+        "Basis": null,
+        "Transaltion": "Must be less than or equal to {{target}}"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "errors.greater-than",
+        "Basis": null,
+        "Transaltion": "Must be greater than {{target}}"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "errors.greater-than-or-equal",
+        "Basis": null,
+        "Transaltion": "Must be greater than or equal to {{target}}"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "errors.regex",
+        "Basis": null,
+        "Transaltion": "Must math regular expression: {{target}}"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "errors.email",
+        "Basis": null,
+        "Transaltion": "Must be valid email address"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "errors.login",
+        "Basis": null,
+        "Transaltion": "Must be valid user name"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "errors.pwd",
+        "Basis": null,
+        "Transaltion": "Must be valid password"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "errors.creds",
+        "Basis": null,
+        "Transaltion": "Invalid credentials"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "errors.url",
+        "Basis": null,
+        "Transaltion": "Must be valid {{target}} URL"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "errors.full-name",
+        "Basis": null,
+        "Transaltion": "Must be valid user Full Name"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "errors.permission",
+        "Basis": null,
+        "Transaltion": "Must be valid permission"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "errors.phone",
+        "Basis": null,
+        "Transaltion": "Must be valid Phone Number in International Format"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "errors.credit-card",
+        "Basis": null,
+        "Transaltion": "Must be valid Credit Card Number"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "errors.enum",
+        "Basis": null,
+        "Transaltion": "Must be on of enumeration options"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "errors.exclusive-between",
+        "Basis": null,
+        "Transaltion": "Must be exclusive between {{min}} and {{max}}"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "errors.inclusive-between",
+        "Basis": null,
+        "Transaltion": "Must be inclusive between {{min}} and {{max}}"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "errors.precision-scale",
+        "Basis": null,
+        "Transaltion": "Must not be more than {{precision}} digits in total, with allowance for {{scale}} decimals"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "errors.unique",
+        "Basis": null,
+        "Transaltion": "Must be unique (none of existing)"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "errors.not-unique",
+        "Basis": null,
+        "Transaltion": "Must be not unique (one of existing)"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "errors.not-found",
+        "Basis": null,
+        "Transaltion": "Not Found"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "errors.access-denied",
+        "Basis": null,
+        "Transaltion": "Access Denied"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "errors.prefixed",
+        "Basis": null,
+        "Transaltion": "Must start with \"{{target}}\""
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "errors.not-prefixed",
+        "Basis": null,
+        "Transaltion": "Must not start with \"{{target}}\""
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "errors.suffixed",
+        "Basis": null,
+        "Transaltion": "Must end with \"{{target}}\""
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "errors.not-suffixed",
+        "Basis": null,
+        "Transaltion": "Must not end with \"{{target}}\""
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "errors.unknown",
+        "Basis": null,
+        "Transaltion": "Unknown error"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "errors.invalid",
+        "Basis": null,
+        "Transaltion": "Invalid"
+      }
+    ]
+  },
+  "DocType": "lp.doc.app.lm.proj",
+  "DocVersion": 1
+}

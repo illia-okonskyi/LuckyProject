@@ -1,0 +1,607 @@
+{
+  "Document": {
+    "Name": "LP.Lib.WinUi.en-US",
+    "Description": "Lucky Project Lib.WinUI en-US Localization Project",
+    "Source": "lp-lib-winui",
+    "Locale": "en-US",
+    "Items": [
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.lib.winui.common.strings.version",
+        "Basis": "Version:",
+        "Transaltion": "Version:"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.lib.winui.common.strings.loading0",
+        "Basis": "Loading...",
+        "Transaltion": "Loading..."
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.lib.winui.common.strings.loading1",
+        "Basis": "Loading {0}...",
+        "Transaltion": "Loading {0}..."
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.lib.winui.common.strings.loading2",
+        "Basis": "Loading {0} {1}...",
+        "Transaltion": "Loading {0} {1}..."
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.lib.winui.common.strings.title",
+        "Basis": "Settings",
+        "Transaltion": "Settings"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.lib.winui.common.strings.localization",
+        "Basis": "Localization",
+        "Transaltion": "Localization"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.lib.winui.common.strings.ok",
+        "Basis": "OK",
+        "Transaltion": "OK"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.lib.winui.common.strings.yes",
+        "Basis": "Yes",
+        "Transaltion": "Yes"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.lib.winui.common.strings.no",
+        "Basis": "No",
+        "Transaltion": "No"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.lib.winui.common.strings.accept",
+        "Basis": "Accept",
+        "Transaltion": "Accept"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.lib.winui.common.strings.reject",
+        "Basis": "Reject",
+        "Transaltion": "Reject"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.lib.winui.common.strings.cancel",
+        "Basis": "Cancel",
+        "Transaltion": "Cancel"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.lib.winui.common.strings.cancelling",
+        "Basis": "Cancelling...",
+        "Transaltion": "Cancelling..."
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.lib.winui.common.strings.close",
+        "Basis": "Close",
+        "Transaltion": "Close"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.lib.winui.common.strings.payAttentionFor",
+        "Basis": "Please, pay attention for",
+        "Transaltion": "Please, pay attention for"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.lib.winui.common.strings.wait",
+        "Basis": "Please, wait...",
+        "Transaltion": "Please, wait..."
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.lib.winui.common.strings.select",
+        "Basis": "Select",
+        "Transaltion": "Select"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.lib.winui.common.strings.dir",
+        "Basis": "Directory",
+        "Transaltion": "Directory"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.lib.winui.common.strings.dirs",
+        "Basis": "Directories",
+        "Transaltion": "Directories"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.lib.winui.common.strings.file",
+        "Basis": "File",
+        "Transaltion": "File"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.lib.winui.common.strings.files",
+        "Basis": "Files",
+        "Transaltion": "Files"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.lib.winui.common.strings.showingItems",
+        "Basis": "Showing {0}-{1} of {2} item(s)",
+        "Transaltion": "Showing {0}-{1} of {2} item(s)"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.lib.winui.common.strings.all",
+        "Basis": "All",
+        "Transaltion": "All"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.lib.winui.common.strings.any",
+        "Basis": "Any",
+        "Transaltion": "Any"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.lib.winui.common.strings.validation.notNull",
+        "Basis": "Must have value",
+        "Transaltion": "Must have value"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.lib.winui.common.strings.validation.null",
+        "Basis": "Must not have value",
+        "Transaltion": "Must not have value"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.lib.winui.common.strings.validation.notEmpty",
+        "Basis": "Must have value",
+        "Transaltion": "Must have value"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.lib.winui.common.strings.validation.empty",
+        "Basis": "Must not have value",
+        "Transaltion": "Must not have value"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.lib.winui.common.strings.validation.notEqual",
+        "Basis": "Must be not equal equal to {0}",
+        "Transaltion": "Must be not equal equal to {0}"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.lib.winui.common.strings.validation.equal",
+        "Basis": "Must be equal to {0}",
+        "Transaltion": "Must be equal to {0}"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.lib.winui.common.strings.validation.length",
+        "Basis": "Length must be from {0} to {1}",
+        "Transaltion": "Length must be from {0} to {1}"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.lib.winui.common.strings.validation.minLength",
+        "Basis": "Length must be not less than {0}",
+        "Transaltion": "Length must be not less than {0}"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.lib.winui.common.strings.validation.maxLength",
+        "Basis": "Length must be not greater than {0}",
+        "Transaltion": "Length must be not greater than {0}"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.lib.winui.common.strings.validation.lessThan",
+        "Basis": "Must be not less than {0}",
+        "Transaltion": "Must be not less than {0}"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.lib.winui.common.strings.validation.lessThanOrEqual",
+        "Basis": "Must be not less than or equal to {0}",
+        "Transaltion": "Must be not less than or equal to {0}"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.lib.winui.common.strings.validation.greaterThan",
+        "Basis": "Must be not greater than {0}",
+        "Transaltion": "Must be not greater than {0}"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.lib.winui.common.strings.validation.greaterThanOrEqual",
+        "Basis": "Must be not greater than or equal to {0}",
+        "Transaltion": "Must be not greater than or equal to {0}"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.lib.winui.common.strings.validation.regex",
+        "Basis": "Must match regular expression \\{0}\\",
+        "Transaltion": "Must match regular expression \\{0}\\"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.lib.winui.common.strings.validation.email",
+        "Basis": "Must be valid email",
+        "Transaltion": "Must be valid email"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.lib.winui.common.strings.validation.login",
+        "Basis": "Must be valid login",
+        "Transaltion": "Must be valid login"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.lib.winui.common.strings.validation.password",
+        "Basis": "Must follow password security rules: {0}",
+        "Transaltion": "Must follow password security rules: {0}"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.lib.winui.common.strings.validation.credentials",
+        "Basis": "Invalid credentials",
+        "Transaltion": "Invalid credentials"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.lib.winui.common.strings.validation.url",
+        "Basis": "Must be URL that follow the {0} rule",
+        "Transaltion": "Must be URL that follow the {0} rule"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.lib.winui.common.strings.validation.fullName",
+        "Basis": "Invalid International Person Full Name",
+        "Transaltion": "Invalid International Person Full Name"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.lib.winui.common.strings.validation.permission",
+        "Basis": "Invalid Permission",
+        "Transaltion": "Invalid Permission"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.lib.winui.common.strings.validation.phone",
+        "Basis": "Must be Phone Number in International format with leading + sign",
+        "Transaltion": "Must be Phone Number in International format with leading + sign"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.lib.winui.common.strings.validation.creditCard",
+        "Basis": "Invalid credit card number",
+        "Transaltion": "Invalid credit card number"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.lib.winui.common.strings.validation.enum",
+        "Basis": "Must be one of the enumeration/listed values",
+        "Transaltion": "Must be one of the enumeration/listed values"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.lib.winui.common.strings.validation.exclusiveBetween",
+        "Basis": "Must be greater than {0} and less than {1}",
+        "Transaltion": "Must be greater than {0} and less than {1}"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.lib.winui.common.strings.validation.inclusiveBetween",
+        "Basis": "Must be greater than or equal to {0} and less than or equal to {1}",
+        "Transaltion": "Must be greater than or equal to {0} and less than or equal to {1}"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.lib.winui.common.strings.validation.precisionScale",
+        "Basis": "Must not be more than {0} digits in total, with allowance for {1} decimals",
+        "Transaltion": "Must not be more than {0} digits in total, with allowance for {1} decimals"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.lib.winui.common.strings.validation.unique",
+        "Basis": "Must be unique (none of existing)",
+        "Transaltion": "Must be unique (none of existing)"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.lib.winui.common.strings.validation.notUnique",
+        "Basis": "Must be not unique (one of existing)",
+        "Transaltion": "Must be not unique (one of existing)"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.lib.winui.common.strings.validation.notFound",
+        "Basis": "Specified item not found",
+        "Transaltion": "Specified item not found"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.lib.winui.common.strings.validation.accessDenied",
+        "Basis": "Access denied",
+        "Transaltion": "Access denied"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.lib.winui.common.strings.validation.prefixed",
+        "Basis": "Must start with \"{0}\"",
+        "Transaltion": "Must start with \"{0}\""
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.lib.winui.common.strings.validation.notPrefixed",
+        "Basis": "Must not start with \"{0}\"",
+        "Transaltion": "Must not start with \"{0}\""
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.lib.winui.common.strings.validation.suffixed",
+        "Basis": "Must end with \"{0}\"",
+        "Transaltion": "Must end with \"{0}\""
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.lib.winui.common.strings.validation.notSuffixed",
+        "Basis": "Must not end with \"{0}\"",
+        "Transaltion": "Must not end with \"{0}\""
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.lib.winui.common.strings.validation.unknown",
+        "Basis": "Validation rule not specified, but value is not valid",
+        "Transaltion": "Validation rule not specified, but value is not valid"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.lib.winui.pages.settings.strings.personalization",
+        "Basis": "Personalization",
+        "Transaltion": "Personalization"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.lib.winui.pages.settings.strings.theme",
+        "Basis": "Theme",
+        "Transaltion": "Theme"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.lib.winui.pages.settings.strings.themeLight",
+        "Basis": "Light",
+        "Transaltion": "Light"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.lib.winui.pages.settings.strings.themeDark",
+        "Basis": "Dark",
+        "Transaltion": "Dark"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.lib.winui.pages.settings.strings.themeDefault",
+        "Basis": "Default",
+        "Transaltion": "Default"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.lib.winui.pages.settings.strings.localization",
+        "Basis": "Localization",
+        "Transaltion": "Localization"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.lib.winui.pages.settings.strings.language",
+        "Basis": "Language",
+        "Transaltion": "Language"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.lib.winui.pages.settings.strings.about",
+        "Basis": "About this application",
+        "Transaltion": "About this application"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.lib.winui.statusbar.strings.pendingTaskCount",
+        "Basis": "Pending task(s)",
+        "Transaltion": "Pending task(s)"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.lib.winui.statusbar.strings.pendingTasks",
+        "Basis": "Pending tasks",
+        "Transaltion": "Pending tasks"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.lib.winui.statusbar.strings.errorCount",
+        "Basis": "Error(s)",
+        "Transaltion": "Error(s)"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.lib.winui.statusbar.strings.warningCount",
+        "Basis": "Warning(s)",
+        "Transaltion": "Warning(s)"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.lib.winui.statusbar.strings.messageCount",
+        "Basis": "Message(s)",
+        "Transaltion": "Message(s)"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.lib.winui.statusbar.strings.progress",
+        "Basis": "Progress",
+        "Transaltion": "Progress"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.lib.winui.statusbar.strings.category",
+        "Basis": "Category",
+        "Transaltion": "Category"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.lib.winui.statusbar.strings.description",
+        "Basis": "Description",
+        "Transaltion": "Description"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.lib.winui.statusbar.strings.status",
+        "Basis": "Status",
+        "Transaltion": "Status"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.lib.winui.statusbar.strings.messages",
+        "Basis": "Messages",
+        "Transaltion": "Messages"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.lib.winui.statusbar.strings.time",
+        "Basis": "Time",
+        "Transaltion": "Time"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.lib.winui.statusbar.strings.message",
+        "Basis": "Message",
+        "Transaltion": "Message"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.lib.winui.statusbar.strings.errorInPendingProcess",
+        "Basis": "Error in pending process {0} -> {1}: {2}",
+        "Transaltion": "Error in pending process {0} -> {1}: {2}"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.lib.winui.entrypoint.strings.closeConfirmation",
+        "Basis": "Close confirmation",
+        "Transaltion": "Close confirmation"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.lib.winui.entrypoint.strings.busyQuestion",
+        "Basis": "There are some pending tasks still in progess.\r\nDo you want to close the application?",
+        "Transaltion": "There are some pending tasks still in progess.\r\nDo you want to close the application?"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.lib.winui.entrypoint.strings.unsavedDataQuestion",
+        "Basis": "There are unsaved data in the application.\r\nDo you want to save data before close the application?",
+        "Transaltion": "There are unsaved data in the application.\r\nDo you want to save data before close the application?"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.lib.winui.entrypoint.strings.savingDataMessage",
+        "Basis": "Saving application data...",
+        "Transaltion": "Saving application data..."
+      }
+    ]
+  },
+  "DocType": "lp.doc.app.lm.proj",
+  "DocVersion": 1
+}

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>LuckyProject ViewModel Property Snippet</Title>
+      <Shortcut>vmprop</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>fieldName</ID>
+          <Default>fieldName</Default>
+          <ToolTip>Enter actual field name here</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>fieldType</ID>
+          <Default>object</Default>
+          <ToolTip>Enter actual field value type here</ToolTip>
+        </Literal>
+      </Declarations>
+      <Code Language="CSharp">
+        <![CDATA[[ObservableProperty]
+        private $fieldType$ $fieldName$;]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

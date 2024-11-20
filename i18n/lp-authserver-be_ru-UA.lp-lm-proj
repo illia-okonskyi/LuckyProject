@@ -1,0 +1,40 @@
+{
+  "Document": {
+    "Name": "LP AuthServer BE ru-UA",
+    "Description": "Lucky Project AuthServer Backend ru-UA Localization",
+    "Source": "lp-authserver-be",
+    "Locale": "ru-UA",
+    "Items": [
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.be.services.userLogin.tgBotStopping",
+        "Basis": null,
+        "Transaltion": "Lucky Project Authenticator Bot остановлен.\r\n\r\n\r\nНе забудьте выслать команду /start после того, как бот будет перезапущен"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.be.services.userLogin.tgBotSubscribed",
+        "Basis": null,
+        "Transaltion": "Привет, <b>{0}</b>!\r\n\r\nТеперь вы подписаны на Lucky Project Authenticator Bot"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.be.services.userLogin.twoFactorCode",
+        "Basis": null,
+        "Transaltion": "Привет, <b>{0}</b>!\r\n\r\nКто-то пытается войти в Lucky Project под вашими реквизитами. Если это не вы - игнорируйте данное сообщение.\r\n\r\nКод Авторизации <b>{1}</b> - введите этот код в форму входа"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.be.services.userLogin.resetPasswordCode",
+        "Basis": null,
+        "Transaltion": "Привет, <b>{0}</b>!\r\n\r\nКто-то пытается Сбросить Пароль вашего Пользователя Lucky Project. Если это не вы - игнорируйте данное сообщение.\r\n\r\nПроверочный код <b>{1}</b> - введите этот код в форму Сброса Пароля"
+      }
+    ]
+  },
+  "DocType": "lp.doc.app.lm.proj",
+  "DocVersion": 1
+}

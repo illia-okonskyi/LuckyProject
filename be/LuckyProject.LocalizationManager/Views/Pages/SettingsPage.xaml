@@ -1,0 +1,28 @@
+﻿<Page
+    x:Class="LuckyProject.LocalizationManager.Views.Pages.SettingsPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:attached="using:LuckyProject.Lib.WinUi.AttachedProperties"
+    xmlns:pages="using:LuckyProject.Lib.WinUi.Components.Pages"
+    xmlns:buttons="using:LuckyProject.Lib.WinUi.Components.Controls.Buttons"
+    xmlns:xaml="using:Microsoft.UI.Xaml"
+    mc:Ignorable="d">
+    <attached:Pages.HeaderExtraContent>
+        <buttons:IconButton Glyph="&#xE74E;" IconSize="24" Command="{x:Bind ViewModel.SaveCommand}"/>
+    </attached:Pages.HeaderExtraContent>
+    <Grid>
+        <pages:LpSettingsPageBaseView
+            ViewModel="{x:Bind ViewModel.BaseViewModel}"
+            AppVersion="{x:Bind ViewModel.AppVersion}"
+            AppDescription="{x:Bind ViewModel.Localization.Description, Mode=OneWay}">
+            <pages:LpSettingsPageBaseView.ExtraContent>
+                <StackPanel Margin="{StaticResource SmallTopBottomMargin}">
+                    <TextBlock Text='THIS IS EXTRA HEDAER' Style="{ThemeResource SubtitleTextBlockStyle}"/>
+                    <TextBlock Text='THIS IS EXTRA CONTENT'/>
+                </StackPanel>
+            </pages:LpSettingsPageBaseView.ExtraContent>
+        </pages:LpSettingsPageBaseView>
+    </Grid>
+</Page>

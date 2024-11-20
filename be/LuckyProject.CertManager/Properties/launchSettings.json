@@ -1,0 +1,15 @@
+{
+  "profiles": {
+    "Dry Run": {
+      "commandName": "Project"
+    },
+    "Get Dev CA Cert": {
+      "commandName": "Project",
+      "commandLineArgs": "get-dev-ca-cert"
+    },
+    "Get Dev Cert": {
+      "commandName": "Project",
+      "commandLineArgs": "get-dev-cert"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "Dry Run": {
+      "commandName": "Project"
+    },
+    "Get Secrets": {
+      "commandName": "Project",
+      "commandLineArgs": "get-secrets"
+    }
+  }
+}

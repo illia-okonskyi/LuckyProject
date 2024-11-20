@@ -1,0 +1,355 @@
+{
+  "Document": {
+    "Name": "LP.App.LocalizationManager.en-US",
+    "Description": "Lucky Project Localization Manager en-US Localization Project",
+    "Source": "lp-app-lm",
+    "Locale": "en-US",
+    "Items": [
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.app.lm.services.project.strings.category",
+        "Basis": "Project",
+        "Transaltion": "Project"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.app.lm.services.project.strings.messages.createdProject",
+        "Basis": "Project {0} created at location {1}",
+        "Transaltion": "Project {0} created at location {1}"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.app.lm.services.project.strings.messages.projectAction",
+        "Basis": "Project action",
+        "Transaltion": "Project action"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.app.lm.services.project.strings.messages.openingProject",
+        "Basis": "Opening project at location {0}...",
+        "Transaltion": "Opening project at location {0}..."
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.app.lm.services.project.strings.messages.openedProject",
+        "Basis": "Opened project {0} at location {1}",
+        "Transaltion": "Opened project {0} at location {1}"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.app.lm.services.project.strings.messages.savingProject",
+        "Basis": "Saving project {0} to location {1}...",
+        "Transaltion": "Saving project {0} to location {1}..."
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.app.lm.services.project.strings.messages.savedProject",
+        "Basis": "Saved project {0} to location {1}",
+        "Transaltion": "Saved project {0} to location {1}"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.app.lm.services.project.strings.messages.buildingProject",
+        "Basis": "Building project {0} to location {1}...",
+        "Transaltion": "Building project {0} to location {1}..."
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.app.lm.services.project.strings.messages.builtProject",
+        "Basis": "Built project {0} to location {1}",
+        "Transaltion": "Built project {0} to location {1}"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.app.lm.services.project.strings.messages.closedProject",
+        "Basis": "Closed project {0}",
+        "Transaltion": "Closed project {0}"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.app.lm.services.project.strings.messages.errorFormat",
+        "Basis": "Error: {0}",
+        "Transaltion": "Error: {0}"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.app.lm.dialogs.createUpdateDialog.strings.newProject",
+        "Basis": "New Project...",
+        "Transaltion": "New Project..."
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.app.lm.dialogs.createUpdateDialog.strings.editProject",
+        "Basis": "Edit Project",
+        "Transaltion": "Edit Project"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.app.lm.common.strings.actions.create",
+        "Basis": "Create",
+        "Transaltion": "Create"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.app.lm.common.strings.actions.update",
+        "Basis": "Update",
+        "Transaltion": "Update"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.app.lm.common.strings.captions.name",
+        "Basis": "Name:",
+        "Transaltion": "Name:"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.app.lm.common.strings.captions.description",
+        "Basis": "Description:",
+        "Transaltion": "Description:"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.app.lm.common.strings.captions.source",
+        "Basis": "Source:",
+        "Transaltion": "Source:"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.app.lm.common.strings.captions.locale",
+        "Basis": "Locale:",
+        "Transaltion": "Locale:"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.app.lm.common.strings.captions.file",
+        "Basis": "File:",
+        "Transaltion": "File:"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.app.lm.pages.home.strings.title",
+        "Basis": "Home",
+        "Transaltion": "Home"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.app.lm.pages.home.strings.newProject",
+        "Basis": "New Project",
+        "Transaltion": "New Project"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.app.lm.pages.home.strings.openProject",
+        "Basis": "Open Project",
+        "Transaltion": "Open Project"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.app.lm.pages.home.strings.saveProject",
+        "Basis": "Save Project",
+        "Transaltion": "Save Project"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.app.lm.pages.home.strings.saveProjectAs",
+        "Basis": "Save Project As...",
+        "Transaltion": "Save Project As..."
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.app.lm.pages.home.strings.closeProject",
+        "Basis": "Close Project",
+        "Transaltion": "Close Project"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.app.lm.pages.home.strings.unsavedProjectQuestion",
+        "Basis": "There are unsaved data in the current project.\r\nDo you want to save the project before closing it?",
+        "Transaltion": "There are unsaved data in the current project.\r\nDo you want to save the project before closing it?"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.app.lm.pages.home.strings.buildProject",
+        "Basis": "Build Project",
+        "Transaltion": "Build Project"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.app.lm.pages.settings.strings.title",
+        "Basis": "Settings",
+        "Transaltion": "Settings"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.app.lm.pages.settings.strings.description",
+        "Basis": "Lucky Project Localization Manager is intented for managing the Lucky Project i18n documents",
+        "Transaltion": "Lucky Project Localization Manager is intented for managing the Lucky Project i18n documents"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.app.lm.pages.workspace.strings.title",
+        "Basis": "Workspace",
+        "Transaltion": "Workspace"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.app.lm.pages.workspace.strings.filter",
+        "Basis": "Filter:",
+        "Transaltion": "Filter:"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.app.lm.pages.workspace.strings.apply",
+        "Basis": "Apply",
+        "Transaltion": "Apply"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.app.lm.pages.workspace.strings.itemStatuses.new",
+        "Basis": "New",
+        "Transaltion": "New"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.app.lm.pages.workspace.strings.itemStatuses.setNew",
+        "Basis": "Set New (Ctrl + N)",
+        "Transaltion": "Set New (Ctrl + N)"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.app.lm.pages.workspace.strings.itemStatuses.review",
+        "Basis": "Review",
+        "Transaltion": "Review"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.app.lm.pages.workspace.strings.itemStatuses.setReview",
+        "Basis": "Set Review (Ctrl + R)",
+        "Transaltion": "Set Review (Ctrl + R)"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.app.lm.pages.workspace.strings.itemStatuses.done",
+        "Basis": "Done",
+        "Transaltion": "Done"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.app.lm.pages.workspace.strings.itemStatuses.setDone",
+        "Basis": "Set Done (Ctrl + Enter)",
+        "Transaltion": "Set Done (Ctrl + Enter)"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.app.lm.pages.workspace.strings.itemTypes.string",
+        "Basis": "String",
+        "Transaltion": "String"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.app.lm.pages.workspace.strings.itemTypes.file",
+        "Basis": "File",
+        "Transaltion": "File"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.app.lm.pages.workspace.strings.status",
+        "Basis": "Status",
+        "Transaltion": "Status"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.app.lm.pages.workspace.strings.type",
+        "Basis": "Type",
+        "Transaltion": "Type"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.app.lm.pages.workspace.strings.key",
+        "Basis": "Key",
+        "Transaltion": "Key"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.app.lm.pages.workspace.strings.basis",
+        "Basis": "Basis",
+        "Transaltion": "Basis"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.app.lm.pages.workspace.strings.translation",
+        "Basis": "Translation",
+        "Transaltion": "Translation"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.app.lm.pages.workspace.createItemDialog.title",
+        "Basis": "Create New Item...",
+        "Transaltion": "Create New Item..."
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.app.lm.workspace.createItemDialog.type",
+        "Basis": "Type:",
+        "Transaltion": "Type:"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.app.lm.workspace.createItemDialog.key",
+        "Basis": "Key:",
+        "Transaltion": "Key:"
+      }
+    ]
+  },
+  "DocType": "lp.doc.app.lm.proj",
+  "DocVersion": 1
+}

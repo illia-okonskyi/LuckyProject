@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>LuckyProject Dependancy Property Snippet</Title>
+      <Shortcut>dprop</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>propName</ID>
+          <Default>PropName</Default>
+          <ToolTip>Enter actual field name here</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>propType</ID>
+          <Default>object</Default>
+          <ToolTip>Enter actual property value type here</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>propOwner</ID>
+          <Default>object</Default>
+          <ToolTip>Enter actual property owner</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>propDefault</ID>
+          <Default>null</Default>
+          <ToolTip>Enter default property value</ToolTip>
+        </Literal>
+      </Declarations>
+      <Code Language="CSharp">
+        <![CDATA[#region $propName$
+        public static readonly DependencyProperty $propName$Property =
+            DependencyProperty.Register(
+                nameof($propName$),
+                typeof($propType$),
+                typeof($propOwner$),
+                new PropertyMetadata($propDefault$));
+        public $propType$ $propName$
+        {
+            get => ($propType$)GetValue($propName$Property);
+            set => SetValue($propName$Property, value);
+        }
+        #endregion]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

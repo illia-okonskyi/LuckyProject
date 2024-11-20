@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Page
+    x:Class="LuckyProject.LocalizationManager.Views.Dialogs.CreateUpdateProjectDialog"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:LuckyProject.LocalizationManager.Views.Dialogs"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="using:LuckyProject.Lib.WinUi.Components.Controls"
+    mc:Ignorable="d">
+    <Grid MinWidth="400">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>            
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock
+            Grid.Row="0"
+            Grid.Column="0"
+            Margin="0,2,8,2"
+            Style="{ThemeResource BodyStrongTextBlockStyle}"
+            VerticalAlignment="Center"
+            Text="{x:Bind ViewModel.Localization.Name, Mode=OneWay}"/>
+        <TextBox
+            Grid.Row="0"
+            Grid.Column="1"
+            Margin="0,2,0,2"
+            Style="{ThemeResource DefaultTextBoxStyle}"
+            Text="{x:Bind ViewModel.Name, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+        <controls:ValidationError
+            Grid.Row="1"
+            Margin="0,2,0,2"
+            Grid.ColumnSpan="2"
+            HorizontalAlignment="Right"
+            ViewModel="{x:Bind ViewModel.Validation.Fields['Name']}"/>
+
+        <TextBlock
+            Grid.Row="2"
+            Grid.Column="0"
+            Margin="0,2,8,2"
+            Style="{ThemeResource BodyStrongTextBlockStyle}"
+            VerticalAlignment="Center"
+            Text="{x:Bind ViewModel.Localization.Description, Mode=OneWay}"/>
+        <TextBox
+            Grid.Row="2"
+            Grid.Column="1"
+            Margin="0,2,0,2"
+            Style="{ThemeResource DefaultTextBoxStyle}"
+            Text="{x:Bind ViewModel.Description, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+        <controls:ValidationError
+            Grid.Row="3"
+            Grid.ColumnSpan="2"
+            Margin="0,2,0,2"
+            HorizontalAlignment="Right"
+            ViewModel="{x:Bind ViewModel.Validation.Fields['Description']}"/>
+
+        <TextBlock
+            Grid.Row="4"
+            Grid.Column="0"
+            Margin="0,2,8,2"
+            Style="{ThemeResource BodyStrongTextBlockStyle}"
+            VerticalAlignment="Center"
+            Text="{x:Bind ViewModel.Localization.Source, Mode=OneWay}"/>
+        <TextBox
+            Grid.Row="4"
+            Grid.Column="1"
+            Margin="0,2,0,2"
+            Style="{ThemeResource DefaultTextBoxStyle}"
+            Text="{x:Bind ViewModel.Source, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+        <controls:ValidationError
+            Grid.Row="5"
+            Grid.ColumnSpan="2"
+            Margin="0,2,0,2"
+            HorizontalAlignment="Right"
+            ViewModel="{x:Bind ViewModel.Validation.Fields['Source']}"/>
+
+        <TextBlock
+            Grid.Row="6"
+            Grid.Column="0"
+            Margin="0,2,8,2"
+            Padding="0,4,0,0"
+            Style="{ThemeResource BodyStrongTextBlockStyle}"
+            VerticalAlignment="Top"
+            Text="{x:Bind ViewModel.Localization.Locale, Mode=OneWay}"/>
+        <Grid Grid.Row="6" Grid.Column="1" Margin="0,2,0,2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="25"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <RadioButton
+                Grid.Row="0"
+                Grid.Column="0"
+                Margin="0,2,2,2"
+                VerticalAlignment="Center"
+                IsChecked="{x:Bind ViewModel.IsDefaultLocale, Mode=TwoWay}"/>
+            <ComboBox
+                Grid.Row="0"
+                Grid.Column="1"
+                Margin="2,2,0,2"
+                ItemsSource="{x:Bind ViewModel.DefaultLocales}"
+                SelectedValue="{x:Bind ViewModel.SelectedDefaultLocale, Mode=TwoWay}"/>
+
+            <RadioButton
+                Grid.Row="1"
+                Grid.Column="0"
+                Margin="0,2,0,2"
+                VerticalAlignment="Center"
+                IsChecked="{x:Bind ViewModel.IsCustomLocale, Mode=TwoWay}"/>
+            <TextBox
+                Grid.Row="1"
+                Grid.Column="1"
+                Margin="2,2,0,2"
+                Style="{ThemeResource DefaultTextBoxStyle}"
+                Text="{x:Bind ViewModel.CustomLocale, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+        </Grid>
+        <controls:ValidationError
+            Grid.Row="7"
+            Grid.ColumnSpan="2"
+            Margin="0,2,0,2"
+            HorizontalAlignment="Right"
+            ViewModel="{x:Bind ViewModel.Validation.Fields['Locale']}"/>
+
+        <TextBlock
+            Grid.Row="8"
+            Grid.Column="0"
+            Margin="0,2,8,2"
+            Visibility="{x:Bind ViewModel.FileFieldVisibility}"
+            Style="{ThemeResource BodyStrongTextBlockStyle}"
+            VerticalAlignment="Center"
+            Text="{x:Bind ViewModel.Localization.File, Mode=OneWay}"/>
+        <controls:FsPicker
+            Grid.Row="8"
+            Grid.Column="1"
+            Margin="0,2,0,2"
+            Visibility="{x:Bind ViewModel.FileFieldVisibility}"
+            Mode="SaveSelectSingleFile"
+            Localization="{x:Bind ViewModel.Localization.FsPicker, Mode=OneWay}"
+            DialogService="{x:Bind ViewModel.DialogService}"
+            Options="{x:Bind ViewModel.FsPickerOptions}"
+            SelectedSingle="{x:Bind ViewModel.FilePath, Mode=TwoWay}"/>
+        <controls:ValidationError
+            Grid.Row="9"
+            Grid.ColumnSpan="2"
+            Margin="0,2,0,2"
+            Visibility="{x:Bind ViewModel.FileFieldVisibility}"
+            HorizontalAlignment="Right"
+            ViewModel="{x:Bind ViewModel.Validation.Fields['FilePath']}"/>
+    </Grid>
+</Page>

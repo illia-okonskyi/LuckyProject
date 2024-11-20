@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<local:LpAppStatusBarDetailsView
+    x:Class="LuckyProject.Lib.WinUi.Components.Controls.StatusBar.TasksDetailsView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:LuckyProject.Lib.WinUi.Components.Controls.StatusBar"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="using:CommunityToolkit.WinUI.UI.Controls"
+    xmlns:converters="using:CommunityToolkit.WinUI.Converters"
+    xmlns:vm="using:LuckyProject.Lib.WinUi.ViewModels"
+    xmlns:sbvm="using:LuckyProject.Lib.WinUi.ViewModels.StatusBar"
+    Header="{x:Bind ViewModel.Localization.PendingTasks, Mode=OneWay}"
+    mc:Ignorable="d">
+    <local:LpAppStatusBarDetailsView.Resources>
+        <converters:BoolToVisibilityConverter x:Key="BoolToVisibilityConverter"/>
+    </local:LpAppStatusBarDetailsView.Resources>
+    <Grid>
+        <controls:DataGrid
+            ItemsSource="{x:Bind ViewModel.PendingTasks}"
+            AutoGenerateColumns="False"
+            CanUserReorderColumns="False"
+            CanUserSortColumns="False"
+            CanUserResizeColumns="True"
+            SelectionMode="Extended"
+            IsReadOnly="True">
+            <controls:DataGrid.Columns>
+                <controls:DataGridTemplateColumn
+                    Header="{x:Bind ViewModel.Localization.Progress, Mode=OneWay}"
+                    MinWidth="100"
+                    MaxWidth="100">
+                    <controls:DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate x:DataType="vm:LpProgressViewModel">
+                            <Grid>
+                                <TextBlock
+                                    VerticalAlignment="Center"
+                                    HorizontalAlignment="Center"
+                                    TextLineBounds="Tight"
+                                    Text="{Binding CancellingString}"
+                                    Style="{ThemeResource BodyTextBlockStyle}"
+                                    Visibility="{Binding IsCancelling, Converter={StaticResource BoolToVisibilityConverter}}"/>
+
+                                <Grid Visibility="{Binding IsCancelling, Converter={StaticResource BoolToVisibilityConverter}, ConverterParameter=True}">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="Auto"/>
+                                    </Grid.ColumnDefinitions>
+                                    <ProgressBar
+                                        Grid.Column="0"                    
+                                        VerticalAlignment="Center"
+                                        HorizontalAlignment="Stretch"
+                                        Style="{ThemeResource DefaultProgressBarStyle}"
+                                        Value="{Binding Progress.Value, Mode=OneWay}"
+                                        IsIndeterminate="{Binding Progress.IsIndeterminate, Mode=OneWay}">
+                                    </ProgressBar>
+                                    <TextBlock
+                                        Grid.Column="1"
+                                        Margin="6,0"
+                                        VerticalAlignment="Center"
+                                        TextLineBounds="Tight"
+                                        Style="{ThemeResource BodyTextBlockStyle}"
+                                        Visibility="{Binding Progress.IsIndeterminate, Converter={StaticResource BoolToVisibilityConverter}, ConverterParameter=True}">
+                                        <Run Text="{Binding Progress.Value}"/>
+                                        <Run Text="%"/>
+                                    </TextBlock>
+                                </Grid>
+                            </Grid>
+                        </DataTemplate>
+                    </controls:DataGridTemplateColumn.CellTemplate>
+                </controls:DataGridTemplateColumn>
+
+                <controls:DataGridTemplateColumn
+                    Header="{x:Bind ViewModel.Localization.Category, Mode=OneWay}"
+                    MinWidth="100"
+                    Width="2*">
+                    <controls:DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate x:DataType="x:String">
+                            <TextBlock
+                                VerticalAlignment="Center"
+                                HorizontalAlignment="Stretch"
+                                TextWrapping="WrapWholeWords"
+                                Style="{ThemeResource BodyTextBlockStyle}"
+                                Text="{Binding Category}" />
+                        </DataTemplate>
+                    </controls:DataGridTemplateColumn.CellTemplate>
+                </controls:DataGridTemplateColumn>
+
+                <controls:DataGridTemplateColumn
+                    Header="{x:Bind ViewModel.Localization.Description, Mode=OneWay}"
+                    MinWidth="150"
+                    Width="3*">
+                    <controls:DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate x:DataType="x:String">
+                            <TextBlock
+                                VerticalAlignment="Center"
+                                HorizontalAlignment="Stretch"
+                                TextWrapping="WrapWholeWords"
+                                Style="{ThemeResource BodyTextBlockStyle}"
+                                Text="{Binding Description}" />
+                        </DataTemplate>
+                    </controls:DataGridTemplateColumn.CellTemplate>
+                </controls:DataGridTemplateColumn>
+
+                <controls:DataGridTemplateColumn
+                    Header="{x:Bind ViewModel.Localization.Status, Mode=OneWay}"
+                    MinWidth="300"
+                    Width="6*">
+                    <controls:DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate x:DataType="x:String">
+                            <TextBlock
+                                VerticalAlignment="Center"
+                                HorizontalAlignment="Stretch"
+                                TextWrapping="WrapWholeWords"
+                                Style="{ThemeResource BodyTextBlockStyle}"
+                                Text="{Binding Status, Mode=OneWay}" />
+                        </DataTemplate>
+                    </controls:DataGridTemplateColumn.CellTemplate>
+                </controls:DataGridTemplateColumn>
+
+                <controls:DataGridTemplateColumn MinWidth="100" MaxWidth="100">
+                    <controls:DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate x:DataType="x:String">
+                            <Button
+                                VerticalAlignment="Center"
+                                HorizontalAlignment="Stretch"
+                                Style="{ThemeResource DefaultButtonStyle}"
+                                Visibility="{Binding IsCancelButtonVisible, Converter={StaticResource BoolToVisibilityConverter}}"
+                                Content="{Binding CancelString}"
+                                Command="{Binding CancelCommand}"
+                                CommandParameter="{Binding}"/>
+                        </DataTemplate>
+                    </controls:DataGridTemplateColumn.CellTemplate>
+                </controls:DataGridTemplateColumn>                
+            </controls:DataGrid.Columns>
+        </controls:DataGrid>
+    </Grid>
+</local:LpAppStatusBarDetailsView>

@@ -1,0 +1,93 @@
+﻿<Page
+    x:Class="LuckyProject.LocalizationManager.Views.Pages.HomePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:wctControls="using:CommunityToolkit.WinUI.Controls"
+    xmlns:buttons="using:LuckyProject.Lib.WinUi.Components.Controls.Buttons"
+    xmlns:controls="using:LuckyProject.Lib.WinUi.Components.Controls"
+    xmlns:attached="using:LuckyProject.Lib.WinUi.AttachedProperties"
+    mc:Ignorable="d">
+    <attached:Pages.HeaderExtraContent>
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+            <TextBlock
+                Margin="0,0,8,0"
+                Padding="0,0,0,4"
+                VerticalAlignment="Center"
+                Style="{ThemeResource TitleTextBlockStyle}"
+                Text="{x:Bind ViewModel.CurrentProjectName, Mode=OneWay}"/>
+            <buttons:IconButton
+                Style="{ThemeResource DefaultButtonStyle}"
+                Glyph="&#xE8BC;"
+                IconSize="32"
+                Padding="0"
+                VerticalAlignment="Center"
+                Command="{x:Bind ViewModel.UpdateProjectCommand}"/>
+        </StackPanel>
+    </attached:Pages.HeaderExtraContent>
+
+    <ScrollViewer VerticalAlignment="Center">
+        <Grid>
+            <wctControls:WrapPanel
+                HorizontalAlignment="Center"
+                HorizontalSpacing="25"
+                VerticalSpacing="25">
+                <buttons:IconButton
+                    Orientation="Vertical"
+                    CaptionStyle="{ThemeResource TitleTextBlockStyle}"
+                    Caption="{x:Bind ViewModel.Localization.NewProject, Mode=OneWay}"
+                    Glyph="&#xE729;"
+                    IconSize="64"
+                    Width="350"
+                    Height="150"
+                    Command="{x:Bind ViewModel.NewProjectCommand}"/>
+                <buttons:IconButton
+                    Orientation="Vertical"
+                    CaptionStyle="{ThemeResource TitleTextBlockStyle}"
+                    Caption="{x:Bind ViewModel.Localization.OpenProject, Mode=OneWay}"
+                    Glyph="&#xE838;"
+                    IconSize="64"
+                    Width="350"
+                    Height="150"
+                    Command="{x:Bind ViewModel.OpenProjectCommand}"/>
+                <buttons:IconButton
+                    Orientation="Vertical"
+                    CaptionStyle="{ThemeResource TitleTextBlockStyle}"
+                    Caption="{x:Bind ViewModel.Localization.SaveProject, Mode=OneWay}"
+                    Glyph="&#xE74E;"
+                    IconSize="64"
+                    Width="350"
+                    Height="150"
+                    Command="{x:Bind ViewModel.SaveProjectCommand}"/>
+                <buttons:IconButton
+                    Orientation="Vertical"
+                    CaptionStyle="{ThemeResource TitleTextBlockStyle}"
+                    Caption="{x:Bind ViewModel.Localization.SaveProjectAs, Mode=OneWay}"
+                    Glyph="&#xE792;"
+                    IconSize="64"
+                    Width="350"
+                    Height="150"
+                    Command="{x:Bind ViewModel.SaveProjectAsCommand}"/>
+                <buttons:IconButton
+                    Orientation="Vertical"
+                    CaptionStyle="{ThemeResource TitleTextBlockStyle}"
+                    Caption="{x:Bind ViewModel.Localization.BuildProject, Mode=OneWay}"
+                    Glyph="&#xE97B;"
+                    IconSize="64"
+                    Width="350"
+                    Height="150"
+                    Command="{x:Bind ViewModel.BuildProjectCommand}"/>
+                <buttons:IconButton
+                    Orientation="Vertical"
+                    CaptionStyle="{ThemeResource TitleTextBlockStyle}"
+                    Caption="{x:Bind ViewModel.Localization.CloseProject, Mode=OneWay}"
+                    Glyph="&#xE711;"
+                    IconSize="64"
+                    Width="350"
+                    Height="150"
+                    Command="{x:Bind ViewModel.CloseProjectCommand}"/>
+            </wctControls:WrapPanel>
+        </Grid>
+    </ScrollViewer>
+</Page>

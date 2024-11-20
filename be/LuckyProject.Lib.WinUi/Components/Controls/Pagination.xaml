@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UserControl
+    x:Class="LuckyProject.Lib.WinUi.Components.Controls.Pagination"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:buttons="using:LuckyProject.Lib.WinUi.Components.Controls.Buttons"
+    xmlns:local="using:LuckyProject.Lib.WinUi.Components.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <StackPanel Orientation="Horizontal">
+        <TextBlock
+            x:Name="tbShowingItems"
+            VerticalAlignment="Center"
+            Style="{ThemeResource CaptionTextBlockStyle}"
+            Margin="4"/>
+        <buttons:IconButton
+            x:Name="btnFirstPage"
+            Style="{ThemeResource DefaultButtonStyle}"
+            Glyph="&#xE76B;&#xE76B;"
+            IconMargin="0"
+            IconSize="16"
+            Margin="2,0"
+            Padding="0"
+            VerticalAlignment="Stretch"
+            Click="btnFirstPage_Click"/>
+        <buttons:IconButton
+            x:Name="btnPrevPage"
+            Style="{ThemeResource DefaultButtonStyle}"
+            Glyph="&#xE76B;"
+            IconMargin="0"
+            IconSize="16"
+            Margin="2,0"
+            Padding="0"
+            VerticalAlignment="Stretch"
+            Click="btnPrevPage_Click"/>
+        <NumberBox
+            x:Name="nbCurrentPage"
+            Minimum="1"
+            Margin="2,0"
+            VerticalAlignment="Center"
+            Value="{x:Bind CurrentPage, Mode=TwoWay}"/>
+        <TextBlock
+            VerticalAlignment="Center"
+            Style="{ThemeResource BodyTextBlockStyle}"
+            Text=" / "
+            Margin="4,0"/>
+        <TextBlock
+            x:Name="tbTotalPagesCount"
+            VerticalAlignment="Center"
+            Style="{ThemeResource BodyStrongTextBlockStyle}"
+            Margin="2,0"/>
+        <buttons:IconButton
+            x:Name="btnNextPage"
+            Style="{ThemeResource DefaultButtonStyle}"
+            Glyph="&#xE970;"
+            IconMargin="0"
+            IconSize="16"
+            Margin="2,0"
+            Padding="0"
+            VerticalAlignment="Stretch"
+            Click="btnNextPage_Click"/>
+        <buttons:IconButton
+            x:Name="btnLastPage"
+            Style="{ThemeResource DefaultButtonStyle}"
+            Glyph="&#xE970;&#xE970;"
+            IconMargin="0"
+            IconSize="16"
+            Margin="2,0"
+            Padding="0"
+            VerticalAlignment="Stretch"
+            Click="btnLastPage_Click"/>
+    </StackPanel>
+</UserControl>

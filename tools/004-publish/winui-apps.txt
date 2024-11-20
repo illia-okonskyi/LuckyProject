@@ -1,0 +1,1 @@
+dotnet publish -c Release -r win-x64 -p:Platform=x64 --self-contained false -p:PublishSingleFile=false -p:PublishReadyToRun=false -p:PublishTrimmed=false -p:TrimMode=partial -p:PublishAot=false -p:ErrorOnDuplicatePublishOutputFiles=false --output <PUBLISH_DIR>

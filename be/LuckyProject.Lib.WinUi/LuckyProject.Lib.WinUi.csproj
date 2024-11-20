@@ -1,0 +1,141 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows10.0.19041.0</TargetFramework>
+    <TargetPlatformMinVersion>10.0.17763.0</TargetPlatformMinVersion>
+    <RootNamespace>LuckyProject.Lib.WinUi</RootNamespace>
+    <SupportedOSPlatformVersion>10.0.19041.0</SupportedOSPlatformVersion>
+    <RuntimeIdentifiers>win-x86;win-x64;win-arm64</RuntimeIdentifiers>
+    <UseWinUI>true</UseWinUI>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+    <EnableMsixTooling>true</EnableMsixTooling>
+    <NoWarn>$(NoWarn);NETSDK1206;;CA1416</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+      <PackageReference Include="CommunityToolkit.WinUI.Behaviors" Version="8.0.240109" />
+      <PackageReference Include="CommunityToolkit.WinUI.Controls.Primitives" Version="8.0.240109" />
+      <PackageReference Include="CommunityToolkit.WinUI.Controls.SettingsControls" Version="8.0.240109" />
+      <PackageReference Include="CommunityToolkit.WinUI.Controls.Sizers" Version="8.0.240109" />
+      <PackageReference Include="CommunityToolkit.WinUI.Converters" Version="8.0.240109" />
+      <PackageReference Include="CommunityToolkit.WinUI.Extensions" Version="8.0.240109" />
+      <PackageReference Include="CommunityToolkit.WinUI.Helpers" Version="8.0.240109" />
+      <PackageReference Include="CommunityToolkit.WinUI.UI.Controls.DataGrid" Version="7.1.2" />
+      <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.5.240627000" />
+      <PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.26100.1" />
+      <PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.2" />
+      <PackageReference Include="Microsoft.Xaml.Behaviors.WinUI.Managed" Version="2.0.9" />
+      <PackageReference Include="WinUIEx" Version="2.3.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LuckyProject.Lib\LuckyProject.Lib.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PRIResource Remove="Styles\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Components\Controls\Buttons\IconButton.xaml" />
+    <None Remove="Components\Controls\FsPicker.xaml" />
+    <None Remove="Components\Controls\LpAppStatusBar.xaml" />
+    <None Remove="Components\Controls\LpSettingsPageBaseView.xaml" />
+    <None Remove="Components\Controls\Pagination.xaml" />
+    <None Remove="Components\Controls\Separator.xaml" />
+    <None Remove="Components\Controls\StatusBar\MessagesDetailsView.xaml" />
+    <None Remove="Components\Controls\StatusBar\TasksDetailsView.xaml" />
+    <None Remove="Components\Controls\VaildationSummary.xaml" />
+    <None Remove="Components\Controls\ValidationError.xaml" />
+    <None Remove="Components\Dialogs\LpContentDialogContent.xaml" />
+    <None Remove="Components\Dialogs\LpMessageBoxContent.xaml" />
+    <None Remove="Components\Dialogs\LpProgressDialogContent.xaml" />
+    <None Remove="Components\Windows\LpSplashScreen.xaml" />
+    <None Remove="i18n\lp-lib-winui_en-US.lpi18n" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="i18n\lp-lib-winui_en-US.lpi18n">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="Components\Controls\Pagination.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="Components\Controls\VaildationSummary.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="Components\Controls\ValidationError.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="Components\Controls\FsPicker.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="Components\Dialogs\LpProgressDialogContent.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="Components\Dialogs\LpContentDialogContent.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="Components\Controls\StatusBar\MessagesDetailsView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="Components\Controls\StatusBar\TasksDetailsView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="Components\Controls\Separator.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="Components\Controls\Buttons\IconButton.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="Components\Controls\Pages\LpSettingsPageBaseView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="Components\Windows\LpSplashScreen.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="Components\Dialogs\LpMessageBoxContent.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+
+</Project>

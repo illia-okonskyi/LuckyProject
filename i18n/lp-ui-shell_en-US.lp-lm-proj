@@ -1,0 +1,488 @@
+{
+  "Document": {
+    "Name": "LP FE Shell en-US",
+    "Description": "Lucky Project Front-End Shell en-US Localization",
+    "Source": "lp-ui-shell",
+    "Locale": "en-US",
+    "Items": [
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "nav.help",
+        "Basis": null,
+        "Transaltion": "Help"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "nav.about",
+        "Basis": null,
+        "Transaltion": "About"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "nav.signIn",
+        "Basis": null,
+        "Transaltion": "Sign In"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "nav.profile",
+        "Basis": null,
+        "Transaltion": "Profile"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "nav.logout",
+        "Basis": null,
+        "Transaltion": "Logout"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "components.lpDataList.noItems",
+        "Basis": null,
+        "Transaltion": "No Items"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "nav.home",
+        "Basis": null,
+        "Transaltion": "Home"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "nav.apis",
+        "Basis": null,
+        "Transaltion": "APIs"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "nav.adminPanel",
+        "Basis": null,
+        "Transaltion": "Admin Panel"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "about.header",
+        "Basis": null,
+        "Transaltion": "About Lucky Project"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "about.crumb",
+        "Basis": null,
+        "Transaltion": "About"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "about.text",
+        "Basis": null,
+        "Transaltion": "This is Lucky Project"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "auth.error.header",
+        "Basis": null,
+        "Transaltion": "Authentication Error"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "auth.error.crumb",
+        "Basis": null,
+        "Transaltion": "Authentication Error"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "auth.signIn.header",
+        "Basis": null,
+        "Transaltion": "Finishing Sing In..."
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "help.header",
+        "Basis": null,
+        "Transaltion": "Help"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "help.crumb",
+        "Basis": null,
+        "Transaltion": "Help"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "help.text",
+        "Basis": null,
+        "Transaltion": "This page can help you with your Lucky Project experience"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "help.clearStorage",
+        "Basis": null,
+        "Transaltion": "Clear Storage"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "notFound.header",
+        "Basis": null,
+        "Transaltion": "Not Found"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "notFound.crumb",
+        "Basis": null,
+        "Transaltion": "Not Found"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "notFound.text",
+        "Basis": null,
+        "Transaltion": "Page Not Found"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "profile.header",
+        "Basis": null,
+        "Transaltion": "Profile"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "profile.crumb",
+        "Basis": null,
+        "Transaltion": "Profile"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "profile.form.userName",
+        "Basis": null,
+        "Transaltion": "User Name"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "profile.form.email",
+        "Basis": null,
+        "Transaltion": "Email"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "profile.form.phoneNumber",
+        "Basis": null,
+        "Transaltion": "Phone Number"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "profile.form.fullName",
+        "Basis": null,
+        "Transaltion": "Full Name"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "profile.form.tgUserName",
+        "Basis": null,
+        "Transaltion": "Telegram User Name"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "profile.form.preferredLocale",
+        "Basis": null,
+        "Transaltion": "Preferred Locale"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "profile.form.updateProfile",
+        "Basis": null,
+        "Transaltion": "Update Profile"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "profile.form.oldPassword",
+        "Basis": null,
+        "Transaltion": "Old Password"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "profile.form.newPassword",
+        "Basis": null,
+        "Transaltion": "New Password"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "profile.form.newPasswordRepeat",
+        "Basis": null,
+        "Transaltion": "Repeat New Password"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "profile.form.passwordRules.title",
+        "Basis": null,
+        "Transaltion": "Password rules:"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "profile.form.form.passwordRules.1",
+        "Basis": null,
+        "Transaltion": "- Must contain at least 1 small letter"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "profile.form.form.passwordRules.2",
+        "Basis": null,
+        "Transaltion": "- Must contain at least 1 digit"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "profile.form.form.passwordRules.3",
+        "Basis": null,
+        "Transaltion": "- Must contain at least 1 special symbol"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "profile.form.form.passwordRules.4",
+        "Basis": null,
+        "Transaltion": "- Must be at least 8 characters long"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "profile.form.updatePassword",
+        "Basis": null,
+        "Transaltion": "Update Password"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "profile.get.error",
+        "Basis": null,
+        "Transaltion": "Get User Profile Error"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "profile.getLocales.error",
+        "Basis": null,
+        "Transaltion": "Get Locales Error"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "profile.update.success",
+        "Basis": null,
+        "Transaltion": "User Profile Updated"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "profile.update.error",
+        "Basis": null,
+        "Transaltion": "Failed to Update User Profile"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "profile.updatePassword.success",
+        "Basis": null,
+        "Transaltion": "Password Updated"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "profile.updatePassword.error",
+        "Basis": null,
+        "Transaltion": "Failed to Update Password"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "apis.header",
+        "Basis": null,
+        "Transaltion": "Manage APIs"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "apis.crumb",
+        "Basis": null,
+        "Transaltion": "Manage APIs"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "apis.install.title",
+        "Basis": null,
+        "Transaltion": "API Installation"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "apis.install.callbackUrl",
+        "Basis": null,
+        "Transaltion": "Callback URL"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "apis.install",
+        "Basis": null,
+        "Transaltion": "Install"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "apis.uninstall",
+        "Basis": null,
+        "Transaltion": "Uninstall"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "apis.lpApis",
+        "Basis": null,
+        "Transaltion": "Lucky Project APIs"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "apis.name",
+        "Basis": null,
+        "Transaltion": "Name"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "apis.description",
+        "Basis": null,
+        "Transaltion": "Description"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "apis.allApis",
+        "Basis": null,
+        "Transaltion": "All Installed APIs"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "apis.get.error",
+        "Basis": null,
+        "Transaltion": "Failed to load APIs"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "apis.install.success",
+        "Basis": null,
+        "Transaltion": "API Installed"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "apis.install.error",
+        "Basis": null,
+        "Transaltion": "Failed to Install API"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "apis.uninstall.success",
+        "Basis": null,
+        "Transaltion": "API Uninstalled"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "apis.uninstall.error",
+        "Basis": null,
+        "Transaltion": "Failed to Uninstall API"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "home.header",
+        "Basis": null,
+        "Transaltion": "Home"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "home.crumb",
+        "Basis": null,
+        "Transaltion": "Home"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "components.lpFopDataList.pagination",
+        "Basis": null,
+        "Transaltion": "Showing {{firstPageItem}} - {{lastPageItem}} of {{totalItemsCount}} Items"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "nav.adminPanel.permissions",
+        "Basis": null,
+        "Transaltion": "Permissions"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "nav.adminPanel.roles",
+        "Basis": null,
+        "Transaltion": "Roles"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "nav.adminPanel.users",
+        "Basis": null,
+        "Transaltion": "Users"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "nav.adminPanel.clients",
+        "Basis": null,
+        "Transaltion": "Clients"
+      }
+    ]
+  },
+  "DocType": "lp.doc.app.lm.proj",
+  "DocVersion": 1
+}

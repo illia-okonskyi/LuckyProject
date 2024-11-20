@@ -1,0 +1,243 @@
+{
+  "Document": {
+    "Items": [
+      {
+        "Value": "Версия",
+        "Type": "String",
+        "Key": "lp.authserver.fe.ui.version"
+      },
+      {
+        "Value": "Это Сервер Авторизации и Аутентификации Lucky Project.",
+        "Type": "String",
+        "Key": "lp.authserver.fe.ui.pages.home.desc.title"
+      },
+      {
+        "Value": "It is used for authentication and authorization in Lucky Project",
+        "Type": "String",
+        "Key": "lp.authserver.fe.ui.pages.home.desc.text"
+      },
+      {
+        "Value": "Страница сгенерирована в {{renderedAt}} UTC",
+        "Type": "String",
+        "Key": "lp.authserver.fe.ui.renderedAt"
+      },
+      {
+        "Value": "Домашняя страница",
+        "Type": "String",
+        "Key": "lp.authserver.fe.ui.pages.home.title"
+      },
+      {
+        "Value": "Не найдено",
+        "Type": "String",
+        "Key": "lp.authserver.fe.ui.pages.notFound.title"
+      },
+      {
+        "Value": "Страница не найдена",
+        "Type": "String",
+        "Key": "lp.authserver.fe.ui.pages.notFound.desc"
+      },
+      {
+        "Value": "приложения",
+        "Type": "String",
+        "Key": "lp.authserver.fe.ui.authLayout.app"
+      },
+      {
+        "Value": "Запрос на вход...",
+        "Type": "String",
+        "Key": "lp.authserver.fe.ui.pages.challenge.statusMessage.signingIn"
+      },
+      {
+        "Value": "Ошибка: {{ctx}}",
+        "Type": "String",
+        "Key": "lp.authserver.fe.ui.pages.challenge.statusMessage.error"
+      },
+      {
+        "Value": "Имя Пользователя или Email адрес",
+        "Type": "String",
+        "Key": "lp.authserver.fe.ui.pages.challenge.form.userNameOrEmail"
+      },
+      {
+        "Value": "Пароль",
+        "Type": "String",
+        "Key": "lp.authserver.fe.ui.pages.challenge.form.password"
+      },
+      {
+        "Value": "Вход",
+        "Type": "String",
+        "Key": "lp.authserver.fe.ui.pages.challenge.form.signIn"
+      },
+      {
+        "Value": "Забыли пароль?",
+        "Type": "String",
+        "Key": "lp.authserver.fe.ui.pages.challenge.form.forgotPassword"
+      },
+      {
+        "Value": "Вход",
+        "Type": "String",
+        "Key": "lp.authserver.fe.ui.pages.challenge.title"
+      },
+      {
+        "Value": "Запрос на Вход",
+        "Type": "String",
+        "Key": "lp.authserver.fe.ui.pages.challenge.request"
+      },
+      {
+        "Value": "Да, Войти",
+        "Type": "String",
+        "Key": "lp.authserver.fe.ui.pages.consent.form.accept"
+      },
+      {
+        "Value": "Нет, Отклонить",
+        "Type": "String",
+        "Key": "lp.authserver.fe.ui.pages.consent.form.reject"
+      },
+      {
+        "Value": "Запрос на Соглашение",
+        "Type": "String",
+        "Key": "lp.authserver.fe.ui.pages.consent.title"
+      },
+      {
+        "Value": "Запрос на Вход",
+        "Type": "String",
+        "Key": "lp.authserver.fe.ui.pages.consent.request"
+      },
+      {
+        "Value": "Приветствуем,",
+        "Type": "String",
+        "Key": "lp.authserver.fe.ui.pages.consent.form.text1"
+      },
+      {
+        "Value": "Хотите ли вы разрешить данному приложению получить доступ к вашему профилю?",
+        "Type": "String",
+        "Key": "lp.authserver.fe.ui.pages.consent.form.text2"
+      },
+      {
+        "Value": "Приветствуем,",
+        "Type": "String",
+        "Key": "lp.authserver.fe.ui.pages.logout.form.text1"
+      },
+      {
+        "Value": "Хотите ли вы Выйти только из Приложения или также выйти из своего профиля?",
+        "Type": "String",
+        "Key": "lp.authserver.fe.ui.pages.logout.form.text2"
+      },
+      {
+        "Value": "Выход",
+        "Type": "String",
+        "Key": "lp.authserver.fe.ui.pages.logout.title"
+      },
+      {
+        "Value": "Запрос на Выход",
+        "Type": "String",
+        "Key": "lp.authserver.fe.ui.pages.logout.request"
+      },
+      {
+        "Value": "Код Авторизации",
+        "Type": "String",
+        "Key": "lp.authserver.fe.ui.pages.challenge.form.twoFactorCode"
+      },
+      {
+        "Value": "Выслать еще раз",
+        "Type": "String",
+        "Key": "lp.authserver.fe.ui.pages.challenge.form.resendTwoFactor"
+      },
+      {
+        "Value": "Обработка запроса...",
+        "Type": "String",
+        "Key": "lp.authserver.fe.ui.pages.forgotPassword.statusMessage.processing"
+      },
+      {
+        "Value": "Ошибка: {{ctx}}",
+        "Type": "String",
+        "Key": "lp.authserver.fe.ui.pages.forgotPassword.statusMessage.error"
+      },
+      {
+        "Value": "Ваш пароль был изменен.\r\n\r\n\r\nТеперь вы можете закрыть эту страницу и повторить попытку авторизации с новым паролем",
+        "Type": "String",
+        "Key": "lp.authserver.fe.ui.pages.forgotPassword.statusMessage.finish"
+      },
+      {
+        "Value": "Имя Пользователя или Email адрес",
+        "Type": "String",
+        "Key": "lp.authserver.fe.ui.pages.forgotPassword.form.userNameOrEmail"
+      },
+      {
+        "Value": "Сбросить Пароль",
+        "Type": "String",
+        "Key": "lp.authserver.fe.ui.pages.forgotPassword.form.resetPassword"
+      },
+      {
+        "Value": "Новый Пароль",
+        "Type": "String",
+        "Key": "lp.authserver.fe.ui.pages.forgotPassword.form.password"
+      },
+      {
+        "Value": "Повторите Новый Пароль",
+        "Type": "String",
+        "Key": "lp.authserver.fe.ui.pages.forgotPassword.form.passwordRepeat"
+      },
+      {
+        "Value": "Код Авторизации",
+        "Type": "String",
+        "Key": "lp.authserver.fe.ui.pages.forgotPassword.form.code"
+      },
+      {
+        "Value": "Выслать еще раз",
+        "Type": "String",
+        "Key": "lp.authserver.fe.ui.pages.forgotPassword.form.codeResend"
+      },
+      {
+        "Value": "Правила для Пароля:",
+        "Type": "String",
+        "Key": "lp.authserver.fe.ui.pages.forgotPassword.form.passwordRules.title"
+      },
+      {
+        "Value": "- Должен содержать как минимум 1 строчную букву",
+        "Type": "String",
+        "Key": "lp.authserver.fe.ui.pages.forgotPassword.form.passwordRules.1"
+      },
+      {
+        "Value": "- Должен содержать как минимум 1 цифру",
+        "Type": "String",
+        "Key": "lp.authserver.fe.ui.pages.forgotPassword.form.passwordRules.2"
+      },
+      {
+        "Value": "- Должен содержать как минимум 1 специальный символ",
+        "Type": "String",
+        "Key": "lp.authserver.fe.ui.pages.forgotPassword.form.passwordRules.3"
+      },
+      {
+        "Value": "- Должен быть не короче 8 символов",
+        "Type": "String",
+        "Key": "lp.authserver.fe.ui.pages.forgotPassword.form.passwordRules.4"
+      },
+      {
+        "Value": "Сброс Пароля",
+        "Type": "String",
+        "Key": "lp.authserver.fe.ui.pages.forgotPassword.title"
+      },
+      {
+        "Value": "Запрос на Сброс Пароля",
+        "Type": "String",
+        "Key": "lp.authserver.fe.ui.pages.forgotPassword.request"
+      },
+      {
+        "Value": "Отмена",
+        "Type": "String",
+        "Key": "lp.authserver.fe.ui.pages.challenge.form.cancel"
+      },
+      {
+        "Value": "Приложение & Профиль",
+        "Type": "String",
+        "Key": "lp.authserver.fe.ui.pages.logout.form.full"
+      },
+      {
+        "Value": "Только Приложение",
+        "Type": "String",
+        "Key": "lp.authserver.fe.ui.pages.logout.form.app"
+      }
+    ]
+  },
+  "DocType": "lp.doc.i18n",
+  "DocVersion": 1
+}

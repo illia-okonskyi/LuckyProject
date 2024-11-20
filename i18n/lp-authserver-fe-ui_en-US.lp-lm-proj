@@ -1,0 +1,341 @@
+{
+  "Document": {
+    "Name": "LP AuthServer FE.UI en-US",
+    "Description": "Lucky Project AuthServer Frontend.UI en-US Localization",
+    "Source": "lp-authserver-fe-ui",
+    "Locale": "en-US",
+    "Items": [
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.ui.version",
+        "Basis": null,
+        "Transaltion": "Version"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.ui.pages.home.desc.title",
+        "Basis": null,
+        "Transaltion": "This is Lucky Project Auth Server."
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.ui.pages.home.desc.text",
+        "Basis": null,
+        "Transaltion": "It is used for authentication and authorization in Lucky Project"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.ui.renderedAt",
+        "Basis": null,
+        "Transaltion": "Page rendered at {{renderedAt}} UTC"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.ui.pages.home.title",
+        "Basis": null,
+        "Transaltion": "Home"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.ui.pages.notFound.title",
+        "Basis": null,
+        "Transaltion": "Not Found"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.ui.pages.notFound.desc",
+        "Basis": null,
+        "Transaltion": "Page Not Found"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.ui.authLayout.app",
+        "Basis": null,
+        "Transaltion": "application"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.ui.pages.challenge.statusMessage.signingIn",
+        "Basis": null,
+        "Transaltion": "Signing in..."
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.ui.pages.challenge.statusMessage.error",
+        "Basis": null,
+        "Transaltion": "Error: {{ctx}}"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.ui.pages.challenge.form.userNameOrEmail",
+        "Basis": null,
+        "Transaltion": "User Name or Email Address"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.ui.pages.challenge.form.password",
+        "Basis": null,
+        "Transaltion": "Password"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.ui.pages.challenge.form.signIn",
+        "Basis": null,
+        "Transaltion": "Sign In"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.ui.pages.challenge.form.forgotPassword",
+        "Basis": null,
+        "Transaltion": "Forgot password?"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.ui.pages.challenge.title",
+        "Basis": null,
+        "Transaltion": "Sign In"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.ui.pages.challenge.request",
+        "Basis": null,
+        "Transaltion": "Sign In Request"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.ui.pages.consent.form.accept",
+        "Basis": null,
+        "Transaltion": "Yes, Sign In"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.ui.pages.consent.form.reject",
+        "Basis": null,
+        "Transaltion": "No, Reject"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.ui.pages.consent.title",
+        "Basis": null,
+        "Transaltion": "Consent"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.ui.pages.consent.request",
+        "Basis": null,
+        "Transaltion": "Sign In Request"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.ui.pages.consent.form.text1",
+        "Basis": null,
+        "Transaltion": "Hello,"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.ui.pages.consent.form.text2",
+        "Basis": null,
+        "Transaltion": "Do you want to allow this application to access your account?"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.ui.pages.logout.form.text1",
+        "Basis": null,
+        "Transaltion": "Hello,"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.ui.pages.logout.form.text2",
+        "Basis": null,
+        "Transaltion": "Do you want to Logout from Application only OR Logout from Your Account too?"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.ui.pages.logout.title",
+        "Basis": null,
+        "Transaltion": "Sign Out"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.ui.pages.logout.request",
+        "Basis": null,
+        "Transaltion": "Sign Out Request"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.ui.pages.challenge.form.twoFactorCode",
+        "Basis": null,
+        "Transaltion": "Two Factor Code"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.ui.pages.challenge.form.resendTwoFactor",
+        "Basis": null,
+        "Transaltion": "Resend Code"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.ui.pages.forgotPassword.statusMessage.processing",
+        "Basis": null,
+        "Transaltion": "Processing..."
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.ui.pages.forgotPassword.statusMessage.error",
+        "Basis": null,
+        "Transaltion": "Error: {{ctx}}"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.ui.pages.forgotPassword.statusMessage.finish",
+        "Basis": null,
+        "Transaltion": "Your password has been reset.\r\n\r\nNow you can close this page and try to Sign In once again with new password"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.ui.pages.forgotPassword.form.userNameOrEmail",
+        "Basis": null,
+        "Transaltion": "User Name or Email Address"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.ui.pages.forgotPassword.form.resetPassword",
+        "Basis": null,
+        "Transaltion": "Reset Password"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.ui.pages.forgotPassword.form.password",
+        "Basis": null,
+        "Transaltion": "New Password"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.ui.pages.forgotPassword.form.passwordRepeat",
+        "Basis": null,
+        "Transaltion": "New Password Repeat"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.ui.pages.forgotPassword.form.code",
+        "Basis": null,
+        "Transaltion": "Verification Code"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.ui.pages.forgotPassword.form.codeResend",
+        "Basis": null,
+        "Transaltion": "Resend Code"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.ui.pages.forgotPassword.form.passwordRules.title",
+        "Basis": null,
+        "Transaltion": "Password rules:"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.ui.pages.forgotPassword.form.passwordRules.1",
+        "Basis": null,
+        "Transaltion": "- Must contain at least 1 small letter"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.ui.pages.forgotPassword.form.passwordRules.2",
+        "Basis": null,
+        "Transaltion": "- Must contain at least 1 digit"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.ui.pages.forgotPassword.form.passwordRules.3",
+        "Basis": null,
+        "Transaltion": "- Must contain at least 1 special symbol"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.ui.pages.forgotPassword.form.passwordRules.4",
+        "Basis": null,
+        "Transaltion": "- Must be at least 8 characters long"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.ui.pages.forgotPassword.title",
+        "Basis": null,
+        "Transaltion": "Reset Password"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.ui.pages.forgotPassword.request",
+        "Basis": null,
+        "Transaltion": "Reset Password Request"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.ui.pages.challenge.form.cancel",
+        "Basis": null,
+        "Transaltion": "Cancel"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.ui.pages.logout.form.full",
+        "Basis": null,
+        "Transaltion": "Application & Profile"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.ui.pages.logout.form.app",
+        "Basis": null,
+        "Transaltion": "Application only"
+      }
+    ]
+  },
+  "DocType": "lp.doc.app.lm.proj",
+  "DocVersion": 1
+}

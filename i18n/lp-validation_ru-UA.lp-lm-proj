@@ -1,0 +1,278 @@
+{
+  "Document": {
+    "Name": "LP Validation ru-UA",
+    "Description": "Lucky Project Validatin ru-UA Localization",
+    "Source": "lp-validation",
+    "Locale": "ru-UA",
+    "Items": [
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "cancelled",
+        "Basis": "Cancelled",
+        "Transaltion": "Отменено"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "errors.not-null",
+        "Basis": "Must be not null",
+        "Transaltion": "Не должно быть null"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "errors.null",
+        "Basis": "Must be null",
+        "Transaltion": "Должно быть null"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "errors.not-empty",
+        "Basis": "Must be not empty",
+        "Transaltion": "Должно быть не пустым"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "errors.empty",
+        "Basis": "Must be empty",
+        "Transaltion": "Должно быть пустым"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "errors.not-equal",
+        "Basis": "Must be not equal to {{target}}",
+        "Transaltion": "Не должно быть равно {{target}}"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "errors.equal",
+        "Basis": "Must be equal to {{target}}",
+        "Transaltion": "Должно быть равно {{target}}"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "errors.length",
+        "Basis": "Length must be from {{min}} to {{max}}",
+        "Transaltion": "Длина должна быть не меньше {{min}} и не больше {{max}}"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "errors.min-length",
+        "Basis": "Length must be at least {{target}}",
+        "Transaltion": "Длина должна быть не меньше {{target}}"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "errors.max-length",
+        "Basis": "Length must be at most {{target}}",
+        "Transaltion": "Длина должна быть не больше {{target}}"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "errors.less-than",
+        "Basis": "Must be less than {{target}}",
+        "Transaltion": "Должно быть меньше {{target}}"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "errors.less-than-or-equal",
+        "Basis": "Must be less than or equal to {{target}}",
+        "Transaltion": "Должно быть меньше или равно {{target}}"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "errors.greater-than",
+        "Basis": "Must be greater than {{target}}",
+        "Transaltion": "Должно быть больше {{target}}"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "errors.greater-than-or-equal",
+        "Basis": "Must be greater than or equal to {{target}}",
+        "Transaltion": "Должно быть больше или равно {{target}}"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "errors.regex",
+        "Basis": "Must math regular expression: {{target}}",
+        "Transaltion": "Должно соответствовать Регулярному Выражению: {{target}}"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "errors.email",
+        "Basis": "Must be valid email address",
+        "Transaltion": "Должно быть адресом электронной почты"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "errors.login",
+        "Basis": "Must be valid user name",
+        "Transaltion": "Должно соответствовать правилам имени пользователя"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "errors.pwd",
+        "Basis": "Must be valid password",
+        "Transaltion": "Должно соответствовать правилам Пароля"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "errors.creds",
+        "Basis": "Invalid credentials",
+        "Transaltion": "Неправильные реквизиты"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "errors.url",
+        "Basis": "Must be valid {{target}} URL",
+        "Transaltion": "Должно быть URL в форме {{target}}"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "errors.full-name",
+        "Basis": "Must be valid user Full Name",
+        "Transaltion": "Должно соответствовать правилам Полного Имени Пользователя "
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "errors.permission",
+        "Basis": "Must be valid permission",
+        "Transaltion": "Должно соответствовать правилам Разрешения "
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "errors.phone",
+        "Basis": "Must be valid Phone Number in International Format",
+        "Transaltion": "Должно соответствовать Телефонном Номеру в Международном Формате "
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "errors.credit-card",
+        "Basis": "Must be valid Credit Card Number",
+        "Transaltion": "Должно быть номером Кредитной Карты"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "errors.enum",
+        "Basis": "Must be on of enumeration options",
+        "Transaltion": "Должно быть одной из опций перечисления"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "errors.exclusive-between",
+        "Basis": "Must be exclusive between {{min}} and {{max}}",
+        "Transaltion": "Должно быть исключительно больше {{min}} и меньше {{max}}"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "errors.inclusive-between",
+        "Basis": "Must be inclusive between {{min}} and {{max}}",
+        "Transaltion": "Должно быть включительно больше {{min}} и меньше {{max}}"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "errors.precision-scale",
+        "Basis": "Must not be more than {{precision}} digits in total, with allowance for {{scale}} decimals",
+        "Transaltion": "Не должно иметь больше {{precision}} цифр в общем, и {{scale}} цифр после десятичной запятой"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "errors.unique",
+        "Basis": "Must be unique (none of existing)",
+        "Transaltion": "Должно быть уникальным (ни одним из существующих)"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "errors.not-unique",
+        "Basis": "Must be not unique (one of existing)",
+        "Transaltion": "Не должно быть уникальным (одним из существующих)"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "errors.not-found",
+        "Basis": "Not Found",
+        "Transaltion": "Не Найдено"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "errors.access-denied",
+        "Basis": "Access Denied",
+        "Transaltion": "Доступ Запрещен"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "errors.prefixed",
+        "Basis": "Must start with \"{{target}}\"",
+        "Transaltion": "Должно начинаться с \"{{target}}\""
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "errors.not-prefixed",
+        "Basis": "Must not start with \"{{target}}\"",
+        "Transaltion": "Не должно начинаться с \"{{target}}\""
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "errors.suffixed",
+        "Basis": "Must end with \"{{target}}\"",
+        "Transaltion": "Должно заканчиваться на \"{{target}}\""
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "errors.not-suffixed",
+        "Basis": "Must not end with \"{{target}}\"",
+        "Transaltion": "Не должно оканчиваться на \"{{target}}\""
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "errors.unknown",
+        "Basis": "Unknown error",
+        "Transaltion": "Неизвестная ошибка"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "errors.invalid",
+        "Basis": null,
+        "Transaltion": "Неверно"
+      }
+    ]
+  },
+  "DocType": "lp.doc.app.lm.proj",
+  "DocVersion": 1
+}

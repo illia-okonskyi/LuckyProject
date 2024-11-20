@@ -1,0 +1,852 @@
+{
+  "Document": {
+    "Name": "LP Admin-Panel API FE.UI ru-UA",
+    "Description": "Lucky Project Admin-Panel API Frontend.UI ru-UA Localization",
+    "Source": "lp-api-admin-panel-fe-ui",
+    "Locale": "ru-UA",
+    "Items": [
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "common.name",
+        "Basis": null,
+        "Transaltion": "Имя"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "common.email",
+        "Basis": null,
+        "Transaltion": "Email"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "common.phoneNumber",
+        "Basis": null,
+        "Transaltion": "Номер Телефона"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "common.secret",
+        "Basis": null,
+        "Transaltion": "Секрет"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "common.preferredLocale",
+        "Basis": null,
+        "Transaltion": "Предпочитаемая Локаль"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "common.origins",
+        "Basis": null,
+        "Transaltion": "Источники"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "common.origin",
+        "Basis": null,
+        "Transaltion": "Источник"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "common.create",
+        "Basis": null,
+        "Transaltion": "Создать"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "common.displayName",
+        "Basis": null,
+        "Transaltion": "Отображаемое Имя"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "common.baseUrl",
+        "Basis": null,
+        "Transaltion": "Базовый URL"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "common.redirect",
+        "Basis": null,
+        "Transaltion": "Перенаправление"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "common.postLogoutRedirect",
+        "Basis": null,
+        "Transaltion": "Post Logout Перенаправление"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "common.type",
+        "Basis": null,
+        "Transaltion": "Тип"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "common.clientId",
+        "Basis": null,
+        "Transaltion": "ClientID"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "common.delete",
+        "Basis": null,
+        "Transaltion": "Удалить"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "common.web",
+        "Basis": null,
+        "Transaltion": "Web"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "common.machine",
+        "Basis": null,
+        "Transaltion": "Машинный"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "common.id",
+        "Basis": null,
+        "Transaltion": "ID"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "common.any",
+        "Basis": null,
+        "Transaltion": "Любой"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "common.userName",
+        "Basis": null,
+        "Transaltion": "Имя Пользователя"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "common.fullName",
+        "Basis": null,
+        "Transaltion": "Полное Имя"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "common.tgUserName",
+        "Basis": null,
+        "Transaltion": "Имя Пользователя Telegram"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "common.root",
+        "Basis": null,
+        "Transaltion": "Корень"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "common.binary",
+        "Basis": null,
+        "Transaltion": "Бинарный"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "common.level",
+        "Basis": null,
+        "Transaltion": "Уровень"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "common.passkey",
+        "Basis": null,
+        "Transaltion": "Ключ"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "common.description",
+        "Basis": null,
+        "Transaltion": "Описание"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "common.allow",
+        "Basis": null,
+        "Transaltion": "Разрешить"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "common.update",
+        "Basis": null,
+        "Transaltion": "Обновить"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "common.accessDenied",
+        "Basis": null,
+        "Transaltion": "Доступ Запрещен"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "common.users",
+        "Basis": null,
+        "Transaltion": "Пользователи"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "common.permissions",
+        "Basis": null,
+        "Transaltion": "Разрешения"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "common.roles",
+        "Basis": null,
+        "Transaltion": "Роли"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "common.clients",
+        "Basis": null,
+        "Transaltion": "Клиенты"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "common.password",
+        "Basis": null,
+        "Transaltion": "Пароль"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "common.newPassword",
+        "Basis": null,
+        "Transaltion": "Новый Пароль"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "common.newPasswordRepeat",
+        "Basis": null,
+        "Transaltion": "Повторите Новый Пароль"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "common.fromRole",
+        "Basis": null,
+        "Transaltion": "От Роли"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "common.value",
+        "Basis": null,
+        "Transaltion": "Значение"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "common.disallow",
+        "Basis": null,
+        "Transaltion": "Запретить"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "headersCrumbs.adminPanel",
+        "Basis": null,
+        "Transaltion": "Админ Панель"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "headersCrumbs.clients",
+        "Basis": null,
+        "Transaltion": "Управление Клиентами"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "headersCrumbs.createMachineClient",
+        "Basis": null,
+        "Transaltion": "Создать Машинный Клиент"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "headersCrumbs.createWebClient",
+        "Basis": null,
+        "Transaltion": "Создать Web Клиент"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "headersCrumbs.manageClient",
+        "Basis": null,
+        "Transaltion": "Управление Клиентом {{displayName}}"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "headersCrumbs.permissions",
+        "Basis": null,
+        "Transaltion": "Управление Разрешениями"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "headersCrumbs.managePermission",
+        "Basis": null,
+        "Transaltion": "Управление Разрешением {{displayName}}"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "headersCrumbs.roles",
+        "Basis": null,
+        "Transaltion": "Управление Ролями"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "headersCrumbs.createRole",
+        "Basis": null,
+        "Transaltion": "Создать Роль"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "headersCrumbs.manageRole",
+        "Basis": null,
+        "Transaltion": "Управление Ролью {{displayName}}"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "headersCrumbs.manageRolePermissions",
+        "Basis": null,
+        "Transaltion": "Управление Разрешениями Роли {{displayName}}"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "headersCrumbs.manageRoleUsers",
+        "Basis": null,
+        "Transaltion": "Управление Пользователями Роли {{displayName}}"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "headersCrumbs.users",
+        "Basis": null,
+        "Transaltion": "Управление Пользователями"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "headersCrumbs.createUser",
+        "Basis": null,
+        "Transaltion": "Создать Пользователя"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "headersCrumbs.manageUser",
+        "Basis": null,
+        "Transaltion": "Управление Пользователем {{displayName}}"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "headersCrumbs.observeUserPermissions",
+        "Basis": null,
+        "Transaltion": "Обзор Разрешений Пользователя {{displayName}}"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "headersCrumbs.manageUserRoles",
+        "Basis": null,
+        "Transaltion": "Управление Ролями Пользователя {{displayName}}"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "other.userDetails",
+        "Basis": null,
+        "Transaltion": "Детали Пользователя"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "other.userPermissions",
+        "Basis": null,
+        "Transaltion": "Разрешения Пользователя"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "other.resetSecret",
+        "Basis": null,
+        "Transaltion": "Обновить Секрет"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "other.assignedPermissions",
+        "Basis": null,
+        "Transaltion": "Назначенные Разрешения"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "other.assignedUsers",
+        "Basis": null,
+        "Transaltion": "Назначенные Пользователи"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "other.resetPassword",
+        "Basis": null,
+        "Transaltion": "Сбросить Пароль"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "other.assignedRoles",
+        "Basis": null,
+        "Transaltion": "Назначенные Роли"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "common.passwordRules.title",
+        "Basis": null,
+        "Transaltion": "Правила для Пароля:"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "common.passwordRules.1",
+        "Basis": null,
+        "Transaltion": "- Должен содержать как минимум 1 строчную букву"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "common.passwordRules.2",
+        "Basis": null,
+        "Transaltion": "- Должен содержать как минимум 1 цифру"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "common.passwordRules.3",
+        "Basis": null,
+        "Transaltion": "- Должен содержать как минимум 1 специальный символ"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "common.passwordRules.4",
+        "Basis": null,
+        "Transaltion": "- Должен быть не короче 8 символов"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "messages.clients.getList.failed",
+        "Basis": null,
+        "Transaltion": "Не удалось получить список Клиентов"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "messages.clients.get.failed",
+        "Basis": null,
+        "Transaltion": "Не удалось получить Клиента"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "messages.clients.getSecret.failed",
+        "Basis": null,
+        "Transaltion": "Не удалось получить Секрет Машинного Клиента"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "messages.clients.createWeb.success",
+        "Basis": null,
+        "Transaltion": "Web Клиент Создан"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "messages.clients.createWeb.failed",
+        "Basis": null,
+        "Transaltion": "Не удалось Создать Web Клиента"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "messages.clients.createMachine.success",
+        "Basis": null,
+        "Transaltion": "Машинный Клиент Создан"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "messages.clients.createMachine.failed",
+        "Basis": null,
+        "Transaltion": "Не удалось создать Машинный Клиент"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "messages.clients.resetMachineSecret.success",
+        "Basis": null,
+        "Transaltion": "Секрет Машинного Клиента Обновлен"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "messages.clients.resetMachineSecret.failed",
+        "Basis": null,
+        "Transaltion": "Не удалось Обновить Секрет Машинного Клиента"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "messages.clients.delete.success",
+        "Basis": null,
+        "Transaltion": "Клиент Удален"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "messages.clients.delete.failed",
+        "Basis": null,
+        "Transaltion": "Не удалось Удалить Клиента"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "messages.permissions.getList.failed",
+        "Basis": null,
+        "Transaltion": "Не удалось получить Список Разрешений"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "messages.permissions.get.failed",
+        "Basis": null,
+        "Transaltion": "Не удалось получить Разрешение"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "messages.permissions.update.success",
+        "Basis": null,
+        "Transaltion": "Разрешение Обновлено"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "messages.permissions.update.failed",
+        "Basis": null,
+        "Transaltion": "Не удалось Обновить Разрешение"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "messages.permissions.delete.success",
+        "Basis": null,
+        "Transaltion": "Разрешение Удалено"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "messages.permissions.delete.failed",
+        "Basis": null,
+        "Transaltion": "Не удалось удалить Разрешенеи"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "messages.users.getList.failed",
+        "Basis": null,
+        "Transaltion": "Не удалось Получить Список Пользователей"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "messages.users.get.failed",
+        "Basis": null,
+        "Transaltion": "Не удалось получить Пользователя"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "messages.roles.getList.failed",
+        "Basis": null,
+        "Transaltion": "Не удалось получить Список Ролей"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "messages.roles.get.failed",
+        "Basis": null,
+        "Transaltion": "Не удалось Получить Роль"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "messages.roles.create.success",
+        "Basis": null,
+        "Transaltion": "Роль Создана"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "messages.roles.create.failed",
+        "Basis": null,
+        "Transaltion": "Не удалось Создать Роль"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "messages.roles.update.success",
+        "Basis": null,
+        "Transaltion": "Роль Обновлена"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "messages.roles.update.failed",
+        "Basis": null,
+        "Transaltion": "Не удалось Обновить Роль"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "messages.roles.delete.success",
+        "Basis": null,
+        "Transaltion": "Роль Удалена"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "messages.roles.delete.failed",
+        "Basis": null,
+        "Transaltion": "Не удалось Удалить Роль"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "messages.roles.getPermissions.failed",
+        "Basis": null,
+        "Transaltion": "Не удалось получить Список Разрешений Роли"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "messages.roles.assignPermission.success",
+        "Basis": null,
+        "Transaltion": "Разрешение Назначено на Роль"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "messages.roles.assignPermission.failed",
+        "Basis": null,
+        "Transaltion": "Не удалось назначить Разрешение Роли"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "messages.roles.deletePermission.success",
+        "Basis": null,
+        "Transaltion": "Разрешение удалено из Роли"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "messages.roles.deletePermission.failed",
+        "Basis": null,
+        "Transaltion": "Не удалось удалить Разрешение из Роли"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "messages.roles.getUsers.failed",
+        "Basis": null,
+        "Transaltion": "Не удалось получить Список Пользователей Роли"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "messages.roles.assignUser.success",
+        "Basis": null,
+        "Transaltion": "Пользователь Назначен на Роль"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "messages.roles.assignUser.failed",
+        "Basis": null,
+        "Transaltion": "Не удалось Назначить Пользователя На Роль"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "messages.roles.deleteUser.success",
+        "Basis": null,
+        "Transaltion": "Пользователь Удален из Роли"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "messages.roles.deleteUser.failed",
+        "Basis": null,
+        "Transaltion": "Не удалось Удалить Пользователя из Роли"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "messages.users.create.success",
+        "Basis": null,
+        "Transaltion": "Пользователь Создан"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "messages.users.create.failed",
+        "Basis": null,
+        "Transaltion": "Не удалось Создать Пользователя"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "messages.users.update.success",
+        "Basis": null,
+        "Transaltion": "Пользователь Обновлен"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "messages.users.update.failed",
+        "Basis": null,
+        "Transaltion": "Не удалось Обновить Пользователя"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "messages.users.resetPassword.success",
+        "Basis": null,
+        "Transaltion": "Пароль Пользователя Обновлен"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "messages.users.resetPassword.failed",
+        "Basis": null,
+        "Transaltion": "Не удалось Обновить Пароль Пользователя"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "messages.users.delete.success",
+        "Basis": null,
+        "Transaltion": "Пользователь Удален"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "messages.users.delete.failed",
+        "Basis": null,
+        "Transaltion": "Не удалось Удалить Пользователя"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "messages.users.getRoles.failed",
+        "Basis": null,
+        "Transaltion": "Не удалось Получить Список Ролей Пользователя"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "messages.users.assignRole.success",
+        "Basis": null,
+        "Transaltion": "Роль Назначена Пользователю"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "messages.users.assignRole.failed",
+        "Basis": null,
+        "Transaltion": "Не удалось Назначить Роль Пользователю"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "messages.users.deleteRole.success",
+        "Basis": null,
+        "Transaltion": "Роль Удалена из Пользователя"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "messages.users.deleteRole.failed",
+        "Basis": null,
+        "Transaltion": "Не удалось Удалить Роль из Пользователя"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "messages.users.getPermissions.failed",
+        "Basis": null,
+        "Transaltion": "Не удалось получить список Разрешений Пользователя"
+      }
+    ]
+  },
+  "DocType": "lp.doc.app.lm.proj",
+  "DocVersion": 1
+}

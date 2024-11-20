@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>LuckyProject LpRecipientFormViewModel View Model Snippet</Title>
+      <Shortcut>lprfvm</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>vmName</ID>
+          <Default>VmName</Default>
+          <ToolTip>Enter actual of View Model</ToolTip>
+        </Literal>
+      </Declarations>
+      <Code Language="CSharp">
+        <![CDATA[#region Localization
+        public partial class $vmName$LocalizationViewModel
+            : AbstractLpLocalizationViewModel
+        {
+            #region ctor & props
+            public $vmName$LocalizationViewModel(
+                ILpDesktopAppLocalizationService service)
+            : base(service)
+            {
+                SetProps(GetRegistrations());
+            }
+
+            private List<PropRegistration> GetRegistrations()
+            {
+                var selfType = GetType();
+                return new List<PropRegistration>
+                {
+                    new()
+                    {
+                        Type = LpLocalizationResourceType.String,
+                        Key = "key",
+                        DefaultValue = "Default",
+                        Property = selfType.GetProperty(nameof(Prop))
+                    },
+               };
+            }
+            #endregion
+
+            #region Observables
+            [ObservableProperty]
+            private string prop;
+            #endregion
+        }
+        #endregion
+
+        #region ViewModel
+        public partial class $vmName$ViewModel
+            : LpRecipientFormViewModel<$vmName$LocalizationViewModel>
+        {
+            #region Internals & ctor
+            public $vmName$ViewModel()
+            {
+                RegisterValidationFields();
+            }
+            #endregion
+
+            #region Public & observables
+            #endregion
+
+            #region Internals
+            private void RegisterValidationFields()
+            {
+                var fields = new List<LpValidationViewModel.FieldRegistration>
+                {
+                    new() { ValidationPath = "vpath", DisplayName = "dname" },
+                };
+                Validation.RegisterFields(fields);
+            }
+            #endregion
+        }
+        #endregion]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

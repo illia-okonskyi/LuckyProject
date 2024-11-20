@@ -1,0 +1,40 @@
+{
+  "Document": {
+    "Name": "LP AuthServer BE en-US",
+    "Description": "Lucky Project AuthServer Backend en-US Localization",
+    "Source": "lp-authserver-be",
+    "Locale": "en-US",
+    "Items": [
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.be.services.userLogin.tgBotStopping",
+        "Basis": null,
+        "Transaltion": "Lucky Project Authenticator Bot is stopped.\r\n\r\n\r\nDo not forget to send /start command after bot is restarted"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.be.services.userLogin.tgBotSubscribed",
+        "Basis": null,
+        "Transaltion": "Hello, <b>{0}</b>!\r\n\r\nNow you are subscribed to the Lucky Project Authenticator Bot"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.be.services.userLogin.twoFactorCode",
+        "Basis": null,
+        "Transaltion": "Hello, <b>{0}</b>!\r\n\r\nSomeone tries to Sign In to the Lucky Project with your credentials. If it is not you - ignore this message.\r\n\r\nAuthentication code is <b>{1}</b> - enter this code in the Sign In form"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.be.services.userLogin.resetPasswordCode",
+        "Basis": null,
+        "Transaltion": "Hello, <b>{0}</b>!\r\n\r\nSomeone tries to Reset Password of your Lucky Project User. If it is not you - ignore this message.\r\n\r\nVerification code is <b>{1}</b> - enter this code in the Reset Password form"
+      }
+    ]
+  },
+  "DocType": "lp.doc.app.lm.proj",
+  "DocVersion": 1
+}

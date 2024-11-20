@@ -1,0 +1,117 @@
+{
+  "Document": {
+    "Name": "LP AuthServer FE.Errors ru-UA",
+    "Description": "Lucky Project AuthServer Frontend.Errors ru-UA Localization",
+    "Source": "lp-authserver-fe-errors",
+    "Locale": "ru-UA",
+    "Items": [
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.errors.internal",
+        "Basis": "Internal Server Error",
+        "Transaltion": "Внутренняя Ошибка Сервера"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.errors.invalidRequest",
+        "Basis": "Invalid Request",
+        "Transaltion": "Неправильный запрос"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.errors.logoutReject",
+        "Basis": "User Rejected Sign Out Request",
+        "Transaltion": "Пользователь Отклонил Запрос на Выход"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.errors.invalidClient",
+        "Basis": "Invalid client",
+        "Transaltion": "Неправильный клиент"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.errors.accessDenied",
+        "Basis": "Access denied",
+        "Transaltion": "Доступ запрещен"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.errors.consentRequired",
+        "Basis": "Interactive user consent is required",
+        "Transaltion": "Требуется Интерактивное Соглашение Пользователя"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.errors.tokenExpired",
+        "Basis": "The token is no longer valid",
+        "Transaltion": "Токен больше не действителен"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.errors.signInReject",
+        "Basis": "User Rejected Sign In Request",
+        "Transaltion": "Пользователь Отклонил Запрос на Вход"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.errors.invalidCreds",
+        "Basis": "Invalid credentials",
+        "Transaltion": "Неправильные реквизиты для входа"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.errors.userLockedOut",
+        "Basis": "User Locked Out",
+        "Transaltion": "Пользователь Заблокирован"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.errors.authExpired",
+        "Basis": "User authorization expired",
+        "Transaltion": "Пользовательская авторизация истекла"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.errors.cancelled",
+        "Basis": "Request cancelled",
+        "Transaltion": "Запрос отменен"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.errors.invalidGrant",
+        "Basis": "Invalid Grant",
+        "Transaltion": "Неправильный тип разрешения"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.errors.twoFactorFailed",
+        "Basis": null,
+        "Transaltion": "Ошибка Запроса Двухфакторной Авторизации "
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.errors.invalidPassword",
+        "Basis": null,
+        "Transaltion": "Неправильный Пароль"
+      }
+    ]
+  },
+  "DocType": "lp.doc.app.lm.proj",
+  "DocVersion": 1
+}

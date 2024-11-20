@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Page
+    x:Class="LuckyProject.LocalizationManager.Views.Dialogs.CreateProjectItemDialog"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:LuckyProject.LocalizationManager.Views.Dialogs"
+    xmlns:cvm="using:LuckyProject.LocalizationManager.ViewModels.Common"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="using:LuckyProject.Lib.WinUi.Components.Controls"    
+    mc:Ignorable="d">
+
+    <Grid MinWidth="400">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock
+            Grid.Row="0"
+            Grid.Column="0"
+            Margin="0,2,8,2"
+            Style="{ThemeResource BodyStrongTextBlockStyle}"
+            VerticalAlignment="Center"
+            Text="{x:Bind ViewModel.Localization.Type, Mode=OneWay}"/>
+        <ComboBox
+            Grid.Row="0"
+            Grid.Column="1"
+            Margin="0,2,0,2"
+            MinWidth="100"
+            ItemsSource="{x:Bind ViewModel.ItemType.Values}"
+            SelectedValue="{x:Bind ViewModel.ItemType.SelectedValue, Mode=TwoWay}">
+            <ComboBox.ItemTemplate>
+                <DataTemplate x:DataType="cvm:LmResourceTypeEnumValueViewModel">
+                    <TextBlock Text="{x:Bind DisplayName, Mode=OneWay}"/>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+
+        <TextBlock
+           Grid.Row="1"
+           Grid.Column="0"
+           Margin="0,2,8,2"
+           Style="{ThemeResource BodyStrongTextBlockStyle}"
+           VerticalAlignment="Center"
+           Text="{x:Bind ViewModel.Localization.Key, Mode=OneWay}"/>
+        <TextBox
+           Grid.Row="1"
+           Grid.Column="1"
+           Margin="0,2,0,2"
+           Style="{ThemeResource DefaultTextBoxStyle}"
+           Text="{x:Bind ViewModel.Key, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+        <controls:ValidationError
+           Grid.Row="2"
+           Grid.ColumnSpan="2"
+           Margin="0,2,0,2"
+           HorizontalAlignment="Right"
+           ViewModel="{x:Bind ViewModel.Validation.Fields['Key']}"/>
+    </Grid>
+</Page>

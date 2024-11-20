@@ -1,0 +1,435 @@
+{
+  "Document": {
+    "Items": [
+      {
+        "Value": "Version:",
+        "Type": "String",
+        "Key": "lp.lib.winui.common.strings.version"
+      },
+      {
+        "Value": "Loading...",
+        "Type": "String",
+        "Key": "lp.lib.winui.common.strings.loading0"
+      },
+      {
+        "Value": "Loading {0}...",
+        "Type": "String",
+        "Key": "lp.lib.winui.common.strings.loading1"
+      },
+      {
+        "Value": "Loading {0} {1}...",
+        "Type": "String",
+        "Key": "lp.lib.winui.common.strings.loading2"
+      },
+      {
+        "Value": "Settings",
+        "Type": "String",
+        "Key": "lp.lib.winui.common.strings.title"
+      },
+      {
+        "Value": "Localization",
+        "Type": "String",
+        "Key": "lp.lib.winui.common.strings.localization"
+      },
+      {
+        "Value": "OK",
+        "Type": "String",
+        "Key": "lp.lib.winui.common.strings.ok"
+      },
+      {
+        "Value": "Yes",
+        "Type": "String",
+        "Key": "lp.lib.winui.common.strings.yes"
+      },
+      {
+        "Value": "No",
+        "Type": "String",
+        "Key": "lp.lib.winui.common.strings.no"
+      },
+      {
+        "Value": "Accept",
+        "Type": "String",
+        "Key": "lp.lib.winui.common.strings.accept"
+      },
+      {
+        "Value": "Reject",
+        "Type": "String",
+        "Key": "lp.lib.winui.common.strings.reject"
+      },
+      {
+        "Value": "Cancel",
+        "Type": "String",
+        "Key": "lp.lib.winui.common.strings.cancel"
+      },
+      {
+        "Value": "Cancelling...",
+        "Type": "String",
+        "Key": "lp.lib.winui.common.strings.cancelling"
+      },
+      {
+        "Value": "Close",
+        "Type": "String",
+        "Key": "lp.lib.winui.common.strings.close"
+      },
+      {
+        "Value": "Please, pay attention for",
+        "Type": "String",
+        "Key": "lp.lib.winui.common.strings.payAttentionFor"
+      },
+      {
+        "Value": "Please, wait...",
+        "Type": "String",
+        "Key": "lp.lib.winui.common.strings.wait"
+      },
+      {
+        "Value": "Select",
+        "Type": "String",
+        "Key": "lp.lib.winui.common.strings.select"
+      },
+      {
+        "Value": "Directory",
+        "Type": "String",
+        "Key": "lp.lib.winui.common.strings.dir"
+      },
+      {
+        "Value": "Directories",
+        "Type": "String",
+        "Key": "lp.lib.winui.common.strings.dirs"
+      },
+      {
+        "Value": "File",
+        "Type": "String",
+        "Key": "lp.lib.winui.common.strings.file"
+      },
+      {
+        "Value": "Files",
+        "Type": "String",
+        "Key": "lp.lib.winui.common.strings.files"
+      },
+      {
+        "Value": "Showing {0}-{1} of {2} item(s)",
+        "Type": "String",
+        "Key": "lp.lib.winui.common.strings.showingItems"
+      },
+      {
+        "Value": "All",
+        "Type": "String",
+        "Key": "lp.lib.winui.common.strings.all"
+      },
+      {
+        "Value": "Any",
+        "Type": "String",
+        "Key": "lp.lib.winui.common.strings.any"
+      },
+      {
+        "Value": "Must have value",
+        "Type": "String",
+        "Key": "lp.lib.winui.common.strings.validation.notNull"
+      },
+      {
+        "Value": "Must not have value",
+        "Type": "String",
+        "Key": "lp.lib.winui.common.strings.validation.null"
+      },
+      {
+        "Value": "Must have value",
+        "Type": "String",
+        "Key": "lp.lib.winui.common.strings.validation.notEmpty"
+      },
+      {
+        "Value": "Must not have value",
+        "Type": "String",
+        "Key": "lp.lib.winui.common.strings.validation.empty"
+      },
+      {
+        "Value": "Must be not equal equal to {0}",
+        "Type": "String",
+        "Key": "lp.lib.winui.common.strings.validation.notEqual"
+      },
+      {
+        "Value": "Must be equal to {0}",
+        "Type": "String",
+        "Key": "lp.lib.winui.common.strings.validation.equal"
+      },
+      {
+        "Value": "Length must be from {0} to {1}",
+        "Type": "String",
+        "Key": "lp.lib.winui.common.strings.validation.length"
+      },
+      {
+        "Value": "Length must be not less than {0}",
+        "Type": "String",
+        "Key": "lp.lib.winui.common.strings.validation.minLength"
+      },
+      {
+        "Value": "Length must be not greater than {0}",
+        "Type": "String",
+        "Key": "lp.lib.winui.common.strings.validation.maxLength"
+      },
+      {
+        "Value": "Must be not less than {0}",
+        "Type": "String",
+        "Key": "lp.lib.winui.common.strings.validation.lessThan"
+      },
+      {
+        "Value": "Must be not less than or equal to {0}",
+        "Type": "String",
+        "Key": "lp.lib.winui.common.strings.validation.lessThanOrEqual"
+      },
+      {
+        "Value": "Must be not greater than {0}",
+        "Type": "String",
+        "Key": "lp.lib.winui.common.strings.validation.greaterThan"
+      },
+      {
+        "Value": "Must be not greater than or equal to {0}",
+        "Type": "String",
+        "Key": "lp.lib.winui.common.strings.validation.greaterThanOrEqual"
+      },
+      {
+        "Value": "Must match regular expression \\{0}\\",
+        "Type": "String",
+        "Key": "lp.lib.winui.common.strings.validation.regex"
+      },
+      {
+        "Value": "Must be valid email",
+        "Type": "String",
+        "Key": "lp.lib.winui.common.strings.validation.email"
+      },
+      {
+        "Value": "Must be valid login",
+        "Type": "String",
+        "Key": "lp.lib.winui.common.strings.validation.login"
+      },
+      {
+        "Value": "Must follow password security rules: {0}",
+        "Type": "String",
+        "Key": "lp.lib.winui.common.strings.validation.password"
+      },
+      {
+        "Value": "Invalid credentials",
+        "Type": "String",
+        "Key": "lp.lib.winui.common.strings.validation.credentials"
+      },
+      {
+        "Value": "Must be URL that follow the {0} rule",
+        "Type": "String",
+        "Key": "lp.lib.winui.common.strings.validation.url"
+      },
+      {
+        "Value": "Invalid International Person Full Name",
+        "Type": "String",
+        "Key": "lp.lib.winui.common.strings.validation.fullName"
+      },
+      {
+        "Value": "Invalid Permission",
+        "Type": "String",
+        "Key": "lp.lib.winui.common.strings.validation.permission"
+      },
+      {
+        "Value": "Must be Phone Number in International format with leading + sign",
+        "Type": "String",
+        "Key": "lp.lib.winui.common.strings.validation.phone"
+      },
+      {
+        "Value": "Invalid credit card number",
+        "Type": "String",
+        "Key": "lp.lib.winui.common.strings.validation.creditCard"
+      },
+      {
+        "Value": "Must be one of the enumeration/listed values",
+        "Type": "String",
+        "Key": "lp.lib.winui.common.strings.validation.enum"
+      },
+      {
+        "Value": "Must be greater than {0} and less than {1}",
+        "Type": "String",
+        "Key": "lp.lib.winui.common.strings.validation.exclusiveBetween"
+      },
+      {
+        "Value": "Must be greater than or equal to {0} and less than or equal to {1}",
+        "Type": "String",
+        "Key": "lp.lib.winui.common.strings.validation.inclusiveBetween"
+      },
+      {
+        "Value": "Must not be more than {0} digits in total, with allowance for {1} decimals",
+        "Type": "String",
+        "Key": "lp.lib.winui.common.strings.validation.precisionScale"
+      },
+      {
+        "Value": "Must be unique (none of existing)",
+        "Type": "String",
+        "Key": "lp.lib.winui.common.strings.validation.unique"
+      },
+      {
+        "Value": "Must be not unique (one of existing)",
+        "Type": "String",
+        "Key": "lp.lib.winui.common.strings.validation.notUnique"
+      },
+      {
+        "Value": "Specified item not found",
+        "Type": "String",
+        "Key": "lp.lib.winui.common.strings.validation.notFound"
+      },
+      {
+        "Value": "Access denied",
+        "Type": "String",
+        "Key": "lp.lib.winui.common.strings.validation.accessDenied"
+      },
+      {
+        "Value": "Must start with \"{0}\"",
+        "Type": "String",
+        "Key": "lp.lib.winui.common.strings.validation.prefixed"
+      },
+      {
+        "Value": "Must not start with \"{0}\"",
+        "Type": "String",
+        "Key": "lp.lib.winui.common.strings.validation.notPrefixed"
+      },
+      {
+        "Value": "Must end with \"{0}\"",
+        "Type": "String",
+        "Key": "lp.lib.winui.common.strings.validation.suffixed"
+      },
+      {
+        "Value": "Must not end with \"{0}\"",
+        "Type": "String",
+        "Key": "lp.lib.winui.common.strings.validation.notSuffixed"
+      },
+      {
+        "Value": "Validation rule not specified, but value is not valid",
+        "Type": "String",
+        "Key": "lp.lib.winui.common.strings.validation.unknown"
+      },
+      {
+        "Value": "Personalization",
+        "Type": "String",
+        "Key": "lp.lib.winui.pages.settings.strings.personalization"
+      },
+      {
+        "Value": "Theme",
+        "Type": "String",
+        "Key": "lp.lib.winui.pages.settings.strings.theme"
+      },
+      {
+        "Value": "Light",
+        "Type": "String",
+        "Key": "lp.lib.winui.pages.settings.strings.themeLight"
+      },
+      {
+        "Value": "Dark",
+        "Type": "String",
+        "Key": "lp.lib.winui.pages.settings.strings.themeDark"
+      },
+      {
+        "Value": "Default",
+        "Type": "String",
+        "Key": "lp.lib.winui.pages.settings.strings.themeDefault"
+      },
+      {
+        "Value": "Localization",
+        "Type": "String",
+        "Key": "lp.lib.winui.pages.settings.strings.localization"
+      },
+      {
+        "Value": "Language",
+        "Type": "String",
+        "Key": "lp.lib.winui.pages.settings.strings.language"
+      },
+      {
+        "Value": "About this application",
+        "Type": "String",
+        "Key": "lp.lib.winui.pages.settings.strings.about"
+      },
+      {
+        "Value": "Pending task(s)",
+        "Type": "String",
+        "Key": "lp.lib.winui.statusbar.strings.pendingTaskCount"
+      },
+      {
+        "Value": "Pending tasks",
+        "Type": "String",
+        "Key": "lp.lib.winui.statusbar.strings.pendingTasks"
+      },
+      {
+        "Value": "Error(s)",
+        "Type": "String",
+        "Key": "lp.lib.winui.statusbar.strings.errorCount"
+      },
+      {
+        "Value": "Warning(s)",
+        "Type": "String",
+        "Key": "lp.lib.winui.statusbar.strings.warningCount"
+      },
+      {
+        "Value": "Message(s)",
+        "Type": "String",
+        "Key": "lp.lib.winui.statusbar.strings.messageCount"
+      },
+      {
+        "Value": "Progress",
+        "Type": "String",
+        "Key": "lp.lib.winui.statusbar.strings.progress"
+      },
+      {
+        "Value": "Category",
+        "Type": "String",
+        "Key": "lp.lib.winui.statusbar.strings.category"
+      },
+      {
+        "Value": "Description",
+        "Type": "String",
+        "Key": "lp.lib.winui.statusbar.strings.description"
+      },
+      {
+        "Value": "Status",
+        "Type": "String",
+        "Key": "lp.lib.winui.statusbar.strings.status"
+      },
+      {
+        "Value": "Messages",
+        "Type": "String",
+        "Key": "lp.lib.winui.statusbar.strings.messages"
+      },
+      {
+        "Value": "Time",
+        "Type": "String",
+        "Key": "lp.lib.winui.statusbar.strings.time"
+      },
+      {
+        "Value": "Message",
+        "Type": "String",
+        "Key": "lp.lib.winui.statusbar.strings.message"
+      },
+      {
+        "Value": "Error in pending process {0} -> {1}: {2}",
+        "Type": "String",
+        "Key": "lp.lib.winui.statusbar.strings.errorInPendingProcess"
+      },
+
+      {
+        "Value": "Close confirmation",
+        "Type": "String",
+        "Key": "lp.lib.winui.entrypoint.strings.closeConfirmation"
+      },
+      {
+        "Value": "There are some pending tasks still in progess.\r\nDo you want to close the application?",
+        "Type": "String",
+        "Key": "lp.lib.winui.entrypoint.strings.busyQuestion"
+      },
+      {
+        "Value": "There are unsaved data in the application.\r\nDo you want to save data before close the application?",
+        "Type": "String",
+        "Key": "lp.lib.winui.entrypoint.strings.unsavedDataQuestion"
+      },
+      {
+        "Value": "Saving application data...",
+        "Type": "String",
+        "Key": "lp.lib.winui.entrypoint.strings.savingDataMessage"
+      }
+    ]
+  },
+  "DocType": "lp.doc.i18n",
+  "DocVersion": 1
+}
+

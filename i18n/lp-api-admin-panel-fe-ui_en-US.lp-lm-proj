@@ -1,0 +1,852 @@
+{
+  "Document": {
+    "Name": "LP Admin-Panel API FE.UI en-US",
+    "Description": "Lucky Project Admin-Panel API Frontend.UI en-US Localization",
+    "Source": "lp-api-admin-panel-fe-ui",
+    "Locale": "en-US",
+    "Items": [
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "common.name",
+        "Basis": null,
+        "Transaltion": "Name"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "common.email",
+        "Basis": null,
+        "Transaltion": "Email"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "common.phoneNumber",
+        "Basis": null,
+        "Transaltion": "Phone Number"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "common.secret",
+        "Basis": null,
+        "Transaltion": "Secret"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "common.preferredLocale",
+        "Basis": null,
+        "Transaltion": "Preferred Locale"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "common.origins",
+        "Basis": null,
+        "Transaltion": "Origins"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "common.origin",
+        "Basis": null,
+        "Transaltion": "Origin"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "common.create",
+        "Basis": null,
+        "Transaltion": "Create"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "common.displayName",
+        "Basis": null,
+        "Transaltion": "Display Name"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "common.baseUrl",
+        "Basis": null,
+        "Transaltion": "Base URL"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "common.redirect",
+        "Basis": null,
+        "Transaltion": "Redirect"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "common.postLogoutRedirect",
+        "Basis": null,
+        "Transaltion": "Post Logout Redirect"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "common.type",
+        "Basis": null,
+        "Transaltion": "Type"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "common.clientId",
+        "Basis": null,
+        "Transaltion": "ClientID"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "common.delete",
+        "Basis": null,
+        "Transaltion": "Delete"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "common.web",
+        "Basis": null,
+        "Transaltion": "Web"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "common.machine",
+        "Basis": null,
+        "Transaltion": "Machine"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "common.id",
+        "Basis": null,
+        "Transaltion": "ID"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "common.any",
+        "Basis": null,
+        "Transaltion": "Any"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "common.userName",
+        "Basis": null,
+        "Transaltion": "User Name"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "common.fullName",
+        "Basis": null,
+        "Transaltion": "Full Name"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "common.tgUserName",
+        "Basis": null,
+        "Transaltion": "Telegram User Name"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "common.root",
+        "Basis": null,
+        "Transaltion": "Root"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "common.binary",
+        "Basis": null,
+        "Transaltion": "Binary"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "common.level",
+        "Basis": null,
+        "Transaltion": "Level"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "common.passkey",
+        "Basis": null,
+        "Transaltion": "Passkey"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "common.description",
+        "Basis": null,
+        "Transaltion": "Description"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "common.allow",
+        "Basis": null,
+        "Transaltion": "Allow"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "common.update",
+        "Basis": null,
+        "Transaltion": "Update"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "common.accessDenied",
+        "Basis": null,
+        "Transaltion": "Access Denied"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "common.users",
+        "Basis": null,
+        "Transaltion": "Users"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "common.permissions",
+        "Basis": null,
+        "Transaltion": "Permissions"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "common.roles",
+        "Basis": null,
+        "Transaltion": "Roles"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "common.clients",
+        "Basis": null,
+        "Transaltion": "Clients"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "common.password",
+        "Basis": null,
+        "Transaltion": "Password"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "common.newPassword",
+        "Basis": null,
+        "Transaltion": "New Password"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "common.newPasswordRepeat",
+        "Basis": null,
+        "Transaltion": "Repeat New Password"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "common.fromRole",
+        "Basis": null,
+        "Transaltion": "From Role"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "common.value",
+        "Basis": null,
+        "Transaltion": "Value"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "common.disallow",
+        "Basis": null,
+        "Transaltion": "Disallow"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "headersCrumbs.adminPanel",
+        "Basis": null,
+        "Transaltion": "Admin Panel"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "headersCrumbs.clients",
+        "Basis": null,
+        "Transaltion": "Manage Clients"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "headersCrumbs.createMachineClient",
+        "Basis": null,
+        "Transaltion": "Create Machine Client"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "headersCrumbs.createWebClient",
+        "Basis": null,
+        "Transaltion": "Create Web Client"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "headersCrumbs.manageClient",
+        "Basis": null,
+        "Transaltion": "Manage Client {{displayName}}"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "headersCrumbs.permissions",
+        "Basis": null,
+        "Transaltion": "Manage Permissions"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "headersCrumbs.managePermission",
+        "Basis": null,
+        "Transaltion": "Manage Permission {{displayName}}"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "headersCrumbs.roles",
+        "Basis": null,
+        "Transaltion": "Manage Roles"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "headersCrumbs.createRole",
+        "Basis": null,
+        "Transaltion": "Create Role"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "headersCrumbs.manageRole",
+        "Basis": null,
+        "Transaltion": "Manage Role {{displayName}}"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "headersCrumbs.manageRolePermissions",
+        "Basis": null,
+        "Transaltion": "Manage Role Permissions {{displayName}}"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "headersCrumbs.manageRoleUsers",
+        "Basis": null,
+        "Transaltion": "Manage Role Users {{displayName}}"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "headersCrumbs.users",
+        "Basis": null,
+        "Transaltion": "Manage Users"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "headersCrumbs.createUser",
+        "Basis": null,
+        "Transaltion": "Create User"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "headersCrumbs.manageUser",
+        "Basis": null,
+        "Transaltion": "Manage User {{displayName}}"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "headersCrumbs.observeUserPermissions",
+        "Basis": null,
+        "Transaltion": "Observe User Permissions {{displayName}}"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "headersCrumbs.manageUserRoles",
+        "Basis": null,
+        "Transaltion": "Manage User Roles {{displayName}}"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "other.userDetails",
+        "Basis": null,
+        "Transaltion": "User Details"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "other.userPermissions",
+        "Basis": null,
+        "Transaltion": "User Permissions"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "other.resetSecret",
+        "Basis": null,
+        "Transaltion": "Reset Secret"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "other.assignedPermissions",
+        "Basis": null,
+        "Transaltion": "Assigned Permissions"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "other.assignedUsers",
+        "Basis": null,
+        "Transaltion": "Assigned Users"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "other.resetPassword",
+        "Basis": null,
+        "Transaltion": "Reset Password"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "other.assignedRoles",
+        "Basis": null,
+        "Transaltion": "Assigned Roles"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "common.passwordRules.title",
+        "Basis": null,
+        "Transaltion": "Password rules:"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "common.passwordRules.1",
+        "Basis": null,
+        "Transaltion": "- Must contain at least 1 small letter"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "common.passwordRules.2",
+        "Basis": null,
+        "Transaltion": "- Must contain at least 1 digit"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "common.passwordRules.3",
+        "Basis": null,
+        "Transaltion": "- Must contain at least 1 special symbol"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "common.passwordRules.4",
+        "Basis": null,
+        "Transaltion": "- Must be at least 8 characters long"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "messages.clients.getList.failed",
+        "Basis": null,
+        "Transaltion": " Failed to Get Clients list"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "messages.clients.get.failed",
+        "Basis": null,
+        "Transaltion": "Failed to Get Client"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "messages.clients.getSecret.failed",
+        "Basis": null,
+        "Transaltion": "Failed to Get Machine Client Secret"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "messages.clients.createWeb.success",
+        "Basis": null,
+        "Transaltion": "Web Client Created"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "messages.clients.createWeb.failed",
+        "Basis": null,
+        "Transaltion": "Failed to Create Web Client"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "messages.clients.createMachine.success",
+        "Basis": null,
+        "Transaltion": "Machine Client Created"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "messages.clients.createMachine.failed",
+        "Basis": null,
+        "Transaltion": "Failed to Create Machine Client"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "messages.clients.resetMachineSecret.success",
+        "Basis": null,
+        "Transaltion": "Machine Client Secret Updated"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "messages.clients.resetMachineSecret.failed",
+        "Basis": null,
+        "Transaltion": "Failed to Update Machine Client Secret"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "messages.clients.delete.success",
+        "Basis": null,
+        "Transaltion": "Client Deleted"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "messages.clients.delete.failed",
+        "Basis": null,
+        "Transaltion": "Failed to Delete Client"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "messages.permissions.getList.failed",
+        "Basis": null,
+        "Transaltion": "Failed to get Permissions List"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "messages.permissions.get.failed",
+        "Basis": null,
+        "Transaltion": "Failed to Get Permission"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "messages.permissions.update.success",
+        "Basis": null,
+        "Transaltion": "Permission Updated"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "messages.permissions.update.failed",
+        "Basis": null,
+        "Transaltion": "Failed to Update Permission"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "messages.permissions.delete.success",
+        "Basis": null,
+        "Transaltion": "Permission Deleted"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "messages.permissions.delete.failed",
+        "Basis": null,
+        "Transaltion": "Failed to Delete Permission"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "messages.users.getList.failed",
+        "Basis": null,
+        "Transaltion": "Failed to Get Users List"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "messages.users.get.failed",
+        "Basis": null,
+        "Transaltion": "Failed to Get User"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "messages.roles.getList.failed",
+        "Basis": null,
+        "Transaltion": "Failed to Get Roles List"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "messages.roles.get.failed",
+        "Basis": null,
+        "Transaltion": "Failed to Get Role"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "messages.roles.create.success",
+        "Basis": null,
+        "Transaltion": "Role Created"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "messages.roles.create.failed",
+        "Basis": null,
+        "Transaltion": "Failed to Create Role"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "messages.roles.update.success",
+        "Basis": null,
+        "Transaltion": "Role Updated"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "messages.roles.update.failed",
+        "Basis": null,
+        "Transaltion": "Failed to Update Role"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "messages.roles.delete.success",
+        "Basis": null,
+        "Transaltion": "Role Deleted"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "messages.roles.delete.failed",
+        "Basis": null,
+        "Transaltion": "Failed to Delete Role"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "messages.roles.getPermissions.failed",
+        "Basis": null,
+        "Transaltion": "Failed to Get Role Permissions List"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "messages.roles.assignPermission.success",
+        "Basis": null,
+        "Transaltion": "Permission Assigned To Role"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "messages.roles.assignPermission.failed",
+        "Basis": null,
+        "Transaltion": "Failed to Assign Permission To Role"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "messages.roles.deletePermission.success",
+        "Basis": null,
+        "Transaltion": "Permission Deleted From Role"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "messages.roles.deletePermission.failed",
+        "Basis": null,
+        "Transaltion": "Failed to Delete Permission From Role"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "messages.roles.getUsers.failed",
+        "Basis": null,
+        "Transaltion": "Failed to Get Role Users List"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "messages.roles.assignUser.success",
+        "Basis": null,
+        "Transaltion": "User Assigned To Role"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "messages.roles.assignUser.failed",
+        "Basis": null,
+        "Transaltion": "Failed to Assign User To Role"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "messages.roles.deleteUser.success",
+        "Basis": null,
+        "Transaltion": "User Deleted From Role"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "messages.roles.deleteUser.failed",
+        "Basis": null,
+        "Transaltion": "Failed To Delete User From Role"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "messages.users.create.success",
+        "Basis": null,
+        "Transaltion": "User Created"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "messages.users.create.failed",
+        "Basis": null,
+        "Transaltion": "Failed to Create User"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "messages.users.update.success",
+        "Basis": null,
+        "Transaltion": "User Updated"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "messages.users.update.failed",
+        "Basis": null,
+        "Transaltion": "Failed to Update User"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "messages.users.resetPassword.success",
+        "Basis": null,
+        "Transaltion": "User Password Updated"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "messages.users.resetPassword.failed",
+        "Basis": null,
+        "Transaltion": "Failed to Reset User Password"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "messages.users.delete.success",
+        "Basis": null,
+        "Transaltion": "User Deleted"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "messages.users.delete.failed",
+        "Basis": null,
+        "Transaltion": "Failed To Delete User"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "messages.users.getRoles.failed",
+        "Basis": null,
+        "Transaltion": "Failed to Get User Roles List"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "messages.users.assignRole.success",
+        "Basis": null,
+        "Transaltion": "Role Assigned To User"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "messages.users.assignRole.failed",
+        "Basis": null,
+        "Transaltion": "Failed to Assign Role To User"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "messages.users.deleteRole.success",
+        "Basis": null,
+        "Transaltion": "Role Deleted From User"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "messages.users.deleteRole.failed",
+        "Basis": null,
+        "Transaltion": "Failed to Delete Role From User"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "messages.users.getPermissions.failed",
+        "Basis": null,
+        "Transaltion": "Failed to Get User Permissions List"
+      }
+    ]
+  },
+  "DocType": "lp.doc.app.lm.proj",
+  "DocVersion": 1
+}

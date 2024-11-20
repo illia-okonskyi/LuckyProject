@@ -1,0 +1,253 @@
+{
+  "Document": {
+    "Items": [
+      {
+        "Value": "Project",
+        "Type": "String",
+        "Key": "lp.app.lm.services.project.strings.category"
+      },
+      {
+        "Value": "Project {0} created at location {1}",
+        "Type": "String",
+        "Key": "lp.app.lm.services.project.strings.messages.createdProject"
+      },
+      {
+        "Value": "Project action",
+        "Type": "String",
+        "Key": "lp.app.lm.services.project.strings.messages.projectAction"
+      },
+      {
+        "Value": "Opening project at location {0}...",
+        "Type": "String",
+        "Key": "lp.app.lm.services.project.strings.messages.openingProject"
+      },
+      {
+        "Value": "Opened project {0} at location {1}",
+        "Type": "String",
+        "Key": "lp.app.lm.services.project.strings.messages.openedProject"
+      },
+      {
+        "Value": "Saving project {0} to location {1}...",
+        "Type": "String",
+        "Key": "lp.app.lm.services.project.strings.messages.savingProject"
+      },
+      {
+        "Value": "Saved project {0} to location {1}",
+        "Type": "String",
+        "Key": "lp.app.lm.services.project.strings.messages.savedProject"
+      },
+      {
+        "Value": "Building project {0} to location {1}...",
+        "Type": "String",
+        "Key": "lp.app.lm.services.project.strings.messages.buildingProject"
+      },
+      {
+        "Value": "Built project {0} to location {1}",
+        "Type": "String",
+        "Key": "lp.app.lm.services.project.strings.messages.builtProject"
+      },
+      {
+        "Value": "Closed project {0}",
+        "Type": "String",
+        "Key": "lp.app.lm.services.project.strings.messages.closedProject"
+      },
+      {
+        "Value": "Error: {0}",
+        "Type": "String",
+        "Key": "lp.app.lm.services.project.strings.messages.errorFormat"
+      },
+      {
+        "Value": "New Project...",
+        "Type": "String",
+        "Key": "lp.app.lm.dialogs.createUpdateDialog.strings.newProject"
+      },
+      {
+        "Value": "Edit Project",
+        "Type": "String",
+        "Key": "lp.app.lm.dialogs.createUpdateDialog.strings.editProject"
+      },
+      {
+        "Value": "Create",
+        "Type": "String",
+        "Key": "lp.app.lm.common.strings.actions.create"
+      },
+      {
+        "Value": "Update",
+        "Type": "String",
+        "Key": "lp.app.lm.common.strings.actions.update"
+      },
+      {
+        "Value": "Name:",
+        "Type": "String",
+        "Key": "lp.app.lm.common.strings.captions.name"
+      },
+      {
+        "Value": "Description:",
+        "Type": "String",
+        "Key": "lp.app.lm.common.strings.captions.description"
+      },
+      {
+        "Value": "Source:",
+        "Type": "String",
+        "Key": "lp.app.lm.common.strings.captions.source"
+      },
+      {
+        "Value": "Locale:",
+        "Type": "String",
+        "Key": "lp.app.lm.common.strings.captions.locale"
+      },
+      {
+        "Value": "File:",
+        "Type": "String",
+        "Key": "lp.app.lm.common.strings.captions.file"
+      },
+      {
+        "Value": "Home",
+        "Type": "String",
+        "Key": "lp.app.lm.pages.home.strings.title"
+      },
+      {
+        "Value": "New Project",
+        "Type": "String",
+        "Key": "lp.app.lm.pages.home.strings.newProject"
+      },
+      {
+        "Value": "Open Project",
+        "Type": "String",
+        "Key": "lp.app.lm.pages.home.strings.openProject"
+      },
+      {
+        "Value": "Save Project",
+        "Type": "String",
+        "Key": "lp.app.lm.pages.home.strings.saveProject"
+      },
+      {
+        "Value": "Save Project As...",
+        "Type": "String",
+        "Key": "lp.app.lm.pages.home.strings.saveProjectAs"
+      },
+      {
+        "Value": "Close Project",
+        "Type": "String",
+        "Key": "lp.app.lm.pages.home.strings.closeProject"
+      },
+      {
+        "Value": "There are unsaved data in the current project.\r\nDo you want to save the project before closing it?",
+        "Type": "String",
+        "Key": "lp.app.lm.pages.home.strings.unsavedProjectQuestion"
+      },
+      {
+        "Value": "Build Project",
+        "Type": "String",
+        "Key": "lp.app.lm.pages.home.strings.buildProject"
+      },
+      {
+        "Value": "Settings",
+        "Type": "String",
+        "Key": "lp.app.lm.pages.settings.strings.title"
+      },
+      {
+        "Value": "Lucky Project Localization Manager is intented for managing the Lucky Project i18n documents",
+        "Type": "String",
+        "Key": "lp.app.lm.pages.settings.strings.description"
+      },
+      {
+        "Value": "Workspace",
+        "Type": "String",
+        "Key": "lp.app.lm.pages.workspace.strings.title"
+      },
+      {
+        "Value": "Filter:",
+        "Type": "String",
+        "Key": "lp.app.lm.pages.workspace.strings.filter"
+      },
+      {
+        "Value": "Apply",
+        "Type": "String",
+        "Key": "lp.app.lm.pages.workspace.strings.apply"
+      },
+      {
+        "Value": "New",
+        "Type": "String",
+        "Key": "lp.app.lm.pages.workspace.strings.itemStatuses.new"
+      },
+      {
+        "Value": "Set New (Ctrl + N)",
+        "Type": "String",
+        "Key": "lp.app.lm.pages.workspace.strings.itemStatuses.setNew"
+      },
+      {
+        "Value": "Review",
+        "Type": "String",
+        "Key": "lp.app.lm.pages.workspace.strings.itemStatuses.review"
+      },
+      {
+        "Value": "Set Review (Ctrl + R)",
+        "Type": "String",
+        "Key": "lp.app.lm.pages.workspace.strings.itemStatuses.setReview"
+      },
+      {
+        "Value": "Done",
+        "Type": "String",
+        "Key": "lp.app.lm.pages.workspace.strings.itemStatuses.done"
+      },
+      {
+        "Value": "Set Done (Ctrl + Enter)",
+        "Type": "String",
+        "Key": "lp.app.lm.pages.workspace.strings.itemStatuses.setDone"
+      },
+      {
+        "Value": "String",
+        "Type": "String",
+        "Key": "lp.app.lm.pages.workspace.strings.itemTypes.string"
+      },
+      {
+        "Value": "File",
+        "Type": "String",
+        "Key": "lp.app.lm.pages.workspace.strings.itemTypes.file"
+      },
+      {
+        "Value": "Status",
+        "Type": "String",
+        "Key": "lp.app.lm.pages.workspace.strings.status"
+      },
+      {
+        "Value": "Type",
+        "Type": "String",
+        "Key": "lp.app.lm.pages.workspace.strings.type"
+      },
+      {
+        "Value": "Key",
+        "Type": "String",
+        "Key": "lp.app.lm.pages.workspace.strings.key"
+      },
+      {
+        "Value": "Basis",
+        "Type": "String",
+        "Key": "lp.app.lm.pages.workspace.strings.basis"
+      },
+      {
+        "Value": "Translation",
+        "Type": "String",
+        "Key": "lp.app.lm.pages.workspace.strings.translation"
+      },
+      {
+        "Value": "Create New Item...",
+        "Type": "String",
+        "Key": "lp.app.lm.pages.workspace.createItemDialog.title"
+      },
+      {
+        "Value": "Type:",
+        "Type": "String",
+        "Key": "lp.app.lm.workspace.createItemDialog.type"
+      },
+      {
+        "Value": "Key:",
+        "Type": "String",
+        "Key": "lp.app.lm.workspace.createItemDialog.key"
+      }
+    ]
+  },
+  "DocType": "lp.doc.i18n",
+  "DocVersion": 1
+}

@@ -1,0 +1,198 @@
+{
+  "Document": {
+    "Items": [
+      {
+        "Value": "Отменено",
+        "Type": "String",
+        "Key": "cancelled"
+      },
+      {
+        "Value": "Не должно быть null",
+        "Type": "String",
+        "Key": "errors.not-null"
+      },
+      {
+        "Value": "Должно быть null",
+        "Type": "String",
+        "Key": "errors.null"
+      },
+      {
+        "Value": "Должно быть не пустым",
+        "Type": "String",
+        "Key": "errors.not-empty"
+      },
+      {
+        "Value": "Должно быть пустым",
+        "Type": "String",
+        "Key": "errors.empty"
+      },
+      {
+        "Value": "Не должно быть равно {{target}}",
+        "Type": "String",
+        "Key": "errors.not-equal"
+      },
+      {
+        "Value": "Должно быть равно {{target}}",
+        "Type": "String",
+        "Key": "errors.equal"
+      },
+      {
+        "Value": "Длина должна быть не меньше {{min}} и не больше {{max}}",
+        "Type": "String",
+        "Key": "errors.length"
+      },
+      {
+        "Value": "Длина должна быть не меньше {{target}}",
+        "Type": "String",
+        "Key": "errors.min-length"
+      },
+      {
+        "Value": "Длина должна быть не больше {{target}}",
+        "Type": "String",
+        "Key": "errors.max-length"
+      },
+      {
+        "Value": "Должно быть меньше {{target}}",
+        "Type": "String",
+        "Key": "errors.less-than"
+      },
+      {
+        "Value": "Должно быть меньше или равно {{target}}",
+        "Type": "String",
+        "Key": "errors.less-than-or-equal"
+      },
+      {
+        "Value": "Должно быть больше {{target}}",
+        "Type": "String",
+        "Key": "errors.greater-than"
+      },
+      {
+        "Value": "Должно быть больше или равно {{target}}",
+        "Type": "String",
+        "Key": "errors.greater-than-or-equal"
+      },
+      {
+        "Value": "Должно соответствовать Регулярному Выражению: {{target}}",
+        "Type": "String",
+        "Key": "errors.regex"
+      },
+      {
+        "Value": "Должно быть адресом электронной почты",
+        "Type": "String",
+        "Key": "errors.email"
+      },
+      {
+        "Value": "Должно соответствовать правилам имени пользователя",
+        "Type": "String",
+        "Key": "errors.login"
+      },
+      {
+        "Value": "Должно соответствовать правилам Пароля",
+        "Type": "String",
+        "Key": "errors.pwd"
+      },
+      {
+        "Value": "Неправильные реквизиты",
+        "Type": "String",
+        "Key": "errors.creds"
+      },
+      {
+        "Value": "Должно быть URL в форме {{target}}",
+        "Type": "String",
+        "Key": "errors.url"
+      },
+      {
+        "Value": "Должно соответствовать правилам Полного Имени Пользователя ",
+        "Type": "String",
+        "Key": "errors.full-name"
+      },
+      {
+        "Value": "Должно соответствовать правилам Разрешения ",
+        "Type": "String",
+        "Key": "errors.permission"
+      },
+      {
+        "Value": "Должно соответствовать Телефонном Номеру в Международном Формате ",
+        "Type": "String",
+        "Key": "errors.phone"
+      },
+      {
+        "Value": "Должно быть номером Кредитной Карты",
+        "Type": "String",
+        "Key": "errors.credit-card"
+      },
+      {
+        "Value": "Должно быть одной из опций перечисления",
+        "Type": "String",
+        "Key": "errors.enum"
+      },
+      {
+        "Value": "Должно быть исключительно больше {{min}} и меньше {{max}}",
+        "Type": "String",
+        "Key": "errors.exclusive-between"
+      },
+      {
+        "Value": "Должно быть включительно больше {{min}} и меньше {{max}}",
+        "Type": "String",
+        "Key": "errors.inclusive-between"
+      },
+      {
+        "Value": "Не должно иметь больше {{precision}} цифр в общем, и {{scale}} цифр после десятичной запятой",
+        "Type": "String",
+        "Key": "errors.precision-scale"
+      },
+      {
+        "Value": "Должно быть уникальным (ни одним из существующих)",
+        "Type": "String",
+        "Key": "errors.unique"
+      },
+      {
+        "Value": "Не должно быть уникальным (одним из существующих)",
+        "Type": "String",
+        "Key": "errors.not-unique"
+      },
+      {
+        "Value": "Не Найдено",
+        "Type": "String",
+        "Key": "errors.not-found"
+      },
+      {
+        "Value": "Доступ Запрещен",
+        "Type": "String",
+        "Key": "errors.access-denied"
+      },
+      {
+        "Value": "Должно начинаться с \"{{target}}\"",
+        "Type": "String",
+        "Key": "errors.prefixed"
+      },
+      {
+        "Value": "Не должно начинаться с \"{{target}}\"",
+        "Type": "String",
+        "Key": "errors.not-prefixed"
+      },
+      {
+        "Value": "Должно заканчиваться на \"{{target}}\"",
+        "Type": "String",
+        "Key": "errors.suffixed"
+      },
+      {
+        "Value": "Не должно оканчиваться на \"{{target}}\"",
+        "Type": "String",
+        "Key": "errors.not-suffixed"
+      },
+      {
+        "Value": "Неизвестная ошибка",
+        "Type": "String",
+        "Key": "errors.unknown"
+      },
+      {
+        "Value": "Неверно",
+        "Type": "String",
+        "Key": "errors.invalid"
+      }
+    ]
+  },
+  "DocType": "lp.doc.i18n",
+  "DocVersion": 1
+}

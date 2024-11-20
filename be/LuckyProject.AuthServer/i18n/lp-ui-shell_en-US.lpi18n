@@ -1,0 +1,348 @@
+{
+  "Document": {
+    "Items": [
+      {
+        "Value": "Help",
+        "Type": "String",
+        "Key": "nav.help"
+      },
+      {
+        "Value": "About",
+        "Type": "String",
+        "Key": "nav.about"
+      },
+      {
+        "Value": "Sign In",
+        "Type": "String",
+        "Key": "nav.signIn"
+      },
+      {
+        "Value": "Profile",
+        "Type": "String",
+        "Key": "nav.profile"
+      },
+      {
+        "Value": "Logout",
+        "Type": "String",
+        "Key": "nav.logout"
+      },
+      {
+        "Value": "No Items",
+        "Type": "String",
+        "Key": "components.lpDataList.noItems"
+      },
+      {
+        "Value": "Home",
+        "Type": "String",
+        "Key": "nav.home"
+      },
+      {
+        "Value": "APIs",
+        "Type": "String",
+        "Key": "nav.apis"
+      },
+      {
+        "Value": "Admin Panel",
+        "Type": "String",
+        "Key": "nav.adminPanel"
+      },
+      {
+        "Value": "About Lucky Project",
+        "Type": "String",
+        "Key": "about.header"
+      },
+      {
+        "Value": "About",
+        "Type": "String",
+        "Key": "about.crumb"
+      },
+      {
+        "Value": "This is Lucky Project",
+        "Type": "String",
+        "Key": "about.text"
+      },
+      {
+        "Value": "Authentication Error",
+        "Type": "String",
+        "Key": "auth.error.header"
+      },
+      {
+        "Value": "Authentication Error",
+        "Type": "String",
+        "Key": "auth.error.crumb"
+      },
+      {
+        "Value": "Finishing Sing In...",
+        "Type": "String",
+        "Key": "auth.signIn.header"
+      },
+      {
+        "Value": "Help",
+        "Type": "String",
+        "Key": "help.header"
+      },
+      {
+        "Value": "Help",
+        "Type": "String",
+        "Key": "help.crumb"
+      },
+      {
+        "Value": "This page can help you with your Lucky Project experience",
+        "Type": "String",
+        "Key": "help.text"
+      },
+      {
+        "Value": "Clear Storage",
+        "Type": "String",
+        "Key": "help.clearStorage"
+      },
+      {
+        "Value": "Not Found",
+        "Type": "String",
+        "Key": "notFound.header"
+      },
+      {
+        "Value": "Not Found",
+        "Type": "String",
+        "Key": "notFound.crumb"
+      },
+      {
+        "Value": "Page Not Found",
+        "Type": "String",
+        "Key": "notFound.text"
+      },
+      {
+        "Value": "Profile",
+        "Type": "String",
+        "Key": "profile.header"
+      },
+      {
+        "Value": "Profile",
+        "Type": "String",
+        "Key": "profile.crumb"
+      },
+      {
+        "Value": "User Name",
+        "Type": "String",
+        "Key": "profile.form.userName"
+      },
+      {
+        "Value": "Email",
+        "Type": "String",
+        "Key": "profile.form.email"
+      },
+      {
+        "Value": "Phone Number",
+        "Type": "String",
+        "Key": "profile.form.phoneNumber"
+      },
+      {
+        "Value": "Full Name",
+        "Type": "String",
+        "Key": "profile.form.fullName"
+      },
+      {
+        "Value": "Telegram User Name",
+        "Type": "String",
+        "Key": "profile.form.tgUserName"
+      },
+      {
+        "Value": "Preferred Locale",
+        "Type": "String",
+        "Key": "profile.form.preferredLocale"
+      },
+      {
+        "Value": "Update Profile",
+        "Type": "String",
+        "Key": "profile.form.updateProfile"
+      },
+      {
+        "Value": "Old Password",
+        "Type": "String",
+        "Key": "profile.form.oldPassword"
+      },
+      {
+        "Value": "New Password",
+        "Type": "String",
+        "Key": "profile.form.newPassword"
+      },
+      {
+        "Value": "Repeat New Password",
+        "Type": "String",
+        "Key": "profile.form.newPasswordRepeat"
+      },
+      {
+        "Value": "Password rules:",
+        "Type": "String",
+        "Key": "profile.form.passwordRules.title"
+      },
+      {
+        "Value": "- Must contain at least 1 small letter",
+        "Type": "String",
+        "Key": "profile.form.form.passwordRules.1"
+      },
+      {
+        "Value": "- Must contain at least 1 digit",
+        "Type": "String",
+        "Key": "profile.form.form.passwordRules.2"
+      },
+      {
+        "Value": "- Must contain at least 1 special symbol",
+        "Type": "String",
+        "Key": "profile.form.form.passwordRules.3"
+      },
+      {
+        "Value": "- Must be at least 8 characters long",
+        "Type": "String",
+        "Key": "profile.form.form.passwordRules.4"
+      },
+      {
+        "Value": "Update Password",
+        "Type": "String",
+        "Key": "profile.form.updatePassword"
+      },
+      {
+        "Value": "Get User Profile Error",
+        "Type": "String",
+        "Key": "profile.get.error"
+      },
+      {
+        "Value": "Get Locales Error",
+        "Type": "String",
+        "Key": "profile.getLocales.error"
+      },
+      {
+        "Value": "User Profile Updated",
+        "Type": "String",
+        "Key": "profile.update.success"
+      },
+      {
+        "Value": "Failed to Update User Profile",
+        "Type": "String",
+        "Key": "profile.update.error"
+      },
+      {
+        "Value": "Password Updated",
+        "Type": "String",
+        "Key": "profile.updatePassword.success"
+      },
+      {
+        "Value": "Failed to Update Password",
+        "Type": "String",
+        "Key": "profile.updatePassword.error"
+      },
+      {
+        "Value": "Manage APIs",
+        "Type": "String",
+        "Key": "apis.header"
+      },
+      {
+        "Value": "Manage APIs",
+        "Type": "String",
+        "Key": "apis.crumb"
+      },
+      {
+        "Value": "API Installation",
+        "Type": "String",
+        "Key": "apis.install.title"
+      },
+      {
+        "Value": "Callback URL",
+        "Type": "String",
+        "Key": "apis.install.callbackUrl"
+      },
+      {
+        "Value": "Install",
+        "Type": "String",
+        "Key": "apis.install"
+      },
+      {
+        "Value": "Uninstall",
+        "Type": "String",
+        "Key": "apis.uninstall"
+      },
+      {
+        "Value": "Lucky Project APIs",
+        "Type": "String",
+        "Key": "apis.lpApis"
+      },
+      {
+        "Value": "Name",
+        "Type": "String",
+        "Key": "apis.name"
+      },
+      {
+        "Value": "Description",
+        "Type": "String",
+        "Key": "apis.description"
+      },
+      {
+        "Value": "All Installed APIs",
+        "Type": "String",
+        "Key": "apis.allApis"
+      },
+      {
+        "Value": "Failed to load APIs",
+        "Type": "String",
+        "Key": "apis.get.error"
+      },
+      {
+        "Value": "API Installed",
+        "Type": "String",
+        "Key": "apis.install.success"
+      },
+      {
+        "Value": "Failed to Install API",
+        "Type": "String",
+        "Key": "apis.install.error"
+      },
+      {
+        "Value": "API Uninstalled",
+        "Type": "String",
+        "Key": "apis.uninstall.success"
+      },
+      {
+        "Value": "Failed to Uninstall API",
+        "Type": "String",
+        "Key": "apis.uninstall.error"
+      },
+      {
+        "Value": "Home",
+        "Type": "String",
+        "Key": "home.header"
+      },
+      {
+        "Value": "Home",
+        "Type": "String",
+        "Key": "home.crumb"
+      },
+      {
+        "Value": "Showing {{firstPageItem}} - {{lastPageItem}} of {{totalItemsCount}} Items",
+        "Type": "String",
+        "Key": "components.lpFopDataList.pagination"
+      },
+      {
+        "Value": "Permissions",
+        "Type": "String",
+        "Key": "nav.adminPanel.permissions"
+      },
+      {
+        "Value": "Roles",
+        "Type": "String",
+        "Key": "nav.adminPanel.roles"
+      },
+      {
+        "Value": "Users",
+        "Type": "String",
+        "Key": "nav.adminPanel.users"
+      },
+      {
+        "Value": "Clients",
+        "Type": "String",
+        "Key": "nav.adminPanel.clients"
+      }
+    ]
+  },
+  "DocType": "lp.doc.i18n",
+  "DocVersion": 1
+}

@@ -1,0 +1,341 @@
+{
+  "Document": {
+    "Name": "LP AuthServer FE.UI ru-UA",
+    "Description": "Lucky Project AuthServer Frontend.UI ru-UA Localization",
+    "Source": "lp-authserver-fe-ui",
+    "Locale": "ru-UA",
+    "Items": [
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.ui.version",
+        "Basis": "Version",
+        "Transaltion": "Версия"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.ui.pages.home.desc.title",
+        "Basis": "This is Lucky Project Auth Server.",
+        "Transaltion": "Это Сервер Авторизации и Аутентификации Lucky Project."
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.ui.pages.home.desc.text",
+        "Basis": "It is used for authentication and authorization in Lucky Project",
+        "Transaltion": "It is used for authentication and authorization in Lucky Project"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.ui.renderedAt",
+        "Basis": "Page rendered at {{renderedAt}} UTC",
+        "Transaltion": "Страница сгенерирована в {{renderedAt}} UTC"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.ui.pages.home.title",
+        "Basis": "Home",
+        "Transaltion": "Домашняя страница"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.ui.pages.notFound.title",
+        "Basis": "Not Found",
+        "Transaltion": "Не найдено"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.ui.pages.notFound.desc",
+        "Basis": "Page Not Found",
+        "Transaltion": "Страница не найдена"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.ui.authLayout.app",
+        "Basis": "application",
+        "Transaltion": "приложения"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.ui.pages.challenge.statusMessage.signingIn",
+        "Basis": "Signing in...",
+        "Transaltion": "Запрос на вход..."
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.ui.pages.challenge.statusMessage.error",
+        "Basis": "Error: {{ctx}}",
+        "Transaltion": "Ошибка: {{ctx}}"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.ui.pages.challenge.form.userNameOrEmail",
+        "Basis": "User Name or Email Address",
+        "Transaltion": "Имя Пользователя или Email адрес"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.ui.pages.challenge.form.password",
+        "Basis": "Password",
+        "Transaltion": "Пароль"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.ui.pages.challenge.form.signIn",
+        "Basis": "Sign In",
+        "Transaltion": "Вход"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.ui.pages.challenge.form.forgotPassword",
+        "Basis": "Forgot password?",
+        "Transaltion": "Забыли пароль?"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.ui.pages.challenge.title",
+        "Basis": "Sign In",
+        "Transaltion": "Вход"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.ui.pages.challenge.request",
+        "Basis": "Sign In",
+        "Transaltion": "Запрос на Вход"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.ui.pages.consent.form.accept",
+        "Basis": "Yes, Sign In",
+        "Transaltion": "Да, Войти"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.ui.pages.consent.form.reject",
+        "Basis": "No, Reject",
+        "Transaltion": "Нет, Отклонить"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.ui.pages.consent.title",
+        "Basis": "Consent",
+        "Transaltion": "Запрос на Соглашение"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.ui.pages.consent.request",
+        "Basis": "Sign In",
+        "Transaltion": "Запрос на Вход"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.ui.pages.consent.form.text1",
+        "Basis": "Hello,",
+        "Transaltion": "Приветствуем,"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.ui.pages.consent.form.text2",
+        "Basis": "Do you want to allow this application to access your account?",
+        "Transaltion": "Хотите ли вы разрешить данному приложению получить доступ к вашему профилю?"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.ui.pages.logout.form.text1",
+        "Basis": "Hello,",
+        "Transaltion": "Приветствуем,"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.ui.pages.logout.form.text2",
+        "Basis": "Do you want to allow this application to Sign Out your account?",
+        "Transaltion": "Хотите ли вы Выйти только из Приложения или также выйти из своего профиля?"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.ui.pages.logout.title",
+        "Basis": "Sign Out",
+        "Transaltion": "Выход"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.ui.pages.logout.request",
+        "Basis": "Sign Out",
+        "Transaltion": "Запрос на Выход"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.ui.pages.challenge.form.twoFactorCode",
+        "Basis": null,
+        "Transaltion": "Код Авторизации"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.ui.pages.challenge.form.resendTwoFactor",
+        "Basis": null,
+        "Transaltion": "Выслать еще раз"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.ui.pages.forgotPassword.statusMessage.processing",
+        "Basis": null,
+        "Transaltion": "Обработка запроса..."
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.ui.pages.forgotPassword.statusMessage.error",
+        "Basis": null,
+        "Transaltion": "Ошибка: {{ctx}}"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.ui.pages.forgotPassword.statusMessage.finish",
+        "Basis": null,
+        "Transaltion": "Ваш пароль был изменен.\r\n\r\n\r\nТеперь вы можете закрыть эту страницу и повторить попытку авторизации с новым паролем"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.ui.pages.forgotPassword.form.userNameOrEmail",
+        "Basis": null,
+        "Transaltion": "Имя Пользователя или Email адрес"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.ui.pages.forgotPassword.form.resetPassword",
+        "Basis": null,
+        "Transaltion": "Сбросить Пароль"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.ui.pages.forgotPassword.form.password",
+        "Basis": null,
+        "Transaltion": "Новый Пароль"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.ui.pages.forgotPassword.form.passwordRepeat",
+        "Basis": null,
+        "Transaltion": "Повторите Новый Пароль"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.ui.pages.forgotPassword.form.code",
+        "Basis": null,
+        "Transaltion": "Код Авторизации"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.ui.pages.forgotPassword.form.codeResend",
+        "Basis": null,
+        "Transaltion": "Выслать еще раз"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.ui.pages.forgotPassword.form.passwordRules.title",
+        "Basis": null,
+        "Transaltion": "Правила для Пароля:"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.ui.pages.forgotPassword.form.passwordRules.1",
+        "Basis": null,
+        "Transaltion": "- Должен содержать как минимум 1 строчную букву"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.ui.pages.forgotPassword.form.passwordRules.2",
+        "Basis": null,
+        "Transaltion": "- Должен содержать как минимум 1 цифру"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.ui.pages.forgotPassword.form.passwordRules.3",
+        "Basis": null,
+        "Transaltion": "- Должен содержать как минимум 1 специальный символ"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.ui.pages.forgotPassword.form.passwordRules.4",
+        "Basis": null,
+        "Transaltion": "- Должен быть не короче 8 символов"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.ui.pages.forgotPassword.title",
+        "Basis": null,
+        "Transaltion": "Сброс Пароля"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.ui.pages.forgotPassword.request",
+        "Basis": null,
+        "Transaltion": "Запрос на Сброс Пароля"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.ui.pages.challenge.form.cancel",
+        "Basis": null,
+        "Transaltion": "Отмена"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.ui.pages.logout.form.full",
+        "Basis": null,
+        "Transaltion": "Приложение & Профиль"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.ui.pages.logout.form.app",
+        "Basis": null,
+        "Transaltion": "Только Приложение"
+      }
+    ]
+  },
+  "DocType": "lp.doc.app.lm.proj",
+  "DocVersion": 1
+}

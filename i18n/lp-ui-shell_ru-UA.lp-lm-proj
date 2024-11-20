@@ -1,0 +1,488 @@
+{
+  "Document": {
+    "Name": "LP FE Shell ru-UA",
+    "Description": "Lucky Project Front-End Shell ru-UA Localization",
+    "Source": "lp-ui-shell",
+    "Locale": "ru-UA",
+    "Items": [
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "nav.help",
+        "Basis": null,
+        "Transaltion": "Помощь"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "nav.about",
+        "Basis": null,
+        "Transaltion": "Про Проект"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "nav.signIn",
+        "Basis": null,
+        "Transaltion": "Вход"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "nav.profile",
+        "Basis": null,
+        "Transaltion": "Профиль"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "nav.logout",
+        "Basis": null,
+        "Transaltion": "Выход"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "components.lpDataList.noItems",
+        "Basis": null,
+        "Transaltion": "Нет Элементов"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "nav.home",
+        "Basis": null,
+        "Transaltion": "Домашняя"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "nav.apis",
+        "Basis": null,
+        "Transaltion": "APIs"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "nav.adminPanel",
+        "Basis": null,
+        "Transaltion": "Админ Панель"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "about.header",
+        "Basis": null,
+        "Transaltion": "Про Lucky Project"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "about.crumb",
+        "Basis": null,
+        "Transaltion": "Про Проект"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "about.text",
+        "Basis": null,
+        "Transaltion": "Это Lucky Project"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "auth.error.header",
+        "Basis": null,
+        "Transaltion": "Ошибка Авторизации"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "auth.error.crumb",
+        "Basis": null,
+        "Transaltion": "Ошибка Авторизации"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "auth.signIn.header",
+        "Basis": null,
+        "Transaltion": "Завершение Авторизации..."
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "help.header",
+        "Basis": null,
+        "Transaltion": "Помощь"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "help.crumb",
+        "Basis": null,
+        "Transaltion": "Помощь"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "help.text",
+        "Basis": null,
+        "Transaltion": "Эта страница поможет вам в вашем опыте использования Lucky Project"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "help.clearStorage",
+        "Basis": null,
+        "Transaltion": "Очистить Хранилище"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "notFound.header",
+        "Basis": null,
+        "Transaltion": "Не Найдено"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "notFound.crumb",
+        "Basis": null,
+        "Transaltion": "Не Найдено"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "notFound.text",
+        "Basis": null,
+        "Transaltion": "Страница Не Найдена"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "profile.header",
+        "Basis": null,
+        "Transaltion": "Профиль"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "profile.crumb",
+        "Basis": null,
+        "Transaltion": "Профиль"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "profile.form.userName",
+        "Basis": null,
+        "Transaltion": "Имя Пользователя"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "profile.form.email",
+        "Basis": null,
+        "Transaltion": "Email"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "profile.form.phoneNumber",
+        "Basis": null,
+        "Transaltion": "Номер Телефона"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "profile.form.fullName",
+        "Basis": null,
+        "Transaltion": "Полное Имя"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "profile.form.tgUserName",
+        "Basis": null,
+        "Transaltion": "Имя Пользователя в Telegram"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "profile.form.preferredLocale",
+        "Basis": null,
+        "Transaltion": "Предпочитаемая Локаль"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "profile.form.updateProfile",
+        "Basis": null,
+        "Transaltion": "Обновить Профиль"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "profile.form.oldPassword",
+        "Basis": null,
+        "Transaltion": "Старый Пароль"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "profile.form.newPassword",
+        "Basis": null,
+        "Transaltion": "Новый Пароль"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "profile.form.newPasswordRepeat",
+        "Basis": null,
+        "Transaltion": "Повторите Новый Пароль"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "profile.form.passwordRules.title",
+        "Basis": null,
+        "Transaltion": "Правила для Пароля:"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "profile.form.form.passwordRules.1",
+        "Basis": null,
+        "Transaltion": "- Должен содержать как минимум 1 строчную букву"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "profile.form.form.passwordRules.2",
+        "Basis": null,
+        "Transaltion": "- Должен содержать как минимум 1 цифру"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "profile.form.form.passwordRules.3",
+        "Basis": null,
+        "Transaltion": "- Должен содержать как минимум 1 специальный символ"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "profile.form.form.passwordRules.4",
+        "Basis": null,
+        "Transaltion": "- Должен быть не короче 8 символов"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "profile.form.updatePassword",
+        "Basis": null,
+        "Transaltion": "Обновить Пароль"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "profile.get.error",
+        "Basis": null,
+        "Transaltion": "Не удалось загрузить Профиль Пользователя"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "profile.getLocales.error",
+        "Basis": null,
+        "Transaltion": "Не удалось получить список Локалей"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "profile.update.success",
+        "Basis": null,
+        "Transaltion": "Профиль Обновлен"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "profile.update.error",
+        "Basis": null,
+        "Transaltion": "Не удалось Обновить Профиль Пользователя"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "profile.updatePassword.success",
+        "Basis": null,
+        "Transaltion": "Пароль Обновлен"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "profile.updatePassword.error",
+        "Basis": null,
+        "Transaltion": "Не Удалось Обновить Пароль"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "apis.header",
+        "Basis": null,
+        "Transaltion": "Управление APIs"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "apis.crumb",
+        "Basis": null,
+        "Transaltion": "Управление APIs"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "apis.install.title",
+        "Basis": null,
+        "Transaltion": "Инсталляция API"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "apis.install.callbackUrl",
+        "Basis": null,
+        "Transaltion": "Callback URL"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "apis.install",
+        "Basis": null,
+        "Transaltion": "Инсталлировать"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "apis.uninstall",
+        "Basis": null,
+        "Transaltion": "Деинсталлировать"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "apis.lpApis",
+        "Basis": null,
+        "Transaltion": "Lucky Project APIs"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "apis.name",
+        "Basis": null,
+        "Transaltion": "Имя"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "apis.description",
+        "Basis": null,
+        "Transaltion": "Описание"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "apis.allApis",
+        "Basis": null,
+        "Transaltion": "Все Инсталлированные APIs"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "apis.get.error",
+        "Basis": null,
+        "Transaltion": "Не удалось загрузить APIs"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "apis.install.success",
+        "Basis": null,
+        "Transaltion": "API Инсталлировано"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "apis.install.error",
+        "Basis": null,
+        "Transaltion": "Не удалось Инсталлировать API"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "apis.uninstall.success",
+        "Basis": null,
+        "Transaltion": "API Деинстилировано"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "apis.uninstall.error",
+        "Basis": null,
+        "Transaltion": "Не удалось Деинсталлировать API"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "home.crumb",
+        "Basis": null,
+        "Transaltion": "Домашняя"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "home.header",
+        "Basis": null,
+        "Transaltion": "Домашняя"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "components.lpFopDataList.pagination",
+        "Basis": null,
+        "Transaltion": "Показаны Элементы {{firstPageItem}} - {{lastPageItem}} из {{totalItemsCount}}"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "nav.adminPanel.permissions",
+        "Basis": null,
+        "Transaltion": "Разрешения"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "nav.adminPanel.roles",
+        "Basis": null,
+        "Transaltion": "Роли"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "nav.adminPanel.users",
+        "Basis": null,
+        "Transaltion": "Пользователи"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "nav.adminPanel.clients",
+        "Basis": null,
+        "Transaltion": "Клиенты"
+      }
+    ]
+  },
+  "DocType": "lp.doc.app.lm.proj",
+  "DocVersion": 1
+}

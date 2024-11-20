@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>LuckyProject Disposable Service With Options Snippet</Title>
+      <Shortcut>svcdo</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>svcName</ID>
+          <Default>SvcName</Default>
+          <ToolTip>Enter actual name of Service</ToolTip>
+        </Literal>
+      </Declarations>
+      <Code Language="CSharp">
+        <![CDATA[public interface I$svcName$ : IDisposable
+        {
+
+        }
+
+        public class $svcName$Options
+        {
+
+        }
+
+        public class $svcName$ : I$svcName$
+        {
+            #region Internals & ctor & Dispose
+            private readonly $svcName$Options options;
+
+            public $svcName$(IOptions<$svcName$Options> options)
+            {
+                this.options = options.Value;
+            }
+
+            public void Dispose()
+            {
+
+            }
+            #endregion
+
+            #region Interface impl
+            #endregion
+            
+            #region Internals
+            #endregion
+        }]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

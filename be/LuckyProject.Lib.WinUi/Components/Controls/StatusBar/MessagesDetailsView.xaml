@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<local:LpAppStatusBarDetailsView
+    x:Class="LuckyProject.Lib.WinUi.Components.Controls.StatusBar.MessagesDetailsView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:LuckyProject.Lib.WinUi.Components.Controls.StatusBar"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="using:CommunityToolkit.WinUI.UI.Controls"
+    xmlns:converters="using:LuckyProject.Lib.WinUi.Converters"
+    xmlns:models="using:LuckyProject.Lib.WinUi.Models"
+    Header="{x:Bind ViewModel.Localization.Messages, Mode=OneWay}"
+    mc:Ignorable="d">
+    <local:LpAppStatusBarDetailsView.Resources>
+        <converters:LpAppMessageTypeToVisibilityConverter x:Key="LpAppMessageTypeToVisibilityConverter"/>
+    </local:LpAppStatusBarDetailsView.Resources>
+    <Grid>
+        <controls:DataGrid
+            ItemsSource="{x:Bind ViewModel.FilteredMessages, Mode=OneWay}"
+            AutoGenerateColumns="False"
+            CanUserReorderColumns="False"
+            CanUserSortColumns="False"
+            CanUserResizeColumns="True"
+            SelectionMode="Extended"
+            IsReadOnly="True">
+            <controls:DataGrid.Columns>
+                <controls:DataGridTemplateColumn MinWidth="25" MaxWidth="25">
+                    <controls:DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate x:DataType="models:LpAppMessageType">
+                            <Grid>
+                                <FontIcon
+                                    Visibility="{Binding Type, Converter={StaticResource LpAppMessageTypeToVisibilityConverter}, ConverterParameter=Error}"
+                                    HorizontalAlignment="Center"
+                                    VerticalAlignment="Center"
+                                    FontFamily="{ThemeResource SymbolThemeFontFamily}"
+                                    Glyph="&#xE783;"
+                                    Foreground="Red"
+                                    FontSize="16"/>
+                                <FontIcon
+                                    Visibility="{Binding Type, Converter={StaticResource LpAppMessageTypeToVisibilityConverter}, ConverterParameter=Warning}"
+                                    HorizontalAlignment="Center"
+                                    VerticalAlignment="Center"
+                                    FontFamily="{ThemeResource SymbolThemeFontFamily}"
+                                    Glyph="&#xE7BA;"
+                                    FontSize="16"/>
+                                <FontIcon
+                                    Visibility="{Binding Type, Converter={StaticResource LpAppMessageTypeToVisibilityConverter}, ConverterParameter=Info}"
+                                    HorizontalAlignment="Center"
+                                    VerticalAlignment="Center"
+                                    FontFamily="{ThemeResource SymbolThemeFontFamily}"
+                                    Glyph="&#xE946;"
+                                    FontSize="16"/>
+                            </Grid>
+                        </DataTemplate>
+                    </controls:DataGridTemplateColumn.CellTemplate>
+                </controls:DataGridTemplateColumn>
+
+                <controls:DataGridTemplateColumn
+                    Header="{x:Bind ViewModel.Localization.Time, Mode=OneWay}"
+                    MinWidth="150">
+                    <controls:DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate x:DataType="x:String">
+                            <TextBlock
+                                VerticalAlignment="Center"
+                                HorizontalAlignment="Stretch"
+                                TextWrapping="WrapWholeWords"
+                                Style="{ThemeResource BodyTextBlockStyle}"
+                                Text="{Binding TimestampString}" />
+                        </DataTemplate>
+                    </controls:DataGridTemplateColumn.CellTemplate>
+                </controls:DataGridTemplateColumn>
+
+                <controls:DataGridTemplateColumn
+                    Header="{x:Bind ViewModel.Localization.Category, Mode=OneWay}"
+                    MinWidth="100"
+                    Width="*">
+                    <controls:DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate x:DataType="x:String">
+                            <TextBlock
+                                VerticalAlignment="Center"
+                                HorizontalAlignment="Stretch"
+                                TextWrapping="WrapWholeWords"
+                                Style="{ThemeResource BodyTextBlockStyle}"
+                                Text="{Binding Category}" />
+                        </DataTemplate>
+                    </controls:DataGridTemplateColumn.CellTemplate>
+                </controls:DataGridTemplateColumn>
+
+                <controls:DataGridTemplateColumn
+                    Header="{x:Bind ViewModel.Localization.Message, Mode=OneWay}"
+                    MinWidth="300"
+                    Width="3*">
+                    <controls:DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate x:DataType="x:String">
+                            <TextBlock
+                                VerticalAlignment="Center"
+                                HorizontalAlignment="Stretch"
+                                TextWrapping="WrapWholeWords"
+                                Style="{ThemeResource BodyTextBlockStyle}"
+                                Text="{Binding Message}" />
+                        </DataTemplate>
+                    </controls:DataGridTemplateColumn.CellTemplate>
+                </controls:DataGridTemplateColumn>
+            </controls:DataGrid.Columns>
+        </controls:DataGrid>
+    </Grid>
+</local:LpAppStatusBarDetailsView>

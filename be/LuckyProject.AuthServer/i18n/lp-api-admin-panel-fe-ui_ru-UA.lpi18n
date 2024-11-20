@@ -1,0 +1,608 @@
+{
+  "Document": {
+    "Items": [
+      {
+        "Value": "Имя",
+        "Type": "String",
+        "Key": "common.name"
+      },
+      {
+        "Value": "Email",
+        "Type": "String",
+        "Key": "common.email"
+      },
+      {
+        "Value": "Номер Телефона",
+        "Type": "String",
+        "Key": "common.phoneNumber"
+      },
+      {
+        "Value": "Секрет",
+        "Type": "String",
+        "Key": "common.secret"
+      },
+      {
+        "Value": "Предпочитаемая Локаль",
+        "Type": "String",
+        "Key": "common.preferredLocale"
+      },
+      {
+        "Value": "Источники",
+        "Type": "String",
+        "Key": "common.origins"
+      },
+      {
+        "Value": "Источник",
+        "Type": "String",
+        "Key": "common.origin"
+      },
+      {
+        "Value": "Создать",
+        "Type": "String",
+        "Key": "common.create"
+      },
+      {
+        "Value": "Отображаемое Имя",
+        "Type": "String",
+        "Key": "common.displayName"
+      },
+      {
+        "Value": "Базовый URL",
+        "Type": "String",
+        "Key": "common.baseUrl"
+      },
+      {
+        "Value": "Перенаправление",
+        "Type": "String",
+        "Key": "common.redirect"
+      },
+      {
+        "Value": "Post Logout Перенаправление",
+        "Type": "String",
+        "Key": "common.postLogoutRedirect"
+      },
+      {
+        "Value": "Тип",
+        "Type": "String",
+        "Key": "common.type"
+      },
+      {
+        "Value": "ClientID",
+        "Type": "String",
+        "Key": "common.clientId"
+      },
+      {
+        "Value": "Удалить",
+        "Type": "String",
+        "Key": "common.delete"
+      },
+      {
+        "Value": "Web",
+        "Type": "String",
+        "Key": "common.web"
+      },
+      {
+        "Value": "Машинный",
+        "Type": "String",
+        "Key": "common.machine"
+      },
+      {
+        "Value": "ID",
+        "Type": "String",
+        "Key": "common.id"
+      },
+      {
+        "Value": "Любой",
+        "Type": "String",
+        "Key": "common.any"
+      },
+      {
+        "Value": "Имя Пользователя",
+        "Type": "String",
+        "Key": "common.userName"
+      },
+      {
+        "Value": "Полное Имя",
+        "Type": "String",
+        "Key": "common.fullName"
+      },
+      {
+        "Value": "Имя Пользователя Telegram",
+        "Type": "String",
+        "Key": "common.tgUserName"
+      },
+      {
+        "Value": "Корень",
+        "Type": "String",
+        "Key": "common.root"
+      },
+      {
+        "Value": "Бинарный",
+        "Type": "String",
+        "Key": "common.binary"
+      },
+      {
+        "Value": "Уровень",
+        "Type": "String",
+        "Key": "common.level"
+      },
+      {
+        "Value": "Ключ",
+        "Type": "String",
+        "Key": "common.passkey"
+      },
+      {
+        "Value": "Описание",
+        "Type": "String",
+        "Key": "common.description"
+      },
+      {
+        "Value": "Разрешить",
+        "Type": "String",
+        "Key": "common.allow"
+      },
+      {
+        "Value": "Обновить",
+        "Type": "String",
+        "Key": "common.update"
+      },
+      {
+        "Value": "Доступ Запрещен",
+        "Type": "String",
+        "Key": "common.accessDenied"
+      },
+      {
+        "Value": "Пользователи",
+        "Type": "String",
+        "Key": "common.users"
+      },
+      {
+        "Value": "Разрешения",
+        "Type": "String",
+        "Key": "common.permissions"
+      },
+      {
+        "Value": "Роли",
+        "Type": "String",
+        "Key": "common.roles"
+      },
+      {
+        "Value": "Клиенты",
+        "Type": "String",
+        "Key": "common.clients"
+      },
+      {
+        "Value": "Пароль",
+        "Type": "String",
+        "Key": "common.password"
+      },
+      {
+        "Value": "Новый Пароль",
+        "Type": "String",
+        "Key": "common.newPassword"
+      },
+      {
+        "Value": "Повторите Новый Пароль",
+        "Type": "String",
+        "Key": "common.newPasswordRepeat"
+      },
+      {
+        "Value": "От Роли",
+        "Type": "String",
+        "Key": "common.fromRole"
+      },
+      {
+        "Value": "Значение",
+        "Type": "String",
+        "Key": "common.value"
+      },
+      {
+        "Value": "Запретить",
+        "Type": "String",
+        "Key": "common.disallow"
+      },
+      {
+        "Value": "Админ Панель",
+        "Type": "String",
+        "Key": "headersCrumbs.adminPanel"
+      },
+      {
+        "Value": "Управление Клиентами",
+        "Type": "String",
+        "Key": "headersCrumbs.clients"
+      },
+      {
+        "Value": "Создать Машинный Клиент",
+        "Type": "String",
+        "Key": "headersCrumbs.createMachineClient"
+      },
+      {
+        "Value": "Создать Web Клиент",
+        "Type": "String",
+        "Key": "headersCrumbs.createWebClient"
+      },
+      {
+        "Value": "Управление Клиентом {{displayName}}",
+        "Type": "String",
+        "Key": "headersCrumbs.manageClient"
+      },
+      {
+        "Value": "Управление Разрешениями",
+        "Type": "String",
+        "Key": "headersCrumbs.permissions"
+      },
+      {
+        "Value": "Управление Разрешением {{displayName}}",
+        "Type": "String",
+        "Key": "headersCrumbs.managePermission"
+      },
+      {
+        "Value": "Управление Ролями",
+        "Type": "String",
+        "Key": "headersCrumbs.roles"
+      },
+      {
+        "Value": "Создать Роль",
+        "Type": "String",
+        "Key": "headersCrumbs.createRole"
+      },
+      {
+        "Value": "Управление Ролью {{displayName}}",
+        "Type": "String",
+        "Key": "headersCrumbs.manageRole"
+      },
+      {
+        "Value": "Управление Разрешениями Роли {{displayName}}",
+        "Type": "String",
+        "Key": "headersCrumbs.manageRolePermissions"
+      },
+      {
+        "Value": "Управление Пользователями Роли {{displayName}}",
+        "Type": "String",
+        "Key": "headersCrumbs.manageRoleUsers"
+      },
+      {
+        "Value": "Управление Пользователями",
+        "Type": "String",
+        "Key": "headersCrumbs.users"
+      },
+      {
+        "Value": "Создать Пользователя",
+        "Type": "String",
+        "Key": "headersCrumbs.createUser"
+      },
+      {
+        "Value": "Управление Пользователем {{displayName}}",
+        "Type": "String",
+        "Key": "headersCrumbs.manageUser"
+      },
+      {
+        "Value": "Обзор Разрешений Пользователя {{displayName}}",
+        "Type": "String",
+        "Key": "headersCrumbs.observeUserPermissions"
+      },
+      {
+        "Value": "Управление Ролями Пользователя {{displayName}}",
+        "Type": "String",
+        "Key": "headersCrumbs.manageUserRoles"
+      },
+      {
+        "Value": "Детали Пользователя",
+        "Type": "String",
+        "Key": "other.userDetails"
+      },
+      {
+        "Value": "Разрешения Пользователя",
+        "Type": "String",
+        "Key": "other.userPermissions"
+      },
+      {
+        "Value": "Обновить Секрет",
+        "Type": "String",
+        "Key": "other.resetSecret"
+      },
+      {
+        "Value": "Назначенные Разрешения",
+        "Type": "String",
+        "Key": "other.assignedPermissions"
+      },
+      {
+        "Value": "Назначенные Пользователи",
+        "Type": "String",
+        "Key": "other.assignedUsers"
+      },
+      {
+        "Value": "Сбросить Пароль",
+        "Type": "String",
+        "Key": "other.resetPassword"
+      },
+      {
+        "Value": "Назначенные Роли",
+        "Type": "String",
+        "Key": "other.assignedRoles"
+      },
+      {
+        "Value": "Правила для Пароля:",
+        "Type": "String",
+        "Key": "common.passwordRules.title"
+      },
+      {
+        "Value": "- Должен содержать как минимум 1 строчную букву",
+        "Type": "String",
+        "Key": "common.passwordRules.1"
+      },
+      {
+        "Value": "- Должен содержать как минимум 1 цифру",
+        "Type": "String",
+        "Key": "common.passwordRules.2"
+      },
+      {
+        "Value": "- Должен содержать как минимум 1 специальный символ",
+        "Type": "String",
+        "Key": "common.passwordRules.3"
+      },
+      {
+        "Value": "- Должен быть не короче 8 символов",
+        "Type": "String",
+        "Key": "common.passwordRules.4"
+      },
+      {
+        "Value": "Не удалось получить список Клиентов",
+        "Type": "String",
+        "Key": "messages.clients.getList.failed"
+      },
+      {
+        "Value": "Не удалось получить Клиента",
+        "Type": "String",
+        "Key": "messages.clients.get.failed"
+      },
+      {
+        "Value": "Не удалось получить Секрет Машинного Клиента",
+        "Type": "String",
+        "Key": "messages.clients.getSecret.failed"
+      },
+      {
+        "Value": "Web Клиент Создан",
+        "Type": "String",
+        "Key": "messages.clients.createWeb.success"
+      },
+      {
+        "Value": "Не удалось Создать Web Клиента",
+        "Type": "String",
+        "Key": "messages.clients.createWeb.failed"
+      },
+      {
+        "Value": "Машинный Клиент Создан",
+        "Type": "String",
+        "Key": "messages.clients.createMachine.success"
+      },
+      {
+        "Value": "Не удалось создать Машинный Клиент",
+        "Type": "String",
+        "Key": "messages.clients.createMachine.failed"
+      },
+      {
+        "Value": "Секрет Машинного Клиента Обновлен",
+        "Type": "String",
+        "Key": "messages.clients.resetMachineSecret.success"
+      },
+      {
+        "Value": "Не удалось Обновить Секрет Машинного Клиента",
+        "Type": "String",
+        "Key": "messages.clients.resetMachineSecret.failed"
+      },
+      {
+        "Value": "Клиент Удален",
+        "Type": "String",
+        "Key": "messages.clients.delete.success"
+      },
+      {
+        "Value": "Не удалось Удалить Клиента",
+        "Type": "String",
+        "Key": "messages.clients.delete.failed"
+      },
+      {
+        "Value": "Не удалось получить Список Разрешений",
+        "Type": "String",
+        "Key": "messages.permissions.getList.failed"
+      },
+      {
+        "Value": "Не удалось получить Разрешение",
+        "Type": "String",
+        "Key": "messages.permissions.get.failed"
+      },
+      {
+        "Value": "Разрешение Обновлено",
+        "Type": "String",
+        "Key": "messages.permissions.update.success"
+      },
+      {
+        "Value": "Не удалось Обновить Разрешение",
+        "Type": "String",
+        "Key": "messages.permissions.update.failed"
+      },
+      {
+        "Value": "Разрешение Удалено",
+        "Type": "String",
+        "Key": "messages.permissions.delete.success"
+      },
+      {
+        "Value": "Не удалось удалить Разрешенеи",
+        "Type": "String",
+        "Key": "messages.permissions.delete.failed"
+      },
+      {
+        "Value": "Не удалось Получить Список Пользователей",
+        "Type": "String",
+        "Key": "messages.users.getList.failed"
+      },
+      {
+        "Value": "Не удалось получить Пользователя",
+        "Type": "String",
+        "Key": "messages.users.get.failed"
+      },
+      {
+        "Value": "Не удалось получить Список Ролей",
+        "Type": "String",
+        "Key": "messages.roles.getList.failed"
+      },
+      {
+        "Value": "Не удалось Получить Роль",
+        "Type": "String",
+        "Key": "messages.roles.get.failed"
+      },
+      {
+        "Value": "Роль Создана",
+        "Type": "String",
+        "Key": "messages.roles.create.success"
+      },
+      {
+        "Value": "Не удалось Создать Роль",
+        "Type": "String",
+        "Key": "messages.roles.create.failed"
+      },
+      {
+        "Value": "Роль Обновлена",
+        "Type": "String",
+        "Key": "messages.roles.update.success"
+      },
+      {
+        "Value": "Не удалось Обновить Роль",
+        "Type": "String",
+        "Key": "messages.roles.update.failed"
+      },
+      {
+        "Value": "Роль Удалена",
+        "Type": "String",
+        "Key": "messages.roles.delete.success"
+      },
+      {
+        "Value": "Не удалось Удалить Роль",
+        "Type": "String",
+        "Key": "messages.roles.delete.failed"
+      },
+      {
+        "Value": "Не удалось получить Список Разрешений Роли",
+        "Type": "String",
+        "Key": "messages.roles.getPermissions.failed"
+      },
+      {
+        "Value": "Разрешение Назначено на Роль",
+        "Type": "String",
+        "Key": "messages.roles.assignPermission.success"
+      },
+      {
+        "Value": "Не удалось назначить Разрешение Роли",
+        "Type": "String",
+        "Key": "messages.roles.assignPermission.failed"
+      },
+      {
+        "Value": "Разрешение удалено из Роли",
+        "Type": "String",
+        "Key": "messages.roles.deletePermission.success"
+      },
+      {
+        "Value": "Не удалось удалить Разрешение из Роли",
+        "Type": "String",
+        "Key": "messages.roles.deletePermission.failed"
+      },
+      {
+        "Value": "Не удалось получить Список Пользователей Роли",
+        "Type": "String",
+        "Key": "messages.roles.getUsers.failed"
+      },
+      {
+        "Value": "Пользователь Назначен на Роль",
+        "Type": "String",
+        "Key": "messages.roles.assignUser.success"
+      },
+      {
+        "Value": "Не удалось Назначить Пользователя На Роль",
+        "Type": "String",
+        "Key": "messages.roles.assignUser.failed"
+      },
+      {
+        "Value": "Пользователь Удален из Роли",
+        "Type": "String",
+        "Key": "messages.roles.deleteUser.success"
+      },
+      {
+        "Value": "Не удалось Удалить Пользователя из Роли",
+        "Type": "String",
+        "Key": "messages.roles.deleteUser.failed"
+      },
+      {
+        "Value": "Пользователь Создан",
+        "Type": "String",
+        "Key": "messages.users.create.success"
+      },
+      {
+        "Value": "Не удалось Создать Пользователя",
+        "Type": "String",
+        "Key": "messages.users.create.failed"
+      },
+      {
+        "Value": "Пользователь Обновлен",
+        "Type": "String",
+        "Key": "messages.users.update.success"
+      },
+      {
+        "Value": "Не удалось Обновить Пользователя",
+        "Type": "String",
+        "Key": "messages.users.update.failed"
+      },
+      {
+        "Value": "Пароль Пользователя Обновлен",
+        "Type": "String",
+        "Key": "messages.users.resetPassword.success"
+      },
+      {
+        "Value": "Не удалось Обновить Пароль Пользователя",
+        "Type": "String",
+        "Key": "messages.users.resetPassword.failed"
+      },
+      {
+        "Value": "Пользователь Удален",
+        "Type": "String",
+        "Key": "messages.users.delete.success"
+      },
+      {
+        "Value": "Не удалось Удалить Пользователя",
+        "Type": "String",
+        "Key": "messages.users.delete.failed"
+      },
+      {
+        "Value": "Не удалось Получить Список Ролей Пользователя",
+        "Type": "String",
+        "Key": "messages.users.getRoles.failed"
+      },
+      {
+        "Value": "Роль Назначена Пользователю",
+        "Type": "String",
+        "Key": "messages.users.assignRole.success"
+      },
+      {
+        "Value": "Не удалось Назначить Роль Пользователю",
+        "Type": "String",
+        "Key": "messages.users.assignRole.failed"
+      },
+      {
+        "Value": "Роль Удалена из Пользователя",
+        "Type": "String",
+        "Key": "messages.users.deleteRole.success"
+      },
+      {
+        "Value": "Не удалось Удалить Роль из Пользователя",
+        "Type": "String",
+        "Key": "messages.users.deleteRole.failed"
+      },
+      {
+        "Value": "Не удалось получить список Разрешений Пользователя",
+        "Type": "String",
+        "Key": "messages.users.getPermissions.failed"
+      }
+    ]
+  },
+  "DocType": "lp.doc.i18n",
+  "DocVersion": 1
+}

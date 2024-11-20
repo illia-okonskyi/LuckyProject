@@ -1,0 +1,117 @@
+{
+  "Document": {
+    "Name": "LP AuthServer FE.Errors en-US",
+    "Description": "Lucky Project AuthServer Frontend.Errors en-US Localization",
+    "Source": "lp-authserver-fe-errors",
+    "Locale": "en-US",
+    "Items": [
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.errors.internal",
+        "Basis": null,
+        "Transaltion": "Internal Server Error"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.errors.invalidRequest",
+        "Basis": null,
+        "Transaltion": "Invalid Request"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.errors.logoutReject",
+        "Basis": null,
+        "Transaltion": "User Rejected Sign Out Request"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.errors.invalidClient",
+        "Basis": null,
+        "Transaltion": "Invalid client"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.errors.accessDenied",
+        "Basis": null,
+        "Transaltion": "Access denied"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.errors.consentRequired",
+        "Basis": null,
+        "Transaltion": "Interactive user consent is required"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.errors.tokenExpired",
+        "Basis": null,
+        "Transaltion": "The token is no longer valid"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.errors.signInReject",
+        "Basis": null,
+        "Transaltion": "User Rejected Sign In Request"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.errors.invalidCreds",
+        "Basis": null,
+        "Transaltion": "Invalid credentials"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.errors.userLockedOut",
+        "Basis": null,
+        "Transaltion": "User Locked Out"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.errors.authExpired",
+        "Basis": null,
+        "Transaltion": "User authorization expired"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.errors.cancelled",
+        "Basis": null,
+        "Transaltion": "Request cancelled"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.errors.invalidGrant",
+        "Basis": null,
+        "Transaltion": "Invalid Grant"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.errors.twoFactorFailed",
+        "Basis": null,
+        "Transaltion": "Two Factor Authentication Failed"
+      },
+      {
+        "Status": 2,
+        "ResourceType": "String",
+        "Key": "lp.authserver.fe.errors.invalidPassword",
+        "Basis": null,
+        "Transaltion": "Invalid Password"
+      }
+    ]
+  },
+  "DocType": "lp.doc.app.lm.proj",
+  "DocVersion": 1
+}

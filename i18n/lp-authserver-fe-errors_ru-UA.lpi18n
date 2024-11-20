@@ -1,0 +1,83 @@
+{
+  "Document": {
+    "Items": [
+      {
+        "Value": "Внутренняя Ошибка Сервера",
+        "Type": "String",
+        "Key": "lp.authserver.fe.errors.internal"
+      },
+      {
+        "Value": "Неправильный запрос",
+        "Type": "String",
+        "Key": "lp.authserver.fe.errors.invalidRequest"
+      },
+      {
+        "Value": "Пользователь Отклонил Запрос на Выход",
+        "Type": "String",
+        "Key": "lp.authserver.fe.errors.logoutReject"
+      },
+      {
+        "Value": "Неправильный клиент",
+        "Type": "String",
+        "Key": "lp.authserver.fe.errors.invalidClient"
+      },
+      {
+        "Value": "Доступ запрещен",
+        "Type": "String",
+        "Key": "lp.authserver.fe.errors.accessDenied"
+      },
+      {
+        "Value": "Требуется Интерактивное Соглашение Пользователя",
+        "Type": "String",
+        "Key": "lp.authserver.fe.errors.consentRequired"
+      },
+      {
+        "Value": "Токен больше не действителен",
+        "Type": "String",
+        "Key": "lp.authserver.fe.errors.tokenExpired"
+      },
+      {
+        "Value": "Пользователь Отклонил Запрос на Вход",
+        "Type": "String",
+        "Key": "lp.authserver.fe.errors.signInReject"
+      },
+      {
+        "Value": "Неправильные реквизиты для входа",
+        "Type": "String",
+        "Key": "lp.authserver.fe.errors.invalidCreds"
+      },
+      {
+        "Value": "Пользователь Заблокирован",
+        "Type": "String",
+        "Key": "lp.authserver.fe.errors.userLockedOut"
+      },
+      {
+        "Value": "Пользовательская авторизация истекла",
+        "Type": "String",
+        "Key": "lp.authserver.fe.errors.authExpired"
+      },
+      {
+        "Value": "Запрос отменен",
+        "Type": "String",
+        "Key": "lp.authserver.fe.errors.cancelled"
+      },
+      {
+        "Value": "Неправильный тип разрешения",
+        "Type": "String",
+        "Key": "lp.authserver.fe.errors.invalidGrant"
+      },
+      {
+        "Value": "Ошибка Запроса Двухфакторной Авторизации ",
+        "Type": "String",
+        "Key": "lp.authserver.fe.errors.twoFactorFailed"
+      },
+      {
+        "Value": "Неправильный Пароль",
+        "Type": "String",
+        "Key": "lp.authserver.fe.errors.invalidPassword"
+      }
+    ]
+  },
+  "DocType": "lp.doc.i18n",
+  "DocVersion": 1
+}

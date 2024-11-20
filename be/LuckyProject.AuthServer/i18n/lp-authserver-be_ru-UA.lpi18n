@@ -1,0 +1,28 @@
+{
+  "Document": {
+    "Items": [
+      {
+        "Value": "Lucky Project Authenticator Bot остановлен.\r\n\r\n\r\nНе забудьте выслать команду /start после того, как бот будет перезапущен",
+        "Type": "String",
+        "Key": "lp.authserver.be.services.userLogin.tgBotStopping"
+      },
+      {
+        "Value": "Привет, <b>{0}</b>!\r\n\r\nТеперь вы подписаны на Lucky Project Authenticator Bot",
+        "Type": "String",
+        "Key": "lp.authserver.be.services.userLogin.tgBotSubscribed"
+      },
+      {
+        "Value": "Привет, <b>{0}</b>!\r\n\r\nКто-то пытается войти в Lucky Project под вашими реквизитами. Если это не вы - игнорируйте данное сообщение.\r\n\r\nКод Авторизации <b>{1}</b> - введите этот код в форму входа",
+        "Type": "String",
+        "Key": "lp.authserver.be.services.userLogin.twoFactorCode"
+      },
+      {
+        "Value": "Привет, <b>{0}</b>!\r\n\r\nКто-то пытается Сбросить Пароль вашего Пользователя Lucky Project. Если это не вы - игнорируйте данное сообщение.\r\n\r\nПроверочный код <b>{1}</b> - введите этот код в форму Сброса Пароля",
+        "Type": "String",
+        "Key": "lp.authserver.be.services.userLogin.resetPasswordCode"
+      }
+    ]
+  },
+  "DocType": "lp.doc.i18n",
+  "DocVersion": 1
+}

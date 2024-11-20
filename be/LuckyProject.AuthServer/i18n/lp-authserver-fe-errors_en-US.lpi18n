@@ -1,0 +1,83 @@
+{
+  "Document": {
+    "Items": [
+      {
+        "Value": "Internal Server Error",
+        "Type": "String",
+        "Key": "lp.authserver.fe.errors.internal"
+      },
+      {
+        "Value": "Invalid Request",
+        "Type": "String",
+        "Key": "lp.authserver.fe.errors.invalidRequest"
+      },
+      {
+        "Value": "User Rejected Sign Out Request",
+        "Type": "String",
+        "Key": "lp.authserver.fe.errors.logoutReject"
+      },
+      {
+        "Value": "Invalid client",
+        "Type": "String",
+        "Key": "lp.authserver.fe.errors.invalidClient"
+      },
+      {
+        "Value": "Access denied",
+        "Type": "String",
+        "Key": "lp.authserver.fe.errors.accessDenied"
+      },
+      {
+        "Value": "Interactive user consent is required",
+        "Type": "String",
+        "Key": "lp.authserver.fe.errors.consentRequired"
+      },
+      {
+        "Value": "The token is no longer valid",
+        "Type": "String",
+        "Key": "lp.authserver.fe.errors.tokenExpired"
+      },
+      {
+        "Value": "User Rejected Sign In Request",
+        "Type": "String",
+        "Key": "lp.authserver.fe.errors.signInReject"
+      },
+      {
+        "Value": "Invalid credentials",
+        "Type": "String",
+        "Key": "lp.authserver.fe.errors.invalidCreds"
+      },
+      {
+        "Value": "User Locked Out",
+        "Type": "String",
+        "Key": "lp.authserver.fe.errors.userLockedOut"
+      },
+      {
+        "Value": "User authorization expired",
+        "Type": "String",
+        "Key": "lp.authserver.fe.errors.authExpired"
+      },
+      {
+        "Value": "Request cancelled",
+        "Type": "String",
+        "Key": "lp.authserver.fe.errors.cancelled"
+      },
+      {
+        "Value": "Invalid Grant",
+        "Type": "String",
+        "Key": "lp.authserver.fe.errors.invalidGrant"
+      },
+      {
+        "Value": "Two Factor Authentication Failed",
+        "Type": "String",
+        "Key": "lp.authserver.fe.errors.twoFactorFailed"
+      },
+      {
+        "Value": "Invalid Password",
+        "Type": "String",
+        "Key": "lp.authserver.fe.errors.invalidPassword"
+      }
+    ]
+  },
+  "DocType": "lp.doc.i18n",
+  "DocVersion": 1
+}
